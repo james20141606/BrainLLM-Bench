@@ -1,0 +1,9 @@
+# Frozen source snapshots for the 2026-09-22 follow-ups
+
+These files are exact historical source bytes recovered from named local Git objects. `provenance.json` deliberately separates `recorded_hash_receipts` from `actual_execution_receipts`: the alpha receipt generator hash was originally read from the shared on-disk script at job end, so it is not always the code already loaded in memory when fitting began. The correction authority is `results/p4_encoding/alpha_sensitivity_20260922/summary.json`, field `provenance_correction`; its source hash is also pinned in `provenance.json`.
+
+The seven alpha rungs are 0=0.5B, 1=1.5B, 2=3B, 3=7B, 4=14B, 5=32B, 6=72B. Rungs 0–1 actually executed `bd323b71…`. Rungs 2–6 actually executed committed source `bcec091e…` (`d89dc54`). While 14B/rung4 and 72B/rung6 were running, the shared on-disk file received a later plateau-only extension; their raw receipts consequently recorded the end-of-job disk hash `31593a6e…`. The correction states that the primary fit/scoring branch did not differ. The separately launched `qwen25_6_plateau_full.json` is the verified execution of `31593a6e…`. We make no unsupported claim that this later version changed the primary numerical branch.
+
+Rogue dose model 00 actually used immutable `516a496a…`; models 01–09 used immutable `e3195cd5…`, which adds baseline/schema validation before full four-dose receipt writing. Earlier `model_*.json` baseline receipts contain other historical script hashes and are inputs checked by the dose scripts; they are not represented here as dose-execution source snapshots.
+
+Packaging redacts absolute paths and identity tokens in copies, changing their bytes. The bundle manifest retains the recovered raw SHA beside each redacted packaged SHA. Connect receipts to source through `provenance.json` and the manifest; do not claim that redacted copies retain raw byte identity.

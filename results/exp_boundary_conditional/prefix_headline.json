@@ -1,0 +1,535 @@
+{
+  "full": {
+    "n": 47,
+    "n_positive": 37,
+    "mean": 0.032330400189052894,
+    "cohen_d": 0.7045954131954597,
+    "wilcoxon_p": 7.719939901562611e-06
+  },
+  "prefix": {
+    "n": 47,
+    "n_positive": 23,
+    "mean": 0.01326611856272779,
+    "cohen_d": 0.17923330467365592,
+    "wilcoxon_p": 0.5532751816445511
+  },
+  "per_subject": {
+    "S01": {
+      "full": 0.08163260897447079,
+      "prefix": 0.0535744911690538,
+      "difference": 0.02805811780541699,
+      "n_items": 84,
+      "full_onset": 0.014378395356659648,
+      "full_medial": 0.09601100433113044,
+      "prefix_onset": -0.04097183002590794,
+      "prefix_medial": 0.012602661143145859
+    },
+    "S02": {
+      "full": 0.03902358417692137,
+      "prefix": -0.02508789838329316,
+      "difference": 0.06411148256021454,
+      "n_items": 76,
+      "full_onset": 0.011083121550188835,
+      "full_medial": 0.05010670572711021,
+      "prefix_onset": 0.01672531956526244,
+      "prefix_medial": -0.00836257881803072
+    },
+    "S03": {
+      "full": 0.05031252390821189,
+      "prefix": 0.2855539894756062,
+      "difference": -0.23524146556739428,
+      "n_items": 84,
+      "full_onset": -0.016074300626749135,
+      "full_medial": 0.03423822328146276,
+      "prefix_onset": -0.1113143794398241,
+      "prefix_medial": 0.1742396100357821
+    },
+    "S04": {
+      "full": 0.090117749766836,
+      "prefix": 0.042979756612857696,
+      "difference": 0.0471379931539783,
+      "n_items": 84,
+      "full_onset": 0.005149653296472471,
+      "full_medial": 0.09526740306330847,
+      "prefix_onset": -0.003582868246343767,
+      "prefix_medial": 0.03939688836651393
+    },
+    "S05": {
+      "full": 0.00345216438924479,
+      "prefix": -0.10703504190418027,
+      "difference": 0.11048720629342507,
+      "n_items": 84,
+      "full_onset": -0.02838382230978614,
+      "full_medial": -0.02493165792054135,
+      "prefix_onset": 0.07019299477210912,
+      "prefix_medial": -0.03684204713207115
+    },
+    "S06": {
+      "full": -0.014101735678625191,
+      "prefix": -0.03811411819008816,
+      "difference": 0.02401238251146297,
+      "n_items": 84,
+      "full_onset": 0.021989208102459565,
+      "full_medial": 0.007887472423834373,
+      "prefix_onset": -0.0057706298405088025,
+      "prefix_medial": -0.043884748030596964
+    },
+    "S07": {
+      "full": 0.06428507695546115,
+      "prefix": -0.08546092911100756,
+      "difference": 0.1497460060664687,
+      "n_items": 84,
+      "full_onset": -0.024432810507354172,
+      "full_medial": 0.03985226644810698,
+      "prefix_onset": -0.05306340363142419,
+      "prefix_medial": -0.13852433274243175
+    },
+    "S08": {
+      "full": 0.12359549515119361,
+      "prefix": 0.07952616849096124,
+      "difference": 0.044069326660232375,
+      "n_items": 84,
+      "full_onset": -0.06183480890737847,
+      "full_medial": 0.06176068624381515,
+      "prefix_onset": -0.04579540202028228,
+      "prefix_medial": 0.033730766470678956
+    },
+    "S09": {
+      "full": 0.04193282402519932,
+      "prefix": 0.0193423465838128,
+      "difference": 0.022590477441386522,
+      "n_items": 84,
+      "full_onset": 0.004178511558125044,
+      "full_medial": 0.046111335583324364,
+      "prefix_onset": -0.006897334380842084,
+      "prefix_medial": 0.012445012202970717
+    },
+    "S10": {
+      "full": 0.07215991287799874,
+      "prefix": -0.017670156781241817,
+      "difference": 0.08983006965924055,
+      "n_items": 84,
+      "full_onset": -0.008986077754179273,
+      "full_medial": 0.06317383512381947,
+      "prefix_onset": -0.013301887807012983,
+      "prefix_medial": -0.0309720445882548
+    },
+    "S11": {
+      "full": 0.004080782534757292,
+      "prefix": 0.005441903860295744,
+      "difference": -0.001361121325538452,
+      "n_items": 84,
+      "full_onset": 0.05935874168204935,
+      "full_medial": 0.06343952421680664,
+      "prefix_onset": 0.015484512080596676,
+      "prefix_medial": 0.02092641594089242
+    },
+    "S12": {
+      "full": 0.061745634312123786,
+      "prefix": 0.01126703740193973,
+      "difference": 0.050478596910184054,
+      "n_items": 84,
+      "full_onset": 0.001500559599344133,
+      "full_medial": 0.06324619391146792,
+      "prefix_onset": -0.00821547507014351,
+      "prefix_medial": 0.00305156233179622
+    },
+    "S13": {
+      "full": 0.010445333123273705,
+      "prefix": 0.010167765664137735,
+      "difference": 0.00027756745913596996,
+      "n_items": 84,
+      "full_onset": 0.003795840986316343,
+      "full_medial": 0.014241174109590048,
+      "prefix_onset": -0.01264396900917063,
+      "prefix_medial": -0.0024762033450328944
+    },
+    "S14": {
+      "full": 0.03983684554835793,
+      "prefix": -0.06223757701278866,
+      "difference": 0.1020744225611466,
+      "n_items": 84,
+      "full_onset": -0.037366986902418374,
+      "full_medial": 0.0024698586459395554,
+      "prefix_onset": -0.01983692777472945,
+      "prefix_medial": -0.08207450478751811
+    },
+    "S15": {
+      "full": 0.05721531395870581,
+      "prefix": 0.029032315644408235,
+      "difference": 0.02818299831429758,
+      "n_items": 84,
+      "full_onset": 0.010421617351910203,
+      "full_medial": 0.06763693131061602,
+      "prefix_onset": -0.0010702220583828131,
+      "prefix_medial": 0.027962093586025423
+    },
+    "S16": {
+      "full": -0.047515725844836126,
+      "prefix": -0.0664621444153892,
+      "difference": 0.01894641857055307,
+      "n_items": 84,
+      "full_onset": 0.007463129071905632,
+      "full_medial": -0.04005259677293049,
+      "prefix_onset": -0.015235356337789593,
+      "prefix_medial": -0.08169750075317879
+    },
+    "S17": {
+      "full": 0.025660509353408863,
+      "prefix": -0.0024824989086019962,
+      "difference": 0.028143008262010858,
+      "n_items": 84,
+      "full_onset": 0.006238642093470066,
+      "full_medial": 0.03189915144687893,
+      "prefix_onset": -0.002245602637259648,
+      "prefix_medial": -0.004728101545861644
+    },
+    "S18": {
+      "full": 0.047670251256379935,
+      "prefix": 0.07331940223507158,
+      "difference": -0.025649150978691644,
+      "n_items": 84,
+      "full_onset": -0.0013207210659664792,
+      "full_medial": 0.046349530190413456,
+      "prefix_onset": -0.006537664277910846,
+      "prefix_medial": 0.06678173795716073
+    },
+    "S19": {
+      "full": 0.04275880858332279,
+      "prefix": -0.02076821678002862,
+      "difference": 0.0635270253633514,
+      "n_items": 84,
+      "full_onset": 0.006632984819071767,
+      "full_medial": 0.04939179340239456,
+      "prefix_onset": -0.0011754284616484014,
+      "prefix_medial": -0.021943645241677023
+    },
+    "S20": {
+      "full": 0.06617331275508354,
+      "prefix": -0.06763015780946813,
+      "difference": 0.13380347056455166,
+      "n_items": 84,
+      "full_onset": 0.0024782406285772216,
+      "full_medial": 0.06865155338366076,
+      "prefix_onset": -0.0013036874292643062,
+      "prefix_medial": -0.06893384523873243
+    },
+    "S21": {
+      "full": -0.052375071032236396,
+      "prefix": 0.06580185829962532,
+      "difference": -0.11817692933186172,
+      "n_items": 84,
+      "full_onset": 0.038800744393075765,
+      "full_medial": -0.013574326639160634,
+      "prefix_onset": -0.028043129994441758,
+      "prefix_medial": 0.03775872830518355
+    },
+    "S22": {
+      "full": 0.023288366369150618,
+      "prefix": -0.06863734646159003,
+      "difference": 0.09192571283074065,
+      "n_items": 84,
+      "full_onset": 0.023302962770046724,
+      "full_medial": 0.04659132913919734,
+      "prefix_onset": 0.010856465426057865,
+      "prefix_medial": -0.05778088103553217
+    },
+    "S23": {
+      "full": -0.014960470575406021,
+      "prefix": -0.033180577388765495,
+      "difference": 0.018220106813359473,
+      "n_items": 84,
+      "full_onset": 0.003962687837722737,
+      "full_medial": -0.010997782737683285,
+      "prefix_onset": 0.010086259064034401,
+      "prefix_medial": -0.023094318324731092
+    },
+    "S24": {
+      "full": 0.05084580511941546,
+      "prefix": -0.012908634054252806,
+      "difference": 0.06375443917366827,
+      "n_items": 76,
+      "full_onset": -0.026147185180161413,
+      "full_medial": 0.02469861993925404,
+      "prefix_onset": 0.03469175418573645,
+      "prefix_medial": 0.021783120131483646
+    },
+    "S25": {
+      "full": 0.03796145629478308,
+      "prefix": 0.007718943580185319,
+      "difference": 0.03024251271459776,
+      "n_items": 84,
+      "full_onset": 0.026106072212348008,
+      "full_medial": 0.06406752850713109,
+      "prefix_onset": -0.008247728347672,
+      "prefix_medial": -0.0005287847674866811
+    },
+    "S26": {
+      "full": 0.07344093585163143,
+      "prefix": -0.00361019893352698,
+      "difference": 0.0770511347851584,
+      "n_items": 76,
+      "full_onset": -0.010976834352682732,
+      "full_medial": 0.0624641014989487,
+      "prefix_onset": 0.018025473443056366,
+      "prefix_medial": 0.014415274509529386
+    },
+    "S27": {
+      "full": 0.029012574142283892,
+      "prefix": -0.03611820119383346,
+      "difference": 0.06513077533611736,
+      "n_items": 76,
+      "full_onset": 0.010682768498187847,
+      "full_medial": 0.03969534264047174,
+      "prefix_onset": 0.02645427370065349,
+      "prefix_medial": -0.009663927493179968
+    },
+    "S28": {
+      "full": 0.0314130486110845,
+      "prefix": 0.07036953137046302,
+      "difference": -0.03895648275937852,
+      "n_items": 84,
+      "full_onset": -0.012070823560205711,
+      "full_medial": 0.01934222505087879,
+      "prefix_onset": -0.02351458648461058,
+      "prefix_medial": 0.046854944885852436
+    },
+    "S29": {
+      "full": 0.04500802831102815,
+      "prefix": 0.012266906066699019,
+      "difference": 0.03274112224432914,
+      "n_items": 76,
+      "full_onset": -0.0146006217961924,
+      "full_medial": 0.030407406514835752,
+      "prefix_onset": -0.027728187620627436,
+      "prefix_medial": -0.015461281553928417
+    },
+    "S30": {
+      "full": -0.016344495754038582,
+      "prefix": 0.06648886132056565,
+      "difference": -0.08283335707460424,
+      "n_items": 76,
+      "full_onset": -0.03166011573440434,
+      "full_medial": -0.04800461148844292,
+      "prefix_onset": -0.1263457816059664,
+      "prefix_medial": -0.05985692028540075
+    },
+    "S31": {
+      "full": 0.00828283000342872,
+      "prefix": 0.06301545563213144,
+      "difference": -0.05473262562870272,
+      "n_items": 84,
+      "full_onset": -0.006099155669119701,
+      "full_medial": 0.002183674334309019,
+      "prefix_onset": -0.027536647342210504,
+      "prefix_medial": 0.035478808289920935
+    },
+    "S33": {
+      "full": 0.0712622777417811,
+      "prefix": -0.08360360178684126,
+      "difference": 0.15486587952862235,
+      "n_items": 84,
+      "full_onset": -0.0006231949756243313,
+      "full_medial": 0.07063908276615677,
+      "prefix_onset": 0.07070485000186401,
+      "prefix_medial": -0.012898751784977255
+    },
+    "S34": {
+      "full": 0.0244661962374096,
+      "prefix": 0.03905015090529641,
+      "difference": -0.014583954667886811,
+      "n_items": 76,
+      "full_onset": 0.01257695312356473,
+      "full_medial": 0.03704314936097433,
+      "prefix_onset": -0.020617161487180246,
+      "prefix_medial": 0.018432989418116167
+    },
+    "S35": {
+      "full": 0.08050007034784777,
+      "prefix": -0.011225985350883039,
+      "difference": 0.09172605569873081,
+      "n_items": 76,
+      "full_onset": -0.023708191034301575,
+      "full_medial": 0.0567918793135462,
+      "prefix_onset": -0.008469644453310214,
+      "prefix_medial": -0.019695629804193253
+    },
+    "S37": {
+      "full": 0.02502890292196691,
+      "prefix": 0.1348113096100643,
+      "difference": -0.10978240668809738,
+      "n_items": 84,
+      "full_onset": -0.02395896512545007,
+      "full_medial": 0.0010699377965168433,
+      "prefix_onset": -0.028057719160652826,
+      "prefix_medial": 0.10675359044941148
+    },
+    "S38": {
+      "full": -0.019292414632033954,
+      "prefix": 0.0585021954507548,
+      "difference": -0.07779461008278876,
+      "n_items": 84,
+      "full_onset": 0.00425150987413716,
+      "full_medial": -0.015040904757896795,
+      "prefix_onset": -0.05617302517404517,
+      "prefix_medial": 0.002329170276709634
+    },
+    "S39": {
+      "full": 0.03629610834970362,
+      "prefix": -0.04927620575645304,
+      "difference": 0.08557231410615666,
+      "n_items": 84,
+      "full_onset": 0.023090177839972328,
+      "full_medial": 0.05938628618967595,
+      "prefix_onset": -0.016449549307577884,
+      "prefix_medial": -0.06572575506403093
+    },
+    "S40": {
+      "full": 0.06273601870685062,
+      "prefix": -0.020545359436521318,
+      "difference": 0.08328137814337194,
+      "n_items": 84,
+      "full_onset": 0.0043999833121369,
+      "full_medial": 0.06713600201898752,
+      "prefix_onset": -0.0008576007106473811,
+      "prefix_medial": -0.0214029601471687
+    },
+    "S41": {
+      "full": -0.0040527960351360364,
+      "prefix": -0.04608731669053611,
+      "difference": 0.04203452065540007,
+      "n_items": 84,
+      "full_onset": -0.004107208680526061,
+      "full_medial": -0.008160004715662098,
+      "prefix_onset": 0.07305229075833736,
+      "prefix_medial": 0.026964974067801246
+    },
+    "S42": {
+      "full": -0.019961270779892182,
+      "prefix": 0.185515080406414,
+      "difference": -0.2054763511863062,
+      "n_items": 84,
+      "full_onset": 0.024810307190753826,
+      "full_medial": 0.004849036410861646,
+      "prefix_onset": -0.10699373674864976,
+      "prefix_medial": 0.07852134365776425
+    },
+    "S43": {
+      "full": 0.05305980017739872,
+      "prefix": -0.05640471510253525,
+      "difference": 0.10946451527993398,
+      "n_items": 84,
+      "full_onset": -0.0910460510250985,
+      "full_medial": -0.03798625084769978,
+      "prefix_onset": -0.0011717813421734022,
+      "prefix_medial": -0.05757649644470866
+    },
+    "S44": {
+      "full": 0.03033574965666379,
+      "prefix": -0.011973251694975956,
+      "difference": 0.042309001351639744,
+      "n_items": 84,
+      "full_onset": 0.022901751899923644,
+      "full_medial": 0.053237501556587435,
+      "prefix_onset": -0.010142957246318668,
+      "prefix_medial": -0.022116208941294624
+    },
+    "S45": {
+      "full": 0.015339388747492296,
+      "prefix": 0.0355041304853994,
+      "difference": -0.020164741737907107,
+      "n_items": 84,
+      "full_onset": 0.008780135664865685,
+      "full_medial": 0.02411952441235798,
+      "prefix_onset": -0.003992621894157772,
+      "prefix_medial": 0.03151150859124163
+    },
+    "S46": {
+      "full": 0.014468962819906152,
+      "prefix": -0.006797166254390703,
+      "difference": 0.021266129074296855,
+      "n_items": 84,
+      "full_onset": -0.010420521264912084,
+      "full_medial": 0.004048441554994068,
+      "prefix_onset": -0.023068001739027108,
+      "prefix_medial": -0.02986516799341781
+    },
+    "S47": {
+      "full": -0.01520066279048625,
+      "prefix": 0.1249509487003297,
+      "difference": -0.14015161149081595,
+      "n_items": 84,
+      "full_onset": 0.020239511670762808,
+      "full_medial": 0.005038848880276558,
+      "prefix_onset": -0.11211860241519904,
+      "prefix_medial": 0.012832346285130662
+    },
+    "S48": {
+      "full": 0.178573912012103,
+      "prefix": 0.10423719618647352,
+      "difference": 0.07433671582562947,
+      "n_items": 84,
+      "full_onset": -0.0035578900626131466,
+      "full_medial": 0.17501602194948984,
+      "prefix_onset": 0.060897188975714014,
+      "prefix_medial": 0.16513438516218754
+    },
+    "S49": {
+      "full": -0.09008571206470406,
+      "prefix": -0.021612873303147807,
+      "difference": -0.06847283876155626,
+      "n_items": 76,
+      "full_onset": 0.0061150879741908425,
+      "full_medial": -0.08397062409051322,
+      "prefix_onset": 0.022835407441413158,
+      "prefix_medial": 0.00122253413826535
+    }
+  },
+  "residual_bound": {
+    "prefix_mean": 0.01326611856272779,
+    "prefix_ci95": [
+      -0.008465770701378323,
+      0.034998007826833905
+    ],
+    "prefix_upper_95_one_sided": 0.031389493783499284,
+    "note": "the residual is a null, not a zero; quote this bound wherever the headline quotes a percentage removed"
+  },
+  "retention_interval": {
+    "point": 0.41032955005672067,
+    "ci95": [
+      -0.36168371460877413,
+      1.1823428147222153
+    ],
+    "declared_bound": 0.5,
+    "note": "if this interval contains 0.50 the third pre-declared condition is met only as a point estimate, and must be reported that way"
+  },
+  "paired_test": {
+    "n": 47,
+    "mean_full": 0.032330400189052894,
+    "mean_prefix": 0.01326611856272779,
+    "mean_difference": 0.01906428162632511,
+    "ci95_difference": [
+      -0.005895216171567543,
+      0.04402377942421776
+    ],
+    "wilcoxon_paired_p": 0.03297681788011175,
+    "retention": 0.41032955005672067,
+    "full_arm_reproduces": true,
+    "paired_drop_excludes_zero": false,
+    "retention_below_50pct": true
+  },
+  "config": {
+    "readout": "headline (exp_boundary_brennan_persubject.py): flattened channels x timepoints 0.325-0.475 s, correlation distance for neural AND embedding RDMs, onset = sentence-initial word, medial = all non-initial words, cap min(300, pool), floor 60, BERT layer 12, rng(42)",
+    "neural_data": "<PROJECT>/data/brennan_p4_v2",
+    "n_subjects_available": 47,
+    "substrate_caveat": "headline's original 49-subject brennan_2019 archive no longer exists on any accessible storage and S32/S36 raws are corrupt at the source; 47 subjects is the maximum any rerun can use",
+    "shared_trials_across_arms": true,
+    "smoke": {
+      "max_sentences": null,
+      "max_subjects": null,
+      "cap": 300,
+      "min_n": 60
+    }
+  },
+  "verdict": "LEAKAGE NOT ESTABLISHED: under the headline readout the contrast survives prefix-only context on the pre-declared criteria, whatever its significance in isolation"
+}

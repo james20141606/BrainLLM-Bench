@@ -1,0 +1,78 @@
+{
+  "status": "validated",
+  "analysis_type": "post_hoc_alpha_grid_sensitivity",
+  "baseline_of_record": {
+    "name": "concordance_modern_final_v2.json",
+    "sha256": "986222549be7833420eb2d5ccc308cdbc32cbcc9cb0088fb6f382855ce1c2217",
+    "note": "The first two run receipts referenced concordance32_CORRECTED.json (sha256 e92d79fe8c77e0f8b1a073ffc67524ae83bc2532796d9d2f1fc72753bebf24b3); its 0.5B and 1.5B values are identical to the modern-final receipt in all twelve sessions. The other five receipts directly reference modern-final."
+  },
+  "protocol": {
+    "cohort": "LibriBrain",
+    "cell": "temporal_L, broadband, 300-400 ms, depth 0.5",
+    "outer_folds": "12 leave-one-session-out",
+    "words": "2500 per session, seed 42, total 30000",
+    "alpha_selection": "RidgeCV GCV on each outer training fold only",
+    "original_grid": "numpy.logspace(1, 6, 8)",
+    "expanded_grid": "union of original grid and numpy.logspace(7, 14, 8)",
+    "score": "mean over 30 neural target columns of held-out Pearson correlation with original +1e-12 denominator epsilon",
+    "original_grid_replay_max_abs_session_error": 2.1510571102112408e-16,
+    "all_models_n_folds": 12
+  },
+  "model_results": [
+    {"model": "Qwen/Qwen2.5-0.5B", "dimension": 896, "original_mean": 0.05932525578138773, "expanded_mean": 0.05550210784360723, "delta": -0.003823147937780505, "expanded_alpha_mode": 10000000.0, "mode_count_of_12": 11, "expanded_grid_top_count": 0, "job": "18252024_0"},
+    {"model": "Qwen/Qwen2.5-1.5B", "dimension": 1536, "original_mean": 0.057034846566233206, "expanded_mean": 0.050790774261716874, "delta": -0.006244072304516332, "expanded_alpha_mode": 10000000.0, "mode_count_of_12": 11, "expanded_grid_top_count": 0, "job": "18252024_1"},
+    {"model": "Qwen/Qwen2.5-3B", "dimension": 2048, "original_mean": 0.05951153839302022, "expanded_mean": 0.06104505891257214, "delta": 0.0015335205195519189, "expanded_alpha_mode": 10000000.0, "mode_count_of_12": 11, "expanded_grid_top_count": 0, "job": "18252664_2"},
+    {"model": "Qwen/Qwen2.5-7B", "dimension": 3584, "original_mean": 0.056412064243238226, "expanded_mean": 0.05453281647213611, "delta": -0.0018792477711021133, "expanded_alpha_mode": 10000000.0, "mode_count_of_12": 11, "expanded_grid_top_count": 0, "job": "18252664_3"},
+    {"model": "Qwen/Qwen2.5-14B", "dimension": 5120, "original_mean": 0.052523698598744346, "expanded_mean": 0.05384908362474849, "delta": 0.0013253850260041417, "expanded_alpha_mode": 100000000.0, "mode_count_of_12": 11, "expanded_grid_top_count": 0, "job": "18252664_4"},
+    {"model": "Qwen/Qwen2.5-32B", "dimension": 5120, "original_mean": 0.048564230037320445, "expanded_mean": 0.05520185415808334, "delta": 0.006637624120762894, "expanded_alpha_mode": 100000000.0, "mode_count_of_12": 11, "expanded_grid_top_count": 0, "job": "18252024_5"},
+    {"model": "Qwen/Qwen2.5-72B", "dimension": 8192, "original_mean": 0.03324574231130689, "expanded_mean": 0.04490932272014408, "delta": 0.011663580408837186, "expanded_alpha_mode": 100000000000000.0, "mode_count_of_12": 11, "expanded_grid_top_count": 11, "job": "18252024_6"}
+  ],
+  "size_ordering_descriptive": {
+    "seven_rung_spearman_original": -0.8928571428571429,
+    "seven_rung_spearman_original_p_exploratory": 0.006807187408935392,
+    "seven_rung_spearman_expanded": -0.4642857142857144,
+    "seven_rung_spearman_expanded_p_exploratory": 0.2939341076002517,
+    "original_32B_minus_0p5B": -0.010761025744067293,
+    "expanded_32B_minus_0p5B": -0.0003002536855238943,
+    "expanded_32B_minus_0p5B_session_bootstrap95_seed0_B20000": [-0.00179623, 0.00111989],
+    "original_72B_minus_0p5B": -0.026079513470080848,
+    "expanded_72B_minus_0p5B": -0.010592785123463152,
+    "expanded_72B_minus_0p5B_session_bootstrap95_seed0_B20000": [-0.01543959, -0.00625202],
+    "train_selected_72B_scale_free_adjusted_mean": 0.045051679223424845,
+    "train_selected_72B_scale_free_adjusted_minus_0p5B": -0.010450428620182382,
+    "seven_rung_spearman_with_selected_72B_scale_free_adjustment": -0.4642857142857144,
+    "interpretation": "The finite original alpha grid materially steepened the measured decline, particularly at 32B. The 72B score remains below 0.5B under the expanded original scorer. Seven-rung rank significance is not retained, but n=7 is small and this does not prove a flat scaling law."
+  },
+  "seventy_two_b_limit_diagnostic": {
+    "job": "18254608_6",
+    "n_folds": 12,
+    "analytic_infinite_direction_mean_scale_free_pearson": 0.04580942458139595,
+    "fixed_alpha_scale_free_means": {"1e10": 0.04581183199521347, "1e12": 0.04580944869390962, "1e14": 0.04580942482252493},
+    "max_abs_per_fold_difference_from_limit": {"1e10": 5.7309119625356675e-06, "1e12": 5.7363103954377603e-08, "1e14": 5.736364369623992e-10},
+    "fixed_alpha_original_epsilon_score_mean_at_1e14": 0.04566656078570136,
+    "fixed_alpha_scale_free_score_mean_at_1e14": 0.04580942482252493,
+    "fixed_alpha_pure_epsilon_attenuation_at_1e14": 0.0001428640368235641,
+    "train_selected_original_epsilon_mean": 0.04490932272014408,
+    "train_selected_scale_free_adjusted_mean": 0.045051679223424845,
+    "train_selected_epsilon_attenuation": 0.0001423565032807675,
+    "train_selected_fold9_alpha": 37275.93720314938,
+    "train_selected_fold9_score": -0.0025141115862457476,
+    "fold9_fixed_infinite_alpha_direction_score": 0.006578835641527356,
+    "three_distinct_estimands": "0.0449093227 is train-selected 11x1e14 plus fold9 interior alpha under the original epsilon scorer. 0.0450516792 uses the same train-selected alphas but removes epsilon attenuation at the 11 high-alpha folds. 0.0458094248 uses fixed alpha 1e14 in all twelve folds and scale-free Pearson; it is a different policy because fold9 changes alpha.",
+    "median_raw_prediction_variance_at_1e14": 2.396500176681131e-19,
+    "interpretation": "Prediction direction reaches a large-penalty limit by 1e12; no interior finite-alpha optimum is established. At the same fixed 1e14 policy, original fixed-epsilon scoring attenuates the mean by 0.000142864. Do not attribute the larger 0.000900102 difference between fixed-limit scale-free and train-selected original scores solely to epsilon: fold 9 uses an interior alpha under the train-selected policy."
+  },
+  "provenance_correction": {
+    "reason": "Generator SHA was initially read from the on-disk script at job end. The same remote file received a later plateau-only extension while 14B and 72B were already running; their saved generator_sha256 fields therefore reflect the newer on-disk version, though the in-memory fit/scoring code came from the earlier committed version.",
+    "actual_original_fit_source_git_commit": "d89dc54",
+    "actual_original_fit_source_sha256_for_14B_and_72B": "bcec091eb03b64eb0f5f7c3f9e8e26661230ff34f1122fe02a9b1871fc28b8d7",
+    "saved_end_of_job_on_disk_sha256_for_14B_and_72B": "31593a6efe5e564714f00fb59c10ba515ffebce1634ea6558da0180521279dfa",
+    "fit_and_scoring_difference": "none; the later extension added a separate plateau mode and start-time hashing, without changing the primary RidgeCV branch",
+    "raw_receipts_preserved": true
+  },
+  "failed_attempts_preserved": {
+    "first_array": "18252024_2/_3/_4 failed before fitting because concordance32_CORRECTED.json lacks their model entries",
+    "retry_array": "18252664_2/_3/_4 completed with full modern-final baseline after seven-model schema preflight",
+    "valid_original_first_array": "18252024_0/_1/_5/_6 completed; 0/1 old baseline values were proven identical to modern-final for all twelve sessions"
+  }
+}

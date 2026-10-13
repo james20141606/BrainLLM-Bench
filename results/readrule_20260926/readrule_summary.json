@@ -1,0 +1,1844 @@
+{
+ "prereg": "paper4_temporalalign/notes/PREREG_readrule_20260926.md",
+ "headline_receipt_sha256": "e92d79fe8c77e0f8b1a073ffc67524ae83bc2532796d9d2f1fc72753bebf24b3",
+ "headline_reproduced": {
+  "rho": -0.5733137829912023,
+  "family_ci95": [
+   -0.7855269643048901,
+   -0.2641235334657375
+  ],
+  "rsa_sb": 0.9822794254803208,
+  "rsa_ci90": [
+   0.9650593441893851,
+   0.9935529078652352
+  ],
+  "enc_sb": 0.9551895825354271,
+  "enc_ci90": [
+   0.9284521161397103,
+   0.9719238741285093
+  ],
+  "ceiling": 0.9686398063045348
+ },
+ "receipts": {
+  "bert-base-uncased": {
+   "sha256": "0b851c1ba65a56208d6d8cf9ccb2f7ebebb1c6d24c45da8a13618612be4b3128",
+   "jid": "18577470_0",
+   "host": "<node>",
+   "device": "cpu",
+   "gates_all_pass": true,
+   "G2": {
+    "rsa_max_abs_diff": 5.204170427930421e-18,
+    "enc_max_abs_diff": 3.0357660829594124e-17,
+    "sessions_match": true,
+    "pass": true
+   },
+   "G3": {
+    "shape_match": true,
+    "median_row_cos": 0.9999999999995871,
+    "min_row_cos": 0.9999999999970407,
+    "frac_rows_cos_ge_0.9999": 1.0,
+    "max_abs_diff": 9.5367431640625e-06,
+    "pass": true
+   },
+   "fallback_frac": {
+    "full_mean": 0.0,
+    "prefix_last": 0.0,
+    "prefix_mean": 0.0,
+    "full_last": 0.0
+   }
+  },
+  "bert-large-uncased": {
+   "sha256": "b6036311aed505945e90e3461af8c7bdad77acbd78df752d99b2a76bdd95d7b6",
+   "jid": "18577608_1",
+   "host": "<node>",
+   "device": "cpu",
+   "gates_all_pass": true,
+   "G2": {
+    "rsa_max_abs_diff": 5.204170427930421e-18,
+    "enc_max_abs_diff": 1.3877787807814457e-17,
+    "sessions_match": true,
+    "pass": true
+   },
+   "G3": {
+    "shape_match": true,
+    "median_row_cos": 0.9999999999995599,
+    "min_row_cos": 0.9999999999912386,
+    "frac_rows_cos_ge_0.9999": 1.0,
+    "max_abs_diff": 2.193450927734375e-05,
+    "pass": true
+   },
+   "fallback_frac": {
+    "full_mean": 0.0,
+    "prefix_last": 0.0,
+    "prefix_mean": 0.0,
+    "full_last": 0.0
+   }
+  },
+  "roberta-base": {
+   "sha256": "40514ecd15bf6b0d7396f62157f046ffc45446721554f54656c9f7b7c4b56dc5",
+   "jid": "18577608_2",
+   "host": "<node>",
+   "device": "cpu",
+   "gates_all_pass": true,
+   "G2": {
+    "rsa_max_abs_diff": 5.204170427930421e-18,
+    "enc_max_abs_diff": 2.7755575615628914e-17,
+    "sessions_match": true,
+    "pass": true
+   },
+   "G3": {
+    "shape_match": true,
+    "median_row_cos": 0.9999999999995915,
+    "min_row_cos": 0.9999999999977678,
+    "frac_rows_cos_ge_0.9999": 1.0,
+    "max_abs_diff": 1.7404556274414062e-05,
+    "pass": true
+   },
+   "fallback_frac": {
+    "full_mean": 0.0,
+    "prefix_last": 0.0,
+    "prefix_mean": 0.0,
+    "full_last": 0.0
+   }
+  },
+  "roberta-large": {
+   "sha256": "da214e86262d0702b5b3c798714f569b380b837a91bf47d20f6ed96caaf09bee",
+   "jid": "18577608_3",
+   "host": "<node>",
+   "device": "cpu",
+   "gates_all_pass": true,
+   "G2": {
+    "rsa_max_abs_diff": 4.336808689942018e-18,
+    "enc_max_abs_diff": 2.7755575615628914e-17,
+    "sessions_match": true,
+    "pass": true
+   },
+   "G3": {
+    "shape_match": true,
+    "median_row_cos": 0.9999999999991944,
+    "min_row_cos": 0.9999999995034994,
+    "frac_rows_cos_ge_0.9999": 1.0,
+    "max_abs_diff": 0.0003147125244140625,
+    "pass": true
+   },
+   "fallback_frac": {
+    "full_mean": 0.0,
+    "prefix_last": 0.0,
+    "prefix_mean": 0.0,
+    "full_last": 0.0
+   }
+  },
+  "microsoft/deberta-v3-base": {
+   "sha256": "cbbbf96f029c3911fbdde691d3249a1381704ee66d36d04b54fb41fe36437430",
+   "jid": "18577608_4",
+   "host": "<node>",
+   "device": "cpu",
+   "gates_all_pass": true,
+   "G2": {
+    "rsa_max_abs_diff": 8.673617379884035e-18,
+    "enc_max_abs_diff": 1.3877787807814457e-17,
+    "sessions_match": true,
+    "pass": true
+   },
+   "G3": {
+    "shape_match": true,
+    "median_row_cos": 0.9999999999992357,
+    "min_row_cos": 0.9999999999428255,
+    "frac_rows_cos_ge_0.9999": 1.0,
+    "max_abs_diff": 3.135204315185547e-05,
+    "pass": true
+   },
+   "fallback_frac": {
+    "full_mean": 0.0,
+    "prefix_last": 0.0,
+    "prefix_mean": 0.0,
+    "full_last": 0.0
+   }
+  },
+  "microsoft/deberta-v3-large": {
+   "sha256": "7ba18d85e067ea939bf767407964c0f33e5fe4b98977f8b18fdf7d239626190b",
+   "jid": "18577608_5",
+   "host": "<node>",
+   "device": "cpu",
+   "gates_all_pass": true,
+   "G2": {
+    "rsa_max_abs_diff": 5.204170427930421e-18,
+    "enc_max_abs_diff": 2.0816681711721685e-17,
+    "sessions_match": true,
+    "pass": true
+   },
+   "G3": {
+    "shape_match": true,
+    "median_row_cos": 0.9999999999992846,
+    "min_row_cos": 0.9999999999315582,
+    "frac_rows_cos_ge_0.9999": 1.0,
+    "max_abs_diff": 0.00014162063598632812,
+    "pass": true
+   },
+   "fallback_frac": {
+    "full_mean": 0.0,
+    "prefix_last": 0.0,
+    "prefix_mean": 0.0,
+    "full_last": 0.0
+   }
+  },
+  "google/electra-base-discriminator": {
+   "sha256": "18b23e1668602cdb973442015d029124df68a6fbbadc02aba47f4db82bce64d9",
+   "jid": "18577608_6",
+   "host": "<node>",
+   "device": "cpu",
+   "gates_all_pass": true,
+   "G2": {
+    "rsa_max_abs_diff": 3.469446951953614e-18,
+    "enc_max_abs_diff": 1.3877787807814457e-17,
+    "sessions_match": true,
+    "pass": true
+   },
+   "G3": {
+    "shape_match": true,
+    "median_row_cos": 0.999999999998659,
+    "min_row_cos": 0.9999999999927032,
+    "frac_rows_cos_ge_0.9999": 1.0,
+    "max_abs_diff": 1.1205673217773438e-05,
+    "pass": true
+   },
+   "fallback_frac": {
+    "full_mean": 0.0,
+    "prefix_last": 0.0,
+    "prefix_mean": 0.0,
+    "full_last": 0.0
+   }
+  },
+  "albert-base-v2": {
+   "sha256": "28a42724e598c856eb163d0840205ec30f06ca838a9ba07768a87365567f7c68",
+   "jid": "18577608_7",
+   "host": "<node>",
+   "device": "cpu",
+   "gates_all_pass": true,
+   "G2": {
+    "rsa_max_abs_diff": 5.204170427930421e-18,
+    "enc_max_abs_diff": 3.469446951953614e-17,
+    "sessions_match": true,
+    "pass": true
+   },
+   "G3": {
+    "shape_match": true,
+    "median_row_cos": 0.9999999999980321,
+    "min_row_cos": 0.999999999833412,
+    "frac_rows_cos_ge_0.9999": 1.0,
+    "max_abs_diff": 0.00010395050048828125,
+    "pass": true
+   },
+   "fallback_frac": {
+    "full_mean": 0.0,
+    "prefix_last": 0.0,
+    "prefix_mean": 0.0,
+    "full_last": 0.0
+   }
+  },
+  "distilbert-base-uncased": {
+   "sha256": "eaa4b92d787516c3c7603d79f0d006b1498c263cf360b5ded3a1e75a1723dc99",
+   "jid": "18577608_8",
+   "host": "<node>",
+   "device": "cpu",
+   "gates_all_pass": true,
+   "G2": {
+    "rsa_max_abs_diff": 8.673617379884035e-18,
+    "enc_max_abs_diff": 2.7755575615628914e-17,
+    "sessions_match": true,
+    "pass": true
+   },
+   "G3": {
+    "shape_match": true,
+    "median_row_cos": 0.9999999999996863,
+    "min_row_cos": 0.9999999999991395,
+    "frac_rows_cos_ge_0.9999": 1.0,
+    "max_abs_diff": 6.67572021484375e-06,
+    "pass": true
+   },
+   "fallback_frac": {
+    "full_mean": 0.0,
+    "prefix_last": 0.0,
+    "prefix_mean": 0.0,
+    "full_last": 0.0
+   }
+  },
+  "t5-small": {
+   "sha256": "9fd6c9160959067576e46f95568b592aec64725f2bbc267ab3e682255c73ed3d",
+   "jid": "18577472_9",
+   "host": "<node>",
+   "device": "cpu",
+   "gates_all_pass": true,
+   "G2": {
+    "rsa_max_abs_diff": 5.204170427930421e-18,
+    "enc_max_abs_diff": 2.0816681711721685e-17,
+    "sessions_match": true,
+    "pass": true
+   },
+   "G3": {
+    "shape_match": true,
+    "median_row_cos": 0.9999999999999077,
+    "min_row_cos": 0.9999999999990287,
+    "frac_rows_cos_ge_0.9999": 1.0,
+    "max_abs_diff": 0.000518798828125,
+    "pass": true
+   },
+   "fallback_frac": {
+    "full_mean": 0.0,
+    "prefix_last": 0.0,
+    "prefix_mean": 0.0,
+    "full_last": 0.0
+   }
+  },
+  "t5-base": {
+   "sha256": "25efecb0704a5929c0dbe98d6fd585bd3a49975fa2eacf8e94aae0f435674d16",
+   "jid": "18577608_10",
+   "host": "<node>",
+   "device": "cpu",
+   "gates_all_pass": true,
+   "G2": {
+    "rsa_max_abs_diff": 5.204170427930421e-18,
+    "enc_max_abs_diff": 3.5561831257524545e-17,
+    "sessions_match": true,
+    "pass": true
+   },
+   "G3": {
+    "shape_match": true,
+    "median_row_cos": 0.999999999999894,
+    "min_row_cos": 0.9999999999931202,
+    "frac_rows_cos_ge_0.9999": 1.0,
+    "max_abs_diff": 0.002838134765625,
+    "pass": true
+   },
+   "fallback_frac": {
+    "full_mean": 0.0,
+    "prefix_last": 0.0,
+    "prefix_mean": 0.0,
+    "full_last": 0.0
+   }
+  },
+  "t5-large": {
+   "sha256": "241e456249eabd37e3f10e6874f64b4ae284b9020e7e10176711089974061d24",
+   "jid": "18577608_11",
+   "host": "<node>",
+   "device": "cpu",
+   "gates_all_pass": true,
+   "G2": {
+    "rsa_max_abs_diff": 6.938893903907228e-18,
+    "enc_max_abs_diff": 4.163336342344337e-17,
+    "sessions_match": true,
+    "pass": true
+   },
+   "G3": {
+    "shape_match": true,
+    "median_row_cos": 0.9999999999999624,
+    "min_row_cos": 0.9999999999997182,
+    "frac_rows_cos_ge_0.9999": 1.0,
+    "max_abs_diff": 0.00048828125,
+    "pass": true
+   },
+   "fallback_frac": {
+    "full_mean": 0.0,
+    "prefix_last": 0.0,
+    "prefix_mean": 0.0,
+    "full_last": 0.0
+   }
+  },
+  "facebook/bart-base": {
+   "sha256": "179c7ded5cd4fd7a34be80df5de58c53acccfb4b7820d884def7efce0ef0f7ed",
+   "jid": "18577608_12",
+   "host": "<node>",
+   "device": "cpu",
+   "gates_all_pass": true,
+   "G2": {
+    "rsa_max_abs_diff": 1.0408340855860843e-17,
+    "enc_max_abs_diff": 2.7755575615628914e-17,
+    "sessions_match": true,
+    "pass": true
+   },
+   "G3": {
+    "shape_match": true,
+    "median_row_cos": 0.99999999999928,
+    "min_row_cos": 0.9999999999938077,
+    "frac_rows_cos_ge_0.9999": 1.0,
+    "max_abs_diff": 5.155801773071289e-06,
+    "pass": true
+   },
+   "fallback_frac": {
+    "full_mean": 0.0,
+    "prefix_last": 0.0,
+    "prefix_mean": 0.0,
+    "full_last": 0.0
+   }
+  },
+  "facebook/bart-large": {
+   "sha256": "b2f361303d92a9532fb2512090ad8dc01db4176c300d8e14e20f0fbc8b5d4d69",
+   "jid": "18577608_13",
+   "host": "<node>",
+   "device": "cpu",
+   "gates_all_pass": true,
+   "G2": {
+    "rsa_max_abs_diff": 3.469446951953614e-18,
+    "enc_max_abs_diff": 5.204170427930421e-17,
+    "sessions_match": true,
+    "pass": true
+   },
+   "G3": {
+    "shape_match": true,
+    "median_row_cos": 0.9999999999985574,
+    "min_row_cos": 0.9999999999271891,
+    "frac_rows_cos_ge_0.9999": 1.0,
+    "max_abs_diff": 2.2172927856445312e-05,
+    "pass": true
+   },
+   "fallback_frac": {
+    "full_mean": 0.0,
+    "prefix_last": 0.0,
+    "prefix_mean": 0.0,
+    "full_last": 0.0
+   }
+  }
+ },
+ "missing": [],
+ "gate_failures": {},
+ "devices": [
+  "cpu"
+ ],
+ "comparator": {
+  "models_excluded": [],
+  "rho": -0.5733137829912023,
+  "p": 0.0006036474416567209,
+  "fisher_ci95": [
+   -0.7683967458207633,
+   -0.2807435541371818
+  ],
+  "family_ci95": [
+   -0.7855269643048901,
+   -0.2641235334657375
+  ],
+  "n_families": 12,
+  "n_models": 32
+ },
+ "variants": {
+  "prefix_last": {
+   "rho": -0.016129032258064516,
+   "p": 0.9301826237960704,
+   "fisher_ci95": [
+    -0.36278267764390676,
+    0.3344458937507669
+   ],
+   "family_ci95": [
+    -0.40411848610275375,
+    0.340457128726781
+   ],
+   "n_families": 12,
+   "n_models": 32,
+   "delta_vs_comparator": 0.5571847507331378,
+   "delta_paired_family_ci95": [
+    0.2043635615438359,
+    0.8215318849143968
+   ],
+   "delta_n_boot_valid": 10000,
+   "reliability": {
+    "rsa_sb": 0.981329350261389,
+    "rsa_ci90": [
+     0.9634765644190216,
+     0.9905736285752322
+    ],
+    "enc_sb": 0.9413020177824386,
+    "enc_ci90": [
+     0.9035149336032902,
+     0.9659419792684267
+    ],
+    "ceiling": 0.9611073288193025
+   },
+   "decomposition": {
+    "within_class_centred_rho": 0.029692082111436948,
+    "between_class_share_of_abs_rho": -0.8409090909090908,
+    "per_class": {
+     "causal": {
+      "n": 18,
+      "rho": -0.2776057791537668,
+      "mean_rsa": 0.004949457533027751,
+      "mean_enc": 0.049396797459528574
+     },
+     "encdec": {
+      "n": 5,
+      "rho": 0.7999999999999999,
+      "mean_rsa": 0.008241716726854203,
+      "mean_enc": 0.04706470027401957
+     },
+     "masked": {
+      "n": 9,
+      "rho": 0.3666666666666667,
+      "mean_rsa": 0.006219302422213843,
+      "mean_enc": 0.04863953514318491
+     }
+    }
+   },
+   "per_model": [
+    {
+     "model": "gpt2",
+     "kind": "causal",
+     "family": "gpt2",
+     "rsa_mean": 0.004530733918096128,
+     "enc_mean": 0.04319047086895254,
+     "rsa_mean_published": 0.004530733918096128,
+     "enc_mean_published": 0.04319047086895254
+    },
+    {
+     "model": "gpt2-medium",
+     "kind": "causal",
+     "family": "gpt2",
+     "rsa_mean": 0.002556196031427548,
+     "enc_mean": 0.0436494289685917,
+     "rsa_mean_published": 0.002556196031427548,
+     "enc_mean_published": 0.0436494289685917
+    },
+    {
+     "model": "gpt2-large",
+     "kind": "causal",
+     "family": "gpt2",
+     "rsa_mean": 0.0026132955898292023,
+     "enc_mean": 0.048506745161715124,
+     "rsa_mean_published": 0.0026132955898292023,
+     "enc_mean_published": 0.048506745161715124
+    },
+    {
+     "model": "gpt2-xl",
+     "kind": "causal",
+     "family": "gpt2",
+     "rsa_mean": 0.0018416988156038077,
+     "enc_mean": 0.04904680251703233,
+     "rsa_mean_published": 0.0018416988156038077,
+     "enc_mean_published": 0.04904680251703233
+    },
+    {
+     "model": "EleutherAI/pythia-70m",
+     "kind": "causal",
+     "family": "pythia",
+     "rsa_mean": 0.007230825968148339,
+     "enc_mean": 0.04824520740765325,
+     "rsa_mean_published": 0.007230825968148339,
+     "enc_mean_published": 0.04824520740765325
+    },
+    {
+     "model": "EleutherAI/pythia-160m",
+     "kind": "causal",
+     "family": "pythia",
+     "rsa_mean": 0.007629927436207123,
+     "enc_mean": 0.046784854846356645,
+     "rsa_mean_published": 0.007629927436207123,
+     "enc_mean_published": 0.046784854846356645
+    },
+    {
+     "model": "EleutherAI/pythia-410m",
+     "kind": "causal",
+     "family": "pythia",
+     "rsa_mean": 0.003283983955132202,
+     "enc_mean": 0.052717024380657514,
+     "rsa_mean_published": 0.003283983955132202,
+     "enc_mean_published": 0.052717024380657514
+    },
+    {
+     "model": "EleutherAI/pythia-1b",
+     "kind": "causal",
+     "family": "pythia",
+     "rsa_mean": 0.003591655091125474,
+     "enc_mean": 0.05193305881917262,
+     "rsa_mean_published": 0.003591655091125474,
+     "enc_mean_published": 0.05193305881917262
+    },
+    {
+     "model": "EleutherAI/pythia-1.4b",
+     "kind": "causal",
+     "family": "pythia",
+     "rsa_mean": 0.006538302795815475,
+     "enc_mean": 0.05047835826776013,
+     "rsa_mean_published": 0.006538302795815475,
+     "enc_mean_published": 0.05047835826776013
+    },
+    {
+     "model": "EleutherAI/pythia-2.8b",
+     "kind": "causal",
+     "family": "pythia",
+     "rsa_mean": 0.006038511086268309,
+     "enc_mean": 0.04618795708625373,
+     "rsa_mean_published": 0.006038511086268309,
+     "enc_mean_published": 0.04618795708625373
+    },
+    {
+     "model": "facebook/opt-125m",
+     "kind": "causal",
+     "family": "opt",
+     "rsa_mean": 0.008231050671838413,
+     "enc_mean": 0.044928422277419944,
+     "rsa_mean_published": 0.008231050671838413,
+     "enc_mean_published": 0.044928422277419944
+    },
+    {
+     "model": "facebook/opt-350m",
+     "kind": "causal",
+     "family": "opt",
+     "rsa_mean": 0.007830835780259221,
+     "enc_mean": 0.04397003234490874,
+     "rsa_mean_published": 0.007830835780259221,
+     "enc_mean_published": 0.04397003234490874
+    },
+    {
+     "model": "facebook/opt-1.3b",
+     "kind": "causal",
+     "family": "opt",
+     "rsa_mean": 0.006959858984576982,
+     "enc_mean": 0.050087426387109994,
+     "rsa_mean_published": 0.006959858984576982,
+     "enc_mean_published": 0.050087426387109994
+    },
+    {
+     "model": "EleutherAI/gpt-neo-125m",
+     "kind": "causal",
+     "family": "gpt-neo",
+     "rsa_mean": 0.0029658934231542836,
+     "enc_mean": 0.05330716155082632,
+     "rsa_mean_published": 0.0029658934231542836,
+     "enc_mean_published": 0.05330716155082632
+    },
+    {
+     "model": "EleutherAI/gpt-neo-1.3B",
+     "kind": "causal",
+     "family": "gpt-neo",
+     "rsa_mean": 0.0021032437086682706,
+     "enc_mean": 0.04981900812002057,
+     "rsa_mean_published": 0.0021032437086682706,
+     "enc_mean_published": 0.04981900812002057
+    },
+    {
+     "model": "meta-llama/Llama-3.2-1B",
+     "kind": "causal",
+     "family": "llama",
+     "rsa_mean": 0.006520944229953844,
+     "enc_mean": 0.049930292919462195,
+     "rsa_mean_published": 0.006520944229953844,
+     "enc_mean_published": 0.049930292919462195
+    },
+    {
+     "model": "Qwen/Qwen2.5-0.5B",
+     "kind": "causal",
+     "family": "qwen",
+     "rsa_mean": 0.004224696765578432,
+     "enc_mean": 0.05932525578138775,
+     "rsa_mean_published": 0.004224696765578432,
+     "enc_mean_published": 0.05932525578138775
+    },
+    {
+     "model": "Qwen/Qwen2.5-1.5B",
+     "kind": "causal",
+     "family": "qwen",
+     "rsa_mean": 0.004398581342816473,
+     "enc_mean": 0.057034846566233206,
+     "rsa_mean_published": 0.004398581342816473,
+     "enc_mean_published": 0.057034846566233206
+    },
+    {
+     "model": "bert-base-uncased",
+     "kind": "masked",
+     "family": "bert",
+     "rsa_mean": 0.006346266084858723,
+     "enc_mean": 0.044133189801106865,
+     "rsa_mean_published": 0.007957544292387337,
+     "enc_mean_published": 0.04364630323070842
+    },
+    {
+     "model": "bert-large-uncased",
+     "kind": "masked",
+     "family": "bert",
+     "rsa_mean": 0.006946097338910255,
+     "enc_mean": 0.04920202372411423,
+     "rsa_mean_published": 0.007354692363691288,
+     "enc_mean_published": 0.04257857460822961
+    },
+    {
+     "model": "roberta-base",
+     "kind": "masked",
+     "family": "roberta",
+     "rsa_mean": 0.008685943613078562,
+     "enc_mean": 0.057581756460993644,
+     "rsa_mean_published": 0.008473818706300883,
+     "enc_mean_published": 0.04453810957080636
+    },
+    {
+     "model": "roberta-large",
+     "kind": "masked",
+     "family": "roberta",
+     "rsa_mean": 0.008193091243669138,
+     "enc_mean": 0.058096759898772755,
+     "rsa_mean_published": 0.007575876487416322,
+     "enc_mean_published": 0.0510657934158669
+    },
+    {
+     "model": "microsoft/deberta-v3-base",
+     "kind": "masked",
+     "family": "deberta",
+     "rsa_mean": 0.012072080680473517,
+     "enc_mean": 0.04736860267822109,
+     "rsa_mean_published": 0.010418261230787396,
+     "enc_mean_published": 0.029157247836476913
+    },
+    {
+     "model": "microsoft/deberta-v3-large",
+     "kind": "masked",
+     "family": "deberta",
+     "rsa_mean": 0.00320942127836007,
+     "enc_mean": 0.04082106599890727,
+     "rsa_mean_published": 0.007478100841986627,
+     "enc_mean_published": 0.03244944284116816
+    },
+    {
+     "model": "google/electra-base-discriminator",
+     "kind": "masked",
+     "family": "electra",
+     "rsa_mean": 0.002374906430350949,
+     "enc_mean": 0.04825405930877449,
+     "rsa_mean_published": 0.007614900522897147,
+     "enc_mean_published": 0.03610548470955669
+    },
+    {
+     "model": "albert-base-v2",
+     "kind": "masked",
+     "family": "bert",
+     "rsa_mean": 0.00207370178913909,
+     "enc_mean": 0.04895603182057951,
+     "rsa_mean_published": 0.00882668051532799,
+     "enc_mean_published": 0.04841685458387893
+    },
+    {
+     "model": "distilbert-base-uncased",
+     "kind": "masked",
+     "family": "bert",
+     "rsa_mean": 0.006072213341084275,
+     "enc_mean": 0.0433423265971944,
+     "rsa_mean_published": 0.008526968655599588,
+     "enc_mean_published": 0.04304572159594358
+    },
+    {
+     "model": "t5-small",
+     "kind": "encdec",
+     "family": "t5",
+     "rsa_mean": 0.00645856622043672,
+     "enc_mean": 0.04452946512279515,
+     "rsa_mean_published": 0.011088841077222083,
+     "enc_mean_published": 0.04417451656827857
+    },
+    {
+     "model": "t5-base",
+     "kind": "encdec",
+     "family": "t5",
+     "rsa_mean": 0.00853999828223955,
+     "enc_mean": 0.04563041289951774,
+     "rsa_mean_published": 0.010338644743976033,
+     "enc_mean_published": 0.03585947611197998
+    },
+    {
+     "model": "t5-large",
+     "kind": "encdec",
+     "family": "t5",
+     "rsa_mean": 0.006985172183535803,
+     "enc_mean": 0.0456709526536176,
+     "rsa_mean_published": 0.010625096668929723,
+     "enc_mean_published": 0.04377257452190055
+    },
+    {
+     "model": "facebook/bart-base",
+     "kind": "encdec",
+     "family": "bart",
+     "rsa_mean": 0.009448148590734043,
+     "enc_mean": 0.05090330866628818,
+     "rsa_mean_published": 0.009151700682781061,
+     "enc_mean_published": 0.04851149006242594
+    },
+    {
+     "model": "facebook/bart-large",
+     "kind": "encdec",
+     "family": "bart",
+     "rsa_mean": 0.009776698357324903,
+     "enc_mean": 0.048589362027879196,
+     "rsa_mean_published": 0.009286680272388709,
+     "enc_mean_published": 0.040788975459209516
+    }
+   ],
+   "branch": "B",
+   "label": "not determined (family CI includes zero)"
+  },
+  "prefix_mean": {
+   "rho": -0.03189149560117301,
+   "p": 0.8624378009547491,
+   "fisher_ci95": [
+    -0.3763997602638992,
+    0.3203650531318071
+   ],
+   "family_ci95": [
+    -0.4232247964686553,
+    0.3313492432288901
+   ],
+   "n_families": 12,
+   "n_models": 32,
+   "delta_vs_comparator": 0.5414222873900293,
+   "delta_paired_family_ci95": [
+    0.1877473508995883,
+    0.8161392856759925
+   ],
+   "delta_n_boot_valid": 10000,
+   "reliability": {
+    "rsa_sb": 0.988880652335063,
+    "rsa_ci90": [
+     0.975389438559733,
+     0.9950267084177564
+    ],
+    "enc_sb": 0.9376947040498441,
+    "enc_ci90": [
+     0.8986009688487356,
+     0.9669014336574037
+    ],
+    "ceiling": 0.9629476364953308
+   },
+   "decomposition": {
+    "within_class_centred_rho": 0.005131964809384164,
+    "between_class_share_of_abs_rho": 0.8390804597701149,
+    "per_class": {
+     "causal": {
+      "n": 18,
+      "rho": -0.2776057791537668,
+      "mean_rsa": 0.004949457533027751,
+      "mean_enc": 0.049396797459528574
+     },
+     "encdec": {
+      "n": 5,
+      "rho": 0.7,
+      "mean_rsa": 0.009160360823004447,
+      "mean_enc": 0.04831052893201482
+     },
+     "masked": {
+      "n": 9,
+      "rho": 0.3666666666666667,
+      "mean_rsa": 0.006189950332876257,
+      "mean_enc": 0.04871766544028761
+     }
+    }
+   },
+   "per_model": [
+    {
+     "model": "gpt2",
+     "kind": "causal",
+     "family": "gpt2",
+     "rsa_mean": 0.004530733918096128,
+     "enc_mean": 0.04319047086895254,
+     "rsa_mean_published": 0.004530733918096128,
+     "enc_mean_published": 0.04319047086895254
+    },
+    {
+     "model": "gpt2-medium",
+     "kind": "causal",
+     "family": "gpt2",
+     "rsa_mean": 0.002556196031427548,
+     "enc_mean": 0.0436494289685917,
+     "rsa_mean_published": 0.002556196031427548,
+     "enc_mean_published": 0.0436494289685917
+    },
+    {
+     "model": "gpt2-large",
+     "kind": "causal",
+     "family": "gpt2",
+     "rsa_mean": 0.0026132955898292023,
+     "enc_mean": 0.048506745161715124,
+     "rsa_mean_published": 0.0026132955898292023,
+     "enc_mean_published": 0.048506745161715124
+    },
+    {
+     "model": "gpt2-xl",
+     "kind": "causal",
+     "family": "gpt2",
+     "rsa_mean": 0.0018416988156038077,
+     "enc_mean": 0.04904680251703233,
+     "rsa_mean_published": 0.0018416988156038077,
+     "enc_mean_published": 0.04904680251703233
+    },
+    {
+     "model": "EleutherAI/pythia-70m",
+     "kind": "causal",
+     "family": "pythia",
+     "rsa_mean": 0.007230825968148339,
+     "enc_mean": 0.04824520740765325,
+     "rsa_mean_published": 0.007230825968148339,
+     "enc_mean_published": 0.04824520740765325
+    },
+    {
+     "model": "EleutherAI/pythia-160m",
+     "kind": "causal",
+     "family": "pythia",
+     "rsa_mean": 0.007629927436207123,
+     "enc_mean": 0.046784854846356645,
+     "rsa_mean_published": 0.007629927436207123,
+     "enc_mean_published": 0.046784854846356645
+    },
+    {
+     "model": "EleutherAI/pythia-410m",
+     "kind": "causal",
+     "family": "pythia",
+     "rsa_mean": 0.003283983955132202,
+     "enc_mean": 0.052717024380657514,
+     "rsa_mean_published": 0.003283983955132202,
+     "enc_mean_published": 0.052717024380657514
+    },
+    {
+     "model": "EleutherAI/pythia-1b",
+     "kind": "causal",
+     "family": "pythia",
+     "rsa_mean": 0.003591655091125474,
+     "enc_mean": 0.05193305881917262,
+     "rsa_mean_published": 0.003591655091125474,
+     "enc_mean_published": 0.05193305881917262
+    },
+    {
+     "model": "EleutherAI/pythia-1.4b",
+     "kind": "causal",
+     "family": "pythia",
+     "rsa_mean": 0.006538302795815475,
+     "enc_mean": 0.05047835826776013,
+     "rsa_mean_published": 0.006538302795815475,
+     "enc_mean_published": 0.05047835826776013
+    },
+    {
+     "model": "EleutherAI/pythia-2.8b",
+     "kind": "causal",
+     "family": "pythia",
+     "rsa_mean": 0.006038511086268309,
+     "enc_mean": 0.04618795708625373,
+     "rsa_mean_published": 0.006038511086268309,
+     "enc_mean_published": 0.04618795708625373
+    },
+    {
+     "model": "facebook/opt-125m",
+     "kind": "causal",
+     "family": "opt",
+     "rsa_mean": 0.008231050671838413,
+     "enc_mean": 0.044928422277419944,
+     "rsa_mean_published": 0.008231050671838413,
+     "enc_mean_published": 0.044928422277419944
+    },
+    {
+     "model": "facebook/opt-350m",
+     "kind": "causal",
+     "family": "opt",
+     "rsa_mean": 0.007830835780259221,
+     "enc_mean": 0.04397003234490874,
+     "rsa_mean_published": 0.007830835780259221,
+     "enc_mean_published": 0.04397003234490874
+    },
+    {
+     "model": "facebook/opt-1.3b",
+     "kind": "causal",
+     "family": "opt",
+     "rsa_mean": 0.006959858984576982,
+     "enc_mean": 0.050087426387109994,
+     "rsa_mean_published": 0.006959858984576982,
+     "enc_mean_published": 0.050087426387109994
+    },
+    {
+     "model": "EleutherAI/gpt-neo-125m",
+     "kind": "causal",
+     "family": "gpt-neo",
+     "rsa_mean": 0.0029658934231542836,
+     "enc_mean": 0.05330716155082632,
+     "rsa_mean_published": 0.0029658934231542836,
+     "enc_mean_published": 0.05330716155082632
+    },
+    {
+     "model": "EleutherAI/gpt-neo-1.3B",
+     "kind": "causal",
+     "family": "gpt-neo",
+     "rsa_mean": 0.0021032437086682706,
+     "enc_mean": 0.04981900812002057,
+     "rsa_mean_published": 0.0021032437086682706,
+     "enc_mean_published": 0.04981900812002057
+    },
+    {
+     "model": "meta-llama/Llama-3.2-1B",
+     "kind": "causal",
+     "family": "llama",
+     "rsa_mean": 0.006520944229953844,
+     "enc_mean": 0.049930292919462195,
+     "rsa_mean_published": 0.006520944229953844,
+     "enc_mean_published": 0.049930292919462195
+    },
+    {
+     "model": "Qwen/Qwen2.5-0.5B",
+     "kind": "causal",
+     "family": "qwen",
+     "rsa_mean": 0.004224696765578432,
+     "enc_mean": 0.05932525578138775,
+     "rsa_mean_published": 0.004224696765578432,
+     "enc_mean_published": 0.05932525578138775
+    },
+    {
+     "model": "Qwen/Qwen2.5-1.5B",
+     "kind": "causal",
+     "family": "qwen",
+     "rsa_mean": 0.004398581342816473,
+     "enc_mean": 0.057034846566233206,
+     "rsa_mean_published": 0.004398581342816473,
+     "enc_mean_published": 0.057034846566233206
+    },
+    {
+     "model": "bert-base-uncased",
+     "kind": "masked",
+     "family": "bert",
+     "rsa_mean": 0.006027238087761279,
+     "enc_mean": 0.04420822365566412,
+     "rsa_mean_published": 0.007957544292387337,
+     "enc_mean_published": 0.04364630323070842
+    },
+    {
+     "model": "bert-large-uncased",
+     "kind": "masked",
+     "family": "bert",
+     "rsa_mean": 0.00680723305041336,
+     "enc_mean": 0.04922933415961611,
+     "rsa_mean_published": 0.007354692363691288,
+     "enc_mean_published": 0.04257857460822961
+    },
+    {
+     "model": "roberta-base",
+     "kind": "masked",
+     "family": "roberta",
+     "rsa_mean": 0.009221292274435635,
+     "enc_mean": 0.057730745970159154,
+     "rsa_mean_published": 0.008473818706300883,
+     "enc_mean_published": 0.04453810957080636
+    },
+    {
+     "model": "roberta-large",
+     "kind": "masked",
+     "family": "roberta",
+     "rsa_mean": 0.00879226821845663,
+     "enc_mean": 0.058704799492393676,
+     "rsa_mean_published": 0.007575876487416322,
+     "enc_mean_published": 0.0510657934158669
+    },
+    {
+     "model": "microsoft/deberta-v3-base",
+     "kind": "masked",
+     "family": "deberta",
+     "rsa_mean": 0.012195216984783736,
+     "enc_mean": 0.046999807141094994,
+     "rsa_mean_published": 0.010418261230787396,
+     "enc_mean_published": 0.029157247836476913
+    },
+    {
+     "model": "microsoft/deberta-v3-large",
+     "kind": "masked",
+     "family": "deberta",
+     "rsa_mean": 0.003405069863240995,
+     "enc_mean": 0.04050395503499895,
+     "rsa_mean_published": 0.007478100841986627,
+     "enc_mean_published": 0.03244944284116816
+    },
+    {
+     "model": "google/electra-base-discriminator",
+     "kind": "masked",
+     "family": "electra",
+     "rsa_mean": 0.0020576296282678653,
+     "enc_mean": 0.04862248045879352,
+     "rsa_mean_published": 0.007614900522897147,
+     "enc_mean_published": 0.03610548470955669
+    },
+    {
+     "model": "albert-base-v2",
+     "kind": "masked",
+     "family": "bert",
+     "rsa_mean": 0.0012169493387628632,
+     "enc_mean": 0.048856807915004526,
+     "rsa_mean_published": 0.00882668051532799,
+     "enc_mean_published": 0.04841685458387893
+    },
+    {
+     "model": "distilbert-base-uncased",
+     "kind": "masked",
+     "family": "bert",
+     "rsa_mean": 0.0059866555497639536,
+     "enc_mean": 0.0436028351348634,
+     "rsa_mean_published": 0.008526968655599588,
+     "enc_mean_published": 0.04304572159594358
+    },
+    {
+     "model": "t5-small",
+     "kind": "encdec",
+     "family": "t5",
+     "rsa_mean": 0.007859760763244369,
+     "enc_mean": 0.04578282376330684,
+     "rsa_mean_published": 0.011088841077222083,
+     "enc_mean_published": 0.04417451656827857
+    },
+    {
+     "model": "t5-base",
+     "kind": "encdec",
+     "family": "t5",
+     "rsa_mean": 0.009808578792042092,
+     "enc_mean": 0.04749199906274885,
+     "rsa_mean_published": 0.010338644743976033,
+     "enc_mean_published": 0.03585947611197998
+    },
+    {
+     "model": "t5-large",
+     "kind": "encdec",
+     "family": "t5",
+     "rsa_mean": 0.008274863636862063,
+     "enc_mean": 0.04741336596974912,
+     "rsa_mean_published": 0.010625096668929723,
+     "enc_mean_published": 0.04377257452190055
+    },
+    {
+     "model": "facebook/bart-base",
+     "kind": "encdec",
+     "family": "bart",
+     "rsa_mean": 0.009762746480226948,
+     "enc_mean": 0.052163025908887835,
+     "rsa_mean_published": 0.009151700682781061,
+     "enc_mean_published": 0.04851149006242594
+    },
+    {
+     "model": "facebook/bart-large",
+     "kind": "encdec",
+     "family": "bart",
+     "rsa_mean": 0.010095854442646763,
+     "enc_mean": 0.04870142995538146,
+     "rsa_mean_published": 0.009286680272388709,
+     "enc_mean_published": 0.040788975459209516
+    }
+   ]
+  },
+  "full_last": {
+   "rho": -0.6627565982404692,
+   "p": 3.581320492702812e-05,
+   "fisher_ci95": [
+    -0.8215833006337295,
+    -0.4084566437844715
+   ],
+   "family_ci95": [
+    -0.8219357944571122,
+    -0.3559725608708033
+   ],
+   "n_families": 12,
+   "n_models": 32,
+   "delta_vs_comparator": -0.0894428152492669,
+   "delta_paired_family_ci95": [
+    -0.24810863297733704,
+    0.0017530711031564245
+   ],
+   "delta_n_boot_valid": 10000,
+   "reliability": {
+    "rsa_sb": 0.978564064812018,
+    "rsa_ci90": [
+     0.956129040910596,
+     0.9911242603550294
+    ],
+    "enc_sb": 0.9614542591754809,
+    "enc_ci90": [
+     0.9388412452793046,
+     0.9761681366109964
+    ],
+    "ceiling": 0.9699714366874862
+   },
+   "decomposition": {
+    "within_class_centred_rho": -0.2664956011730205,
+    "between_class_share_of_abs_rho": 0.5978982300884956,
+    "per_class": {
+     "causal": {
+      "n": 18,
+      "rho": -0.2776057791537668,
+      "mean_rsa": 0.004949457533027751,
+      "mean_enc": 0.049396797459528574
+     },
+     "encdec": {
+      "n": 5,
+      "rho": -0.09999999999999999,
+      "mean_rsa": 0.009166770633816086,
+      "mean_enc": 0.04111873865158563
+     },
+     "masked": {
+      "n": 9,
+      "rho": -0.16666666666666669,
+      "mean_rsa": 0.007975234560264704,
+      "mean_enc": 0.040847000299024744
+     }
+    }
+   },
+   "per_model": [
+    {
+     "model": "gpt2",
+     "kind": "causal",
+     "family": "gpt2",
+     "rsa_mean": 0.004530733918096128,
+     "enc_mean": 0.04319047086895254,
+     "rsa_mean_published": 0.004530733918096128,
+     "enc_mean_published": 0.04319047086895254
+    },
+    {
+     "model": "gpt2-medium",
+     "kind": "causal",
+     "family": "gpt2",
+     "rsa_mean": 0.002556196031427548,
+     "enc_mean": 0.0436494289685917,
+     "rsa_mean_published": 0.002556196031427548,
+     "enc_mean_published": 0.0436494289685917
+    },
+    {
+     "model": "gpt2-large",
+     "kind": "causal",
+     "family": "gpt2",
+     "rsa_mean": 0.0026132955898292023,
+     "enc_mean": 0.048506745161715124,
+     "rsa_mean_published": 0.0026132955898292023,
+     "enc_mean_published": 0.048506745161715124
+    },
+    {
+     "model": "gpt2-xl",
+     "kind": "causal",
+     "family": "gpt2",
+     "rsa_mean": 0.0018416988156038077,
+     "enc_mean": 0.04904680251703233,
+     "rsa_mean_published": 0.0018416988156038077,
+     "enc_mean_published": 0.04904680251703233
+    },
+    {
+     "model": "EleutherAI/pythia-70m",
+     "kind": "causal",
+     "family": "pythia",
+     "rsa_mean": 0.007230825968148339,
+     "enc_mean": 0.04824520740765325,
+     "rsa_mean_published": 0.007230825968148339,
+     "enc_mean_published": 0.04824520740765325
+    },
+    {
+     "model": "EleutherAI/pythia-160m",
+     "kind": "causal",
+     "family": "pythia",
+     "rsa_mean": 0.007629927436207123,
+     "enc_mean": 0.046784854846356645,
+     "rsa_mean_published": 0.007629927436207123,
+     "enc_mean_published": 0.046784854846356645
+    },
+    {
+     "model": "EleutherAI/pythia-410m",
+     "kind": "causal",
+     "family": "pythia",
+     "rsa_mean": 0.003283983955132202,
+     "enc_mean": 0.052717024380657514,
+     "rsa_mean_published": 0.003283983955132202,
+     "enc_mean_published": 0.052717024380657514
+    },
+    {
+     "model": "EleutherAI/pythia-1b",
+     "kind": "causal",
+     "family": "pythia",
+     "rsa_mean": 0.003591655091125474,
+     "enc_mean": 0.05193305881917262,
+     "rsa_mean_published": 0.003591655091125474,
+     "enc_mean_published": 0.05193305881917262
+    },
+    {
+     "model": "EleutherAI/pythia-1.4b",
+     "kind": "causal",
+     "family": "pythia",
+     "rsa_mean": 0.006538302795815475,
+     "enc_mean": 0.05047835826776013,
+     "rsa_mean_published": 0.006538302795815475,
+     "enc_mean_published": 0.05047835826776013
+    },
+    {
+     "model": "EleutherAI/pythia-2.8b",
+     "kind": "causal",
+     "family": "pythia",
+     "rsa_mean": 0.006038511086268309,
+     "enc_mean": 0.04618795708625373,
+     "rsa_mean_published": 0.006038511086268309,
+     "enc_mean_published": 0.04618795708625373
+    },
+    {
+     "model": "facebook/opt-125m",
+     "kind": "causal",
+     "family": "opt",
+     "rsa_mean": 0.008231050671838413,
+     "enc_mean": 0.044928422277419944,
+     "rsa_mean_published": 0.008231050671838413,
+     "enc_mean_published": 0.044928422277419944
+    },
+    {
+     "model": "facebook/opt-350m",
+     "kind": "causal",
+     "family": "opt",
+     "rsa_mean": 0.007830835780259221,
+     "enc_mean": 0.04397003234490874,
+     "rsa_mean_published": 0.007830835780259221,
+     "enc_mean_published": 0.04397003234490874
+    },
+    {
+     "model": "facebook/opt-1.3b",
+     "kind": "causal",
+     "family": "opt",
+     "rsa_mean": 0.006959858984576982,
+     "enc_mean": 0.050087426387109994,
+     "rsa_mean_published": 0.006959858984576982,
+     "enc_mean_published": 0.050087426387109994
+    },
+    {
+     "model": "EleutherAI/gpt-neo-125m",
+     "kind": "causal",
+     "family": "gpt-neo",
+     "rsa_mean": 0.0029658934231542836,
+     "enc_mean": 0.05330716155082632,
+     "rsa_mean_published": 0.0029658934231542836,
+     "enc_mean_published": 0.05330716155082632
+    },
+    {
+     "model": "EleutherAI/gpt-neo-1.3B",
+     "kind": "causal",
+     "family": "gpt-neo",
+     "rsa_mean": 0.0021032437086682706,
+     "enc_mean": 0.04981900812002057,
+     "rsa_mean_published": 0.0021032437086682706,
+     "enc_mean_published": 0.04981900812002057
+    },
+    {
+     "model": "meta-llama/Llama-3.2-1B",
+     "kind": "causal",
+     "family": "llama",
+     "rsa_mean": 0.006520944229953844,
+     "enc_mean": 0.049930292919462195,
+     "rsa_mean_published": 0.006520944229953844,
+     "enc_mean_published": 0.049930292919462195
+    },
+    {
+     "model": "Qwen/Qwen2.5-0.5B",
+     "kind": "causal",
+     "family": "qwen",
+     "rsa_mean": 0.004224696765578432,
+     "enc_mean": 0.05932525578138775,
+     "rsa_mean_published": 0.004224696765578432,
+     "enc_mean_published": 0.05932525578138775
+    },
+    {
+     "model": "Qwen/Qwen2.5-1.5B",
+     "kind": "causal",
+     "family": "qwen",
+     "rsa_mean": 0.004398581342816473,
+     "enc_mean": 0.057034846566233206,
+     "rsa_mean_published": 0.004398581342816473,
+     "enc_mean_published": 0.057034846566233206
+    },
+    {
+     "model": "bert-base-uncased",
+     "kind": "masked",
+     "family": "bert",
+     "rsa_mean": 0.007812308678983629,
+     "enc_mean": 0.043460838390880614,
+     "rsa_mean_published": 0.007957544292387337,
+     "enc_mean_published": 0.04364630323070842
+    },
+    {
+     "model": "bert-large-uncased",
+     "kind": "masked",
+     "family": "bert",
+     "rsa_mean": 0.007125837859190655,
+     "enc_mean": 0.042321352069803315,
+     "rsa_mean_published": 0.007354692363691288,
+     "enc_mean_published": 0.04257857460822961
+    },
+    {
+     "model": "roberta-base",
+     "kind": "masked",
+     "family": "roberta",
+     "rsa_mean": 0.0079027255951291,
+     "enc_mean": 0.0437258169218393,
+     "rsa_mean_published": 0.008473818706300883,
+     "enc_mean_published": 0.04453810957080636
+    },
+    {
+     "model": "roberta-large",
+     "kind": "masked",
+     "family": "roberta",
+     "rsa_mean": 0.007026743247496286,
+     "enc_mean": 0.04994447189882783,
+     "rsa_mean_published": 0.007575876487416322,
+     "enc_mean_published": 0.0510657934158669
+    },
+    {
+     "model": "microsoft/deberta-v3-base",
+     "kind": "masked",
+     "family": "deberta",
+     "rsa_mean": 0.010225132112337727,
+     "enc_mean": 0.02909579413216773,
+     "rsa_mean_published": 0.010418261230787396,
+     "enc_mean_published": 0.029157247836476913
+    },
+    {
+     "model": "microsoft/deberta-v3-large",
+     "kind": "masked",
+     "family": "deberta",
+     "rsa_mean": 0.007326973647414223,
+     "enc_mean": 0.0325657251925107,
+     "rsa_mean_published": 0.007478100841986627,
+     "enc_mean_published": 0.03244944284116816
+    },
+    {
+     "model": "google/electra-base-discriminator",
+     "kind": "masked",
+     "family": "electra",
+     "rsa_mean": 0.007442555485680583,
+     "enc_mean": 0.035895696679660936,
+     "rsa_mean_published": 0.007614900522897147,
+     "enc_mean_published": 0.03610548470955669
+    },
+    {
+     "model": "albert-base-v2",
+     "kind": "masked",
+     "family": "bert",
+     "rsa_mean": 0.008693316672599526,
+     "enc_mean": 0.04811668569913205,
+     "rsa_mean_published": 0.00882668051532799,
+     "enc_mean_published": 0.04841685458387893
+    },
+    {
+     "model": "distilbert-base-uncased",
+     "kind": "masked",
+     "family": "bert",
+     "rsa_mean": 0.008221517743550611,
+     "enc_mean": 0.0424966217064002,
+     "rsa_mean_published": 0.008526968655599588,
+     "enc_mean_published": 0.04304572159594358
+    },
+    {
+     "model": "t5-small",
+     "kind": "encdec",
+     "family": "t5",
+     "rsa_mean": 0.009873971737577205,
+     "enc_mean": 0.04278692588016742,
+     "rsa_mean_published": 0.011088841077222083,
+     "enc_mean_published": 0.04417451656827857
+    },
+    {
+     "model": "t5-base",
+     "kind": "encdec",
+     "family": "t5",
+     "rsa_mean": 0.009018128123284659,
+     "enc_mean": 0.03381403260016531,
+     "rsa_mean_published": 0.010338644743976033,
+     "enc_mean_published": 0.03585947611197998
+    },
+    {
+     "model": "t5-large",
+     "kind": "encdec",
+     "family": "t5",
+     "rsa_mean": 0.009430310511494799,
+     "enc_mean": 0.04189946413646003,
+     "rsa_mean_published": 0.010625096668929723,
+     "enc_mean_published": 0.04377257452190055
+    },
+    {
+     "model": "facebook/bart-base",
+     "kind": "encdec",
+     "family": "bart",
+     "rsa_mean": 0.008695603181813796,
+     "enc_mean": 0.047366029991553704,
+     "rsa_mean_published": 0.009151700682781061,
+     "enc_mean_published": 0.04851149006242594
+    },
+    {
+     "model": "facebook/bart-large",
+     "kind": "encdec",
+     "family": "bart",
+     "rsa_mean": 0.008815839614909967,
+     "enc_mean": 0.039727240649581684,
+     "rsa_mean_published": 0.009286680272388709,
+     "enc_mean_published": 0.040788975459209516
+    }
+   ]
+  },
+  "full_mean": {
+   "rho": -0.5733137829912023,
+   "p": 0.0006036474416567209,
+   "fisher_ci95": [
+    -0.7683967458207633,
+    -0.2807435541371818
+   ],
+   "family_ci95": [
+    -0.7855269643048901,
+    -0.2641235334657375
+   ],
+   "n_families": 12,
+   "n_models": 32,
+   "delta_vs_comparator": 0.0,
+   "delta_paired_family_ci95": [
+    0.0,
+    0.0
+   ],
+   "delta_n_boot_valid": 10000,
+   "reliability": {
+    "rsa_sb": 0.9822794254803208,
+    "rsa_ci90": [
+     0.9650593441893851,
+     0.9935529078652352
+    ],
+    "enc_sb": 0.9551895825354271,
+    "enc_ci90": [
+     0.9284521161397103,
+     0.9719238741285093
+    ],
+    "ceiling": 0.9686398063045348
+   },
+   "decomposition": {
+    "within_class_centred_rho": -0.252199413489736,
+    "between_class_share_of_abs_rho": 0.5601023017902813,
+    "per_class": {
+     "causal": {
+      "n": 18,
+      "rho": -0.2776057791537668,
+      "mean_rsa": 0.004949457533027751,
+      "mean_enc": 0.049396797459528574
+     },
+     "encdec": {
+      "n": 5,
+      "rho": -0.09999999999999999,
+      "mean_rsa": 0.010098192732809274,
+      "mean_enc": 0.042621407851705526
+     },
+     "masked": {
+      "n": 9,
+      "rho": 0.03333333333333333,
+      "mean_rsa": 0.008247427769283123,
+      "mean_enc": 0.04122261771265675
+     }
+    }
+   },
+   "per_model": [
+    {
+     "model": "gpt2",
+     "kind": "causal",
+     "family": "gpt2",
+     "rsa_mean": 0.004530733918096128,
+     "enc_mean": 0.04319047086895254,
+     "rsa_mean_published": 0.004530733918096128,
+     "enc_mean_published": 0.04319047086895254
+    },
+    {
+     "model": "gpt2-medium",
+     "kind": "causal",
+     "family": "gpt2",
+     "rsa_mean": 0.002556196031427548,
+     "enc_mean": 0.0436494289685917,
+     "rsa_mean_published": 0.002556196031427548,
+     "enc_mean_published": 0.0436494289685917
+    },
+    {
+     "model": "gpt2-large",
+     "kind": "causal",
+     "family": "gpt2",
+     "rsa_mean": 0.0026132955898292023,
+     "enc_mean": 0.048506745161715124,
+     "rsa_mean_published": 0.0026132955898292023,
+     "enc_mean_published": 0.048506745161715124
+    },
+    {
+     "model": "gpt2-xl",
+     "kind": "causal",
+     "family": "gpt2",
+     "rsa_mean": 0.0018416988156038077,
+     "enc_mean": 0.04904680251703233,
+     "rsa_mean_published": 0.0018416988156038077,
+     "enc_mean_published": 0.04904680251703233
+    },
+    {
+     "model": "EleutherAI/pythia-70m",
+     "kind": "causal",
+     "family": "pythia",
+     "rsa_mean": 0.007230825968148339,
+     "enc_mean": 0.04824520740765325,
+     "rsa_mean_published": 0.007230825968148339,
+     "enc_mean_published": 0.04824520740765325
+    },
+    {
+     "model": "EleutherAI/pythia-160m",
+     "kind": "causal",
+     "family": "pythia",
+     "rsa_mean": 0.007629927436207123,
+     "enc_mean": 0.046784854846356645,
+     "rsa_mean_published": 0.007629927436207123,
+     "enc_mean_published": 0.046784854846356645
+    },
+    {
+     "model": "EleutherAI/pythia-410m",
+     "kind": "causal",
+     "family": "pythia",
+     "rsa_mean": 0.003283983955132202,
+     "enc_mean": 0.052717024380657514,
+     "rsa_mean_published": 0.003283983955132202,
+     "enc_mean_published": 0.052717024380657514
+    },
+    {
+     "model": "EleutherAI/pythia-1b",
+     "kind": "causal",
+     "family": "pythia",
+     "rsa_mean": 0.003591655091125474,
+     "enc_mean": 0.05193305881917262,
+     "rsa_mean_published": 0.003591655091125474,
+     "enc_mean_published": 0.05193305881917262
+    },
+    {
+     "model": "EleutherAI/pythia-1.4b",
+     "kind": "causal",
+     "family": "pythia",
+     "rsa_mean": 0.006538302795815475,
+     "enc_mean": 0.05047835826776013,
+     "rsa_mean_published": 0.006538302795815475,
+     "enc_mean_published": 0.05047835826776013
+    },
+    {
+     "model": "EleutherAI/pythia-2.8b",
+     "kind": "causal",
+     "family": "pythia",
+     "rsa_mean": 0.006038511086268309,
+     "enc_mean": 0.04618795708625373,
+     "rsa_mean_published": 0.006038511086268309,
+     "enc_mean_published": 0.04618795708625373
+    },
+    {
+     "model": "facebook/opt-125m",
+     "kind": "causal",
+     "family": "opt",
+     "rsa_mean": 0.008231050671838413,
+     "enc_mean": 0.044928422277419944,
+     "rsa_mean_published": 0.008231050671838413,
+     "enc_mean_published": 0.044928422277419944
+    },
+    {
+     "model": "facebook/opt-350m",
+     "kind": "causal",
+     "family": "opt",
+     "rsa_mean": 0.007830835780259221,
+     "enc_mean": 0.04397003234490874,
+     "rsa_mean_published": 0.007830835780259221,
+     "enc_mean_published": 0.04397003234490874
+    },
+    {
+     "model": "facebook/opt-1.3b",
+     "kind": "causal",
+     "family": "opt",
+     "rsa_mean": 0.006959858984576982,
+     "enc_mean": 0.050087426387109994,
+     "rsa_mean_published": 0.006959858984576982,
+     "enc_mean_published": 0.050087426387109994
+    },
+    {
+     "model": "EleutherAI/gpt-neo-125m",
+     "kind": "causal",
+     "family": "gpt-neo",
+     "rsa_mean": 0.0029658934231542836,
+     "enc_mean": 0.05330716155082632,
+     "rsa_mean_published": 0.0029658934231542836,
+     "enc_mean_published": 0.05330716155082632
+    },
+    {
+     "model": "EleutherAI/gpt-neo-1.3B",
+     "kind": "causal",
+     "family": "gpt-neo",
+     "rsa_mean": 0.0021032437086682706,
+     "enc_mean": 0.04981900812002057,
+     "rsa_mean_published": 0.0021032437086682706,
+     "enc_mean_published": 0.04981900812002057
+    },
+    {
+     "model": "meta-llama/Llama-3.2-1B",
+     "kind": "causal",
+     "family": "llama",
+     "rsa_mean": 0.006520944229953844,
+     "enc_mean": 0.049930292919462195,
+     "rsa_mean_published": 0.006520944229953844,
+     "enc_mean_published": 0.049930292919462195
+    },
+    {
+     "model": "Qwen/Qwen2.5-0.5B",
+     "kind": "causal",
+     "family": "qwen",
+     "rsa_mean": 0.004224696765578432,
+     "enc_mean": 0.05932525578138775,
+     "rsa_mean_published": 0.004224696765578432,
+     "enc_mean_published": 0.05932525578138775
+    },
+    {
+     "model": "Qwen/Qwen2.5-1.5B",
+     "kind": "causal",
+     "family": "qwen",
+     "rsa_mean": 0.004398581342816473,
+     "enc_mean": 0.057034846566233206,
+     "rsa_mean_published": 0.004398581342816473,
+     "enc_mean_published": 0.057034846566233206
+    },
+    {
+     "model": "bert-base-uncased",
+     "kind": "masked",
+     "family": "bert",
+     "rsa_mean": 0.007957544985011201,
+     "enc_mean": 0.04364630421915408,
+     "rsa_mean_published": 0.007957544292387337,
+     "enc_mean_published": 0.04364630323070842
+    },
+    {
+     "model": "bert-large-uncased",
+     "kind": "masked",
+     "family": "bert",
+     "rsa_mean": 0.0073546921756410324,
+     "enc_mean": 0.04257856713169051,
+     "rsa_mean_published": 0.007354692363691288,
+     "enc_mean_published": 0.04257857460822961
+    },
+    {
+     "model": "roberta-base",
+     "kind": "masked",
+     "family": "roberta",
+     "rsa_mean": 0.008473819348875403,
+     "enc_mean": 0.0445381186533812,
+     "rsa_mean_published": 0.008473818706300883,
+     "enc_mean_published": 0.04453810957080636
+    },
+    {
+     "model": "roberta-large",
+     "kind": "masked",
+     "family": "roberta",
+     "rsa_mean": 0.007575879581731742,
+     "enc_mean": 0.05106579305213508,
+     "rsa_mean_published": 0.007575876487416322,
+     "enc_mean_published": 0.0510657934158669
+    },
+    {
+     "model": "microsoft/deberta-v3-base",
+     "kind": "masked",
+     "family": "deberta",
+     "rsa_mean": 0.010418260869111047,
+     "enc_mean": 0.029157251845444626,
+     "rsa_mean_published": 0.010418261230787396,
+     "enc_mean_published": 0.029157247836476913
+    },
+    {
+     "model": "microsoft/deberta-v3-large",
+     "kind": "masked",
+     "family": "deberta",
+     "rsa_mean": 0.007478100638315356,
+     "enc_mean": 0.03244943744850934,
+     "rsa_mean_published": 0.007478100841986627,
+     "enc_mean_published": 0.03244944284116816
+    },
+    {
+     "model": "google/electra-base-discriminator",
+     "kind": "masked",
+     "family": "electra",
+     "rsa_mean": 0.007614901537477855,
+     "enc_mean": 0.03610548429121904,
+     "rsa_mean_published": 0.007614900522897147,
+     "enc_mean_published": 0.03610548470955669
+    },
+    {
+     "model": "albert-base-v2",
+     "kind": "masked",
+     "family": "bert",
+     "rsa_mean": 0.008826681191501134,
+     "enc_mean": 0.0484168797905297,
+     "rsa_mean_published": 0.00882668051532799,
+     "enc_mean_published": 0.04841685458387893
+    },
+    {
+     "model": "distilbert-base-uncased",
+     "kind": "masked",
+     "family": "bert",
+     "rsa_mean": 0.008526969595883343,
+     "enc_mean": 0.043045722981847195,
+     "rsa_mean_published": 0.008526968655599588,
+     "enc_mean_published": 0.04304572159594358
+    },
+    {
+     "model": "t5-small",
+     "kind": "encdec",
+     "family": "t5",
+     "rsa_mean": 0.01108884098539418,
+     "enc_mean": 0.04417451450577692,
+     "rsa_mean_published": 0.011088841077222083,
+     "enc_mean_published": 0.04417451656827857
+    },
+    {
+     "model": "t5-base",
+     "kind": "encdec",
+     "family": "t5",
+     "rsa_mean": 0.010338644535303759,
+     "enc_mean": 0.03585948152101078,
+     "rsa_mean_published": 0.010338644743976033,
+     "enc_mean_published": 0.03585947611197998
+    },
+    {
+     "model": "t5-large",
+     "kind": "encdec",
+     "family": "t5",
+     "rsa_mean": 0.010625096592457023,
+     "enc_mean": 0.0437725679835339,
+     "rsa_mean_published": 0.010625096668929723,
+     "enc_mean_published": 0.04377257452190055
+    },
+    {
+     "model": "facebook/bart-base",
+     "kind": "encdec",
+     "family": "bart",
+     "rsa_mean": 0.009151702097858703,
+     "enc_mean": 0.0485114974596344,
+     "rsa_mean_published": 0.009151700682781061,
+     "enc_mean_published": 0.04851149006242594
+    },
+    {
+     "model": "facebook/bart-large",
+     "kind": "encdec",
+     "family": "bart",
+     "rsa_mean": 0.00928667945303271,
+     "enc_mean": 0.04078897778857164,
+     "rsa_mean_published": 0.009286680272388709,
+     "enc_mean_published": 0.040788975459209516
+    }
+   ]
+  }
+ },
+ "primary": {
+  "rule": "prefix_last",
+  "branch": "B",
+  "label": "not determined (family CI includes zero)"
+ },
+ "status": "complete",
+ "comparator_decomposition": {
+  "within_class_centred_rho": -0.252199413489736,
+  "between_class_share_of_abs_rho": 0.5601023017902813,
+  "per_class": {
+   "causal": {
+    "n": 18,
+    "rho": -0.2776057791537668,
+    "mean_rsa": 0.004949457533027751,
+    "mean_enc": 0.049396797459528574
+   },
+   "encdec": {
+    "n": 5,
+    "rho": -0.09999999999999999,
+    "mean_rsa": 0.01009819268905952,
+    "mean_enc": 0.04262140654475891
+   },
+   "masked": {
+    "n": 9,
+    "rho": 0.03333333333333333,
+    "mean_rsa": 0.008247427068488286,
+    "mean_enc": 0.041222614710292836
+   }
+  }
+ }
+}

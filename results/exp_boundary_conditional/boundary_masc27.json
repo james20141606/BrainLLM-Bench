@@ -1,0 +1,45 @@
+{
+  "cell": {
+    "window_ms": [
+      325,
+      475
+    ],
+    "sensors": "all",
+    "definition": "Brennan-matched"
+  },
+  "floor": {
+    "rule": "exclude artifact_rate > median + 3.0 MAD",
+    "cutoff": 0.41333333333333333,
+    "excluded": [
+      3,
+      13,
+      19
+    ]
+  },
+  "per_model": {
+    "BERT": {
+      "primary_floor_passing": {
+        "n": 24,
+        "n_positive": 10,
+        "mean_delta": 0.0009402273693776523,
+        "cohen_d": 0.10864344166020767,
+        "PRIMARY_upper_95": 0.0039678519127571985,
+        "PRIMARY_noninferiority_p": 7.2730444771665055e-06,
+        "PRIMARY_excludes_brennan_effect": true,
+        "secondary_wilcoxon_p": 0.8553357124328613,
+        "brennan_reference": 0.010608316022643104
+      },
+      "all_subjects": {
+        "n": 27,
+        "n_positive": 12,
+        "mean_delta": 0.0012986890470157437,
+        "cohen_d": 0.1544264149519029,
+        "PRIMARY_upper_95": 0.0040591617472360755,
+        "PRIMARY_noninferiority_p": 2.3383709431205375e-06,
+        "PRIMARY_excludes_brennan_effect": true,
+        "secondary_wilcoxon_p": 0.6109333634376526,
+        "brennan_reference": 0.010608316022643104
+      }
+    }
+  }
+}

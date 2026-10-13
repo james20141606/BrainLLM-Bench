@@ -1,0 +1,56 @@
+{
+  "stem": "fig03_concordance",
+  "script": "<REPO_ROOT>/codes/fig_paperA_body_20260924.py",
+  "caption_first_sentence": "The readout reversal is a between-class offset that survives representation and control changes but not full feature standardization.",
+  "inputs": [
+    {
+      "path": "paper4_temporalalign/results/p4_encoding/concordance32_CORRECTED.json",
+      "sha256": "e92d79fe8c77e0f8b1a073ffc67524ae83bc2532796d9d2f1fc72753bebf24b3"
+    },
+    {
+      "path": "paper4_temporalalign/results/p4_encoding/concordance32_c4.json",
+      "sha256": "9a0a1c3a0b2cd6e8b6b8de3429d8723d8d20967dfd2c45b6b300ae7a74bf590a"
+    },
+    {
+      "path": "paper4_temporalalign/results/p4_encoding/concordance32_lb_allch_CORRECTED.json",
+      "sha256": "54f9ebfa724d86636230531cf927eb839c0b92191ecfa37eab58b0b82c03d9be"
+    },
+    {
+      "path": "paper4_temporalalign/results/p4_encoding/concordance_decomposition_libribrain_CORRECTED.json",
+      "sha256": "11ee001a7b0f9ef6f9c3200ad6b0a49b5d865df4f9da5b9f0e54420212f25874"
+    },
+    {
+      "path": "paper4_temporalalign/results/p4_encoding/concordance_repr_chantime_CORRECTED.json",
+      "sha256": "74960e14cf97523853afe31b9a205ca2c0c821356e2441080ee51d3c13d4e60d"
+    },
+    {
+      "path": "paper4_temporalalign/results/p4_encoding/concordance_repr_timeavg_CORRECTED.json",
+      "sha256": "35598fda6a94034a5597a589d2befbeeb047db4171b345f75a8d3a55f642234a"
+    },
+    {
+      "path": "paper4_temporalalign/results/p4_encoding/correction_2026_08.json",
+      "sha256": "c2792e64c9deaf44aa2345ab56674e29e8c71c51ff8852853ac47109eb356fae"
+    },
+    {
+      "path": "paper4_temporalalign/results/p4_encoding/correction_2026_08_derived.json",
+      "sha256": "0a57f437a55f448bb2ac50705e1acbf1c8f2c0df2b04c90627d5cb4a2c5f18f1"
+    },
+    {
+      "path": "paper4_temporalalign/results/p4_encoding/correction_2026_08_stdfeat.json",
+      "sha256": "3887fd4894c51bab994f8ca1b95d7c9ae817abcb32a82b3861eea7fe37577b29"
+    },
+    {
+      "path": "paper4_temporalalign/results/p4_encoding/space_fix_20260925/aggregate/adr0006_registered_verdicts_spacefix.json",
+      "sha256": "8b2782b811a00410595ecfe81ba973957734a410facf5da73c7992a05801e64d"
+    },
+    {
+      "path": "paper4_temporalalign/results/p4_encoding/space_fix_20260925/aggregate/concordance_spacefix_masc27_32.json",
+      "sha256": "8218418bbb3e8fc9e484afd81c547d91a56d2fa46c4c7e0347e900a0b4118fc8"
+    },
+    {
+      "path": "paper4_temporalalign/results/paperA_rebuttal_20261004/brennan_k2_summary_20261009.json",
+      "sha256": "293674719225ec333f6835339da872ba3a49c83ce28c6cb72436ea2f3e552e22"
+    }
+  ],
+  "pdf_sha256": "3658fe7715bd1d766dbeb57f9efca535cbe06e7ffd4a5b4654661eb41cf4e086"
+}

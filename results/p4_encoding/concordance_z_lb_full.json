@@ -1,0 +1,220 @@
+{
+  "rung": "rung-2 learned S4D embedding z (both readouts)",
+  "z_path": "<PROJECT>/results/p4_ssm/neural_z_lb_full.npy",
+  "group_col": "session",
+  "n_models": 32,
+  "per_model": [
+    {
+      "model": "gpt2",
+      "kind": "causal",
+      "rsa_mean": 0.001550062330812586,
+      "enc_mean": 0.03692191630441884
+    },
+    {
+      "model": "gpt2-medium",
+      "kind": "causal",
+      "rsa_mean": 0.0006809112578199586,
+      "enc_mean": 0.038712587663517165
+    },
+    {
+      "model": "gpt2-large",
+      "kind": "causal",
+      "rsa_mean": 0.0017103742194156816,
+      "enc_mean": 0.0392393201282274
+    },
+    {
+      "model": "gpt2-xl",
+      "kind": "causal",
+      "rsa_mean": 0.001360602701517031,
+      "enc_mean": 0.04081005719664404
+    },
+    {
+      "model": "EleutherAI/pythia-70m",
+      "kind": "causal",
+      "rsa_mean": 0.0002454208706358027,
+      "enc_mean": 0.028481667382654462
+    },
+    {
+      "model": "EleutherAI/pythia-160m",
+      "kind": "causal",
+      "rsa_mean": -0.00197836929060671,
+      "enc_mean": 0.03638091518232978
+    },
+    {
+      "model": "EleutherAI/pythia-410m",
+      "kind": "causal",
+      "rsa_mean": 0.003363881054733483,
+      "enc_mean": 0.035208570350034926
+    },
+    {
+      "model": "EleutherAI/pythia-1b",
+      "kind": "causal",
+      "rsa_mean": 0.003468995365415952,
+      "enc_mean": 0.03988255310039777
+    },
+    {
+      "model": "EleutherAI/pythia-1.4b",
+      "kind": "causal",
+      "rsa_mean": -0.0012108978259103343,
+      "enc_mean": 0.040170219084093954
+    },
+    {
+      "model": "EleutherAI/pythia-2.8b",
+      "kind": "causal",
+      "rsa_mean": -0.007305615453004209,
+      "enc_mean": 0.03702911582811087
+    },
+    {
+      "model": "facebook/opt-125m",
+      "kind": "causal",
+      "rsa_mean": -0.0017660132442804436,
+      "enc_mean": 0.035381965567597096
+    },
+    {
+      "model": "facebook/opt-350m",
+      "kind": "causal",
+      "rsa_mean": 0.0014528102556148274,
+      "enc_mean": 0.03672469802756307
+    },
+    {
+      "model": "facebook/opt-1.3b",
+      "kind": "causal",
+      "rsa_mean": 0.0010112639087415836,
+      "enc_mean": 0.037464682040369415
+    },
+    {
+      "model": "EleutherAI/gpt-neo-125m",
+      "kind": "causal",
+      "rsa_mean": 0.0016797401300118805,
+      "enc_mean": 0.034214135806157446
+    },
+    {
+      "model": "EleutherAI/gpt-neo-1.3B",
+      "kind": "causal",
+      "rsa_mean": 0.0022043009745195347,
+      "enc_mean": 0.03825591000476959
+    },
+    {
+      "model": "meta-llama/Llama-3.2-1B",
+      "kind": "causal",
+      "rsa_mean": -0.006924775182933521,
+      "enc_mean": 0.039343932284216
+    },
+    {
+      "model": "Qwen/Qwen2.5-0.5B",
+      "kind": "causal",
+      "rsa_mean": 0.0054314565237001886,
+      "enc_mean": 0.03081341138254912
+    },
+    {
+      "model": "Qwen/Qwen2.5-1.5B",
+      "kind": "causal",
+      "rsa_mean": 0.007604922851288752,
+      "enc_mean": 0.02941909715360548
+    },
+    {
+      "model": "bert-base-uncased",
+      "kind": "masked",
+      "rsa_mean": 0.00026128772119799463,
+      "enc_mean": 0.03373852765326579
+    },
+    {
+      "model": "bert-large-uncased",
+      "kind": "masked",
+      "rsa_mean": -0.0031074677213333776,
+      "enc_mean": 0.03478510319420026
+    },
+    {
+      "model": "roberta-base",
+      "kind": "masked",
+      "rsa_mean": -0.0060360638276645345,
+      "enc_mean": 0.03492443511055867
+    },
+    {
+      "model": "roberta-large",
+      "kind": "masked",
+      "rsa_mean": -0.010934687557464942,
+      "enc_mean": 0.037016490853550736
+    },
+    {
+      "model": "microsoft/deberta-v3-base",
+      "kind": "masked",
+      "rsa_mean": -0.0025787400772314256,
+      "enc_mean": 0.029085066641179765
+    },
+    {
+      "model": "microsoft/deberta-v3-large",
+      "kind": "masked",
+      "rsa_mean": -0.005094529480433311,
+      "enc_mean": 0.028554000282379834
+    },
+    {
+      "model": "google/electra-base-discriminator",
+      "kind": "masked",
+      "rsa_mean": -0.0025352282960532306,
+      "enc_mean": 0.03292265253002943
+    },
+    {
+      "model": "albert-base-v2",
+      "kind": "masked",
+      "rsa_mean": -0.001653446198915621,
+      "enc_mean": 0.03344128866785679
+    },
+    {
+      "model": "distilbert-base-uncased",
+      "kind": "masked",
+      "rsa_mean": -0.00011384760527229716,
+      "enc_mean": 0.035073568580665355
+    },
+    {
+      "model": "t5-small",
+      "kind": "encdec",
+      "rsa_mean": 0.005709173963000558,
+      "enc_mean": 0.03374490177251392
+    },
+    {
+      "model": "t5-base",
+      "kind": "encdec",
+      "rsa_mean": 0.0015894814590364968,
+      "enc_mean": 0.034608872954787796
+    },
+    {
+      "model": "t5-large",
+      "kind": "encdec",
+      "rsa_mean": -0.004420827044262406,
+      "enc_mean": 0.03457141954964752
+    },
+    {
+      "model": "facebook/bart-base",
+      "kind": "encdec",
+      "rsa_mean": -0.002175924882474306,
+      "enc_mean": 0.03212951086702698
+    },
+    {
+      "model": "facebook/bart-large",
+      "kind": "encdec",
+      "rsa_mean": -0.003716490906401885,
+      "enc_mean": 0.03357097617002892
+    }
+  ],
+  "rsa_reliability_sb": 0.61011333880613,
+  "rsa_reliability_ci90": [
+    0.25499512986075773,
+    0.7792951043697853
+  ],
+  "enc_reliability_sb": 0.8351827542953822,
+  "enc_reliability_ci90": [
+    0.7226495360456817,
+    0.9199884017050165
+  ],
+  "attenuation_ceiling": 0.7138320101651756,
+  "concordance_spearman": 0.06928152492668621,
+  "concordance_p": 0.7063400463398868,
+  "concordance_ci95": [
+    -0.2863296102056848,
+    0.4081162033851462
+  ],
+  "verdict": "H1 SUPPORTED (CI upper bound below ceiling)",
+  "reversal_supported": false,
+  "verdict_note": "The 'verdict'/'H1' field is the pre-registered mechanical test (concordance CI below the attenuation ceiling = readouts not perfectly concordant); it is NOT a directional claim. For whether a NEGATIVE reversal is supported, use reversal_supported (rho<0 and CI upper<0)."
+}

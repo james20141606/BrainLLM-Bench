@@ -1,0 +1,32 @@
+{
+  "note": "Depth curve recomputed under the corrected encoding arm.",
+  "source": "concordance32_CORRECTED.json",
+  "curve": {
+    "12": {
+      "mean": -0.5733137829912023,
+      "sd": 0.0,
+      "frac_negative": 1.0
+    },
+    "10": {
+      "mean": -0.5737866568914956,
+      "sd": 0.03207081228076853,
+      "frac_negative": 1.0
+    },
+    "5": {
+      "mean": -0.556066715542522,
+      "sd": 0.06942669849171286,
+      "frac_negative": 1.0
+    },
+    "2": {
+      "mean": -0.48975073313782985,
+      "sd": 0.11702419288010688,
+      "frac_negative": 1.0
+    },
+    "1": {
+      "mean": -0.3929398826979471,
+      "sd": 0.18114386407127744,
+      "frac_negative": 0.9175
+    }
+  },
+  "spearman_k_vs_concordance": -0.8999999999999998
+}

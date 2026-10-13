@@ -1,0 +1,41 @@
+{
+  "script": "codes/fig_paperA_scorecard_r1_20261007.py",
+  "inputs": [
+    {
+      "path": "paper4_temporalalign/results/scorecard/scorecard_transport.tsv",
+      "sha256": "5465b0b4fb62862aff315e3a1f2f80005d2a4b519c754adb69c276c14d7d73e6"
+    },
+    {
+      "path": "paper4_temporalalign/results/scorecard/scorecard_derived.json",
+      "sha256": "da508dba819dfff9853b46ca55e839d88e5b336a073519b1fa6337c7c65564ce"
+    }
+  ],
+  "archived_cells": [
+    {
+      "paper": "Feghhi/Hadidi et al.",
+      "cohort": "Brennan",
+      "stored_outcomes": [
+        "refines"
+      ]
+    },
+    {
+      "paper": "He et al.",
+      "cohort": "Brennan",
+      "stored_outcomes": [
+        "refines"
+      ]
+    },
+    {
+      "paper": "Zou et al.",
+      "cohort": "Brennan",
+      "stored_outcomes": [
+        "supports"
+      ]
+    }
+  ],
+  "outputs": {
+    "paper4_temporalalign/figures_v2/revision_r1_20261007/fig09_scorecard_r1.svg": "310eb15c89360c6ef89c3d1f7bd46e585fe09f7bb8a5a01fb14bd5b1ca981ae1",
+    "paper4_temporalalign/figures_v2/revision_r1_20261007/fig09_scorecard_r1.pdf": "0abc81910a03ad2383848fe026535e08382062597848213c5a8561671456ff6d",
+    "paper4_temporalalign/figures_v2/revision_r1_20261007/fig09_scorecard_r1.png": "7d0e863135e9b781507cb0175029c199e9f1221dd31e62595268b81aae29dbf1"
+  }
+}

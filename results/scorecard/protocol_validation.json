@@ -1,0 +1,19 @@
+{
+  "what": "bench/protocol.py recomputes the paper's stored per-(model, subject) RSA numbers",
+  "reference": "results/path1_confound_libribrain/rsa_confound_per_model_subject.tsv",
+  "cohort": "LibriBrain",
+  "cell": {"region": "temporal_L", "time_ms": 350.0, "band": "broadband"},
+  "n_words": 462,
+  "n_models": 14,
+  "n_subjects": 12,
+  "fields_checked": ["best_layer", "raw_rho", "partial_rho"],
+  "tolerance": 1e-9,
+  "values_checked": 504,
+  "values_matched": 504,
+  "mismatches": 0,
+  "confound_C2_source": "wordfreq.zipf_frequency(en)",
+  "runtime_wall_s": 2885,
+  "run_on": "<cluster> login node, <HPC_SCRATCH>/envs/<env>",
+  "date": "2026-07-28",
+  "note": "Cohort epochs are not redistributed, so this check cannot run in CI; the portable known-answer checks in `python -m bench.protocol --selftest` cover the statistic itself and do run in CI."
+}

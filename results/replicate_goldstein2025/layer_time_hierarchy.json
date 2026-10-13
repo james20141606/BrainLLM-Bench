@@ -1,0 +1,203 @@
+{
+  "models": [
+    "gpt2",
+    "bert-base-uncased",
+    "gpt2-medium"
+  ],
+  "rows_per_model": [
+    {
+      "model": "gpt2",
+      "n_layers": 13
+    },
+    {
+      "model": "bert-base-uncased",
+      "n_layers": 13
+    },
+    {
+      "model": "gpt2-medium",
+      "n_layers": 25
+    }
+  ],
+  "headline_broadband": [
+    {
+      "model": "gpt2",
+      "region": "temporal_L",
+      "band": "broadband",
+      "pearson_r": -0.6296249479106205,
+      "pearson_p": 0.021108079831678308,
+      "spearman_r": -0.6525123300495406,
+      "spearman_p": 0.015630869953332717,
+      "perm_p": 0.0234
+    },
+    {
+      "model": "gpt2",
+      "region": "frontal_L",
+      "band": "broadband",
+      "pearson_r": -0.2872773846074596,
+      "pearson_p": 0.34124986886039277,
+      "spearman_r": -0.26446917579170726,
+      "spearman_p": 0.3825671195767466,
+      "perm_p": 0.3612
+    },
+    {
+      "model": "gpt2",
+      "region": "parieto_occipital_L",
+      "band": "broadband",
+      "pearson_r": -0.3355505751249052,
+      "pearson_p": 0.2623598170557892,
+      "spearman_r": 0.03159511035351828,
+      "spearman_p": 0.9183888856472131,
+      "perm_p": 0.3202
+    },
+    {
+      "model": "gpt2",
+      "region": "temporal_R",
+      "band": "broadband",
+      "pearson_r": 0.023430346807614303,
+      "pearson_p": 0.93943793354342,
+      "spearman_r": -0.176041450066941,
+      "spearman_p": 0.5650919506719579,
+      "perm_p": 0.9428
+    },
+    {
+      "model": "gpt2",
+      "region": "frontal_R",
+      "band": "broadband",
+      "pearson_r": -0.5070925528371101,
+      "pearson_p": 0.07694295979458655,
+      "spearman_r": -0.50709255283711,
+      "spearman_p": 0.07694295979458651,
+      "perm_p": 0.0904
+    },
+    {
+      "model": "gpt2",
+      "region": "parieto_occipital_R",
+      "band": "broadband",
+      "pearson_r": -0.5668976571366288,
+      "pearson_p": 0.04335548807348551,
+      "spearman_r": -0.8876519084457714,
+      "spearman_p": 5.13095594879452e-05,
+      "perm_p": 0.0408
+    },
+    {
+      "model": "bert-base-uncased",
+      "region": "temporal_L",
+      "band": "broadband",
+      "pearson_r": 0.3973307630305834,
+      "pearson_p": 0.17882042970119144,
+      "spearman_r": 0.6054076331139936,
+      "spearman_p": 0.02833567869088513,
+      "perm_p": 0.173
+    },
+    {
+      "model": "bert-base-uncased",
+      "region": "frontal_L",
+      "band": "broadband",
+      "pearson_r": 0.4629100498862758,
+      "pearson_p": 0.11117295276905687,
+      "spearman_r": 0.46291004988627577,
+      "spearman_p": 0.11117295276905703,
+      "perm_p": 0.0966
+    },
+    {
+      "model": "bert-base-uncased",
+      "region": "parieto_occipital_L",
+      "band": "broadband",
+      "pearson_r": 0.20265943850894905,
+      "pearson_p": 0.5066789257627597,
+      "spearman_r": 0.3218065940813933,
+      "spearman_p": 0.2836149488309576,
+      "perm_p": 0.497
+    },
+    {
+      "model": "bert-base-uncased",
+      "region": "temporal_R",
+      "band": "broadband",
+      "pearson_r": 0.7319250547114,
+      "pearson_p": 0.00445228618946975,
+      "spearman_r": 0.7319250547114,
+      "spearman_p": 0.004452286189469753,
+      "perm_p": 0.005
+    },
+    {
+      "model": "bert-base-uncased",
+      "region": "frontal_R",
+      "band": "broadband",
+      "pearson_r": 0.4629100498862758,
+      "pearson_p": 0.11117295276905687,
+      "spearman_r": 0.46291004988627577,
+      "spearman_p": 0.11117295276905703,
+      "perm_p": 0.0966
+    },
+    {
+      "model": "bert-base-uncased",
+      "region": "parieto_occipital_R",
+      "band": "broadband",
+      "pearson_r": -0.07862136800502917,
+      "pearson_p": 0.798488023119996,
+      "spearman_r": 0.2017194532849893,
+      "spearman_p": 0.5086941693929878,
+      "perm_p": 0.8142
+    },
+    {
+      "model": "gpt2-medium",
+      "region": "temporal_L",
+      "band": "broadband",
+      "pearson_r": -0.2616855632424499,
+      "pearson_p": 0.20637385142181242,
+      "spearman_r": -0.27017973149461033,
+      "spearman_p": 0.1914885636295234,
+      "perm_p": 0.1964
+    },
+    {
+      "model": "gpt2-medium",
+      "region": "frontal_L",
+      "band": "broadband",
+      "pearson_r": -0.7159566517235127,
+      "pearson_p": 5.7140039112694723e-05,
+      "spearman_r": -0.6663285057352126,
+      "spearman_p": 0.0002763149255824639,
+      "perm_p": 0.0
+    },
+    {
+      "model": "gpt2-medium",
+      "region": "parieto_occipital_L",
+      "band": "broadband",
+      "pearson_r": -0.5460215770605544,
+      "pearson_p": 0.0047489684842794665,
+      "spearman_r": -0.40466227004136557,
+      "spearman_p": 0.04480439399679093,
+      "perm_p": 0.0064
+    },
+    {
+      "model": "gpt2-medium",
+      "region": "temporal_R",
+      "band": "broadband",
+      "pearson_r": 0.048045592155644815,
+      "pearson_p": 0.8195991719510868,
+      "spearman_r": 0.4571218539372544,
+      "spearman_p": 0.021599659465186216,
+      "perm_p": 0.8194
+    },
+    {
+      "model": "gpt2-medium",
+      "region": "frontal_R",
+      "band": "broadband",
+      "pearson_r": -0.7116305204125589,
+      "pearson_p": 6.639029743815708e-05,
+      "spearman_r": -0.6076489392362011,
+      "spearman_p": 0.0012739151065339653,
+      "perm_p": 0.0
+    },
+    {
+      "model": "gpt2-medium",
+      "region": "parieto_occipital_R",
+      "band": "broadband",
+      "pearson_r": -0.3896553535142447,
+      "pearson_p": 0.054176720473884075,
+      "spearman_r": -0.37253378955754995,
+      "spearman_p": 0.06665973549304853,
+      "perm_p": 0.0524
+    }
+  ]
+}

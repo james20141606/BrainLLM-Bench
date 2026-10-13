@@ -1,0 +1,44 @@
+{
+  "n_released": 27,
+  "n_analyzed": 10,
+  "n_excluded": 17,
+  "source": "OSF 10.17605/OSF.IO/AG3KJ participants.tsv",
+  "tests": {
+    "age": {
+      "analyzed_mean": 28.0,
+      "excluded_mean": 22.58823529411765,
+      "mannwhitney_p": 0.04153441482109243
+    },
+    "n_sessions": {
+      "analyzed_mean": 1.9,
+      "excluded_mean": 1.7647058823529411,
+      "mannwhitney_p": 0.4120280546315189
+    },
+    "sex": {
+      "table": [
+        [
+          6,
+          4
+        ],
+        [
+          6,
+          11
+        ]
+      ],
+      "fisher_p": 0.2565980167810831
+    }
+  },
+  "native_english": {
+    "y": 26,
+    "n": 1
+  },
+  "analyzed_all_native": true,
+  "recordings_analyzed": 76,
+  "recordings_released": 196,
+  "holm_adjusted": {
+    "age": 0.12460324446327728,
+    "sex": 0.5131960335621663,
+    "n_sessions": 0.5131960335621663
+  },
+  "any_significant_after_holm": false
+}

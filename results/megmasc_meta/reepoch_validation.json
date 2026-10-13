@@ -1,0 +1,32 @@
+{
+  "question": "Can newly written epoching reproduce the existing 10-subject MEG-MASC archive?",
+  "why": "The original preprocessing ran on a machine we no longer have (stored source paths point at <HOME>/MEG_paper4/...), and no script survives. The full-cohort job is only worth starting if new code reproduces the old output; otherwise re-running the 17 missing subjects pools two pipelines, in a paper about pipeline sensitivity.",
+  "test": "sub-01 ses-0 task-0 re-epoched from OSF raw (.con + events.tsv) and compared against the corresponding archive rows",
+  "source": "OSF 10.17605/OSF.IO/AG3KJ (CC0), sub-01 only, 4.1 GB",
+  "spec_recovered_from": "data/meg_masc_full/metadata.json (208 ch, 250 Hz, -0.2..0.8 s, min_word_len 2)",
+  "trial_selection": {
+    "archive_rows": 654,
+    "recovered_words": 654,
+    "word_sequence_identical": true,
+    "onsets_identical": true
+  },
+  "variants_swept": ["resample_first x {True,False}", "zscore x {epoch,run,none}", "bandpass x {none,(0.5,100)}"],
+  "winning_variant": {"resample_first": true, "zscore": "none", "bandpass": null},
+  "per_epoch_correlation": {"median": 0.999899, "min": 0.99794, "n_below_0_99": 0, "n": 654},
+  "global_gain": {
+    "fitted": 100163.23,
+    "note": "archive = our output x ~1.0016e5, a constant gain. Correlation-distance RSA is scale-invariant, so this does not affect any reported statistic."
+  },
+  "residual_after_gain": {
+    "median_abs": 2.22e-10,
+    "p99_abs": 1.33e-09,
+    "max_abs": 4.84e-09,
+    "ref_std": 2.68e-08,
+    "median_rel_to_ref_std_pct": 0.83
+  },
+  "bit_exact": false,
+  "verdict": "Reproducible. Trial selection is exact (654/654 words, identical sequence and onsets); the signal matches at per-epoch r = 0.9999 (min 0.998) up to a constant gain, with a sub-1% residual consistent with a resampling implementation difference rather than a structural one.",
+  "metadata_error_found": "data/meg_masc_full/metadata.json records zscore_normalized: true, but the archive is in raw MEG units (std 2.7e-08) and reproduction requires NO z-scoring. The flag is wrong; any downstream code trusting it would mis-scale the data.",
+  "implication": "Re-preprocessing all 27 subjects uniformly is viable and the result would be comparable to the current archive. The remaining cost is download (~118 GB) and compute, not methodological risk.",
+  "date": "2026-07-28"
+}

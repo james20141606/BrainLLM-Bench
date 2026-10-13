@@ -1,0 +1,99 @@
+{
+ "note": "Six-point Pythia ladder recomputed from the corrected per-session encoding matrices in concordance32_CORRECTED.json. Supersedes scaling_ladder_test.json (corrupted encoding arm). Same estimators: Spearman of parameter count vs session-mean encoding; paired per-session difference 2.8B minus 70M with an exact Wilcoxon over the 12 sessions. The paired difference FLIPS SIGN under the correction (audit prediction verified: sign_flipped below).",
+ "source": "concordance32_CORRECTED.json",
+ "supersedes": "scaling_ladder_test.json",
+ "cohort": "libribrain",
+ "metric": "per_session_encoding_at_preregistered_depth",
+ "ladder": [
+  {
+   "model": "pythia-70m",
+   "params_M": 70,
+   "n_sessions": 12,
+   "mean_R": 0.04824520740765325,
+   "ci95": [
+    0.03723384862741815,
+    0.0566455436932208
+   ]
+  },
+  {
+   "model": "pythia-160m",
+   "params_M": 160,
+   "n_sessions": 12,
+   "mean_R": 0.046784854846356645,
+   "ci95": [
+    0.03630080797043858,
+    0.054928425825805295
+   ]
+  },
+  {
+   "model": "pythia-410m",
+   "params_M": 410,
+   "n_sessions": 12,
+   "mean_R": 0.052717024380657514,
+   "ci95": [
+    0.039802102572171455,
+    0.06298560330562906
+   ]
+  },
+  {
+   "model": "pythia-1b",
+   "params_M": 1000,
+   "n_sessions": 12,
+   "mean_R": 0.05193305881917262,
+   "ci95": [
+    0.04020656730024365,
+    0.06126007977979249
+   ]
+  },
+  {
+   "model": "pythia-1.4b",
+   "params_M": 1400,
+   "n_sessions": 12,
+   "mean_R": 0.05047835826776013,
+   "ci95": [
+    0.039066116682208295,
+    0.059295817740301716
+   ]
+  },
+  {
+   "model": "pythia-2.8b",
+   "params_M": 2800,
+   "n_sessions": 12,
+   "mean_R": 0.04618795708625373,
+   "ci95": [
+    0.03621192540511499,
+    0.054344991125619475
+   ]
+  }
+ ],
+ "size_vs_alignment_spearman": -0.14285714285714288,
+ "size_vs_alignment_p": 0.7871720116618075,
+ "largest_vs_smallest": {
+  "diff": -0.0020572503213995255,
+  "wilcoxon_p": 0.2333984375,
+  "param_ratio": 40.0
+ },
+ "p410_vs_p160": {
+  "diff": 0.0059321695343008685,
+  "wilcoxon_p": 0.0048828125
+ },
+ "old_vs_new": {
+  "size_vs_alignment_spearman": {
+   "old": 0.4285714285714286,
+   "new": -0.14285714285714288
+  },
+  "size_vs_alignment_p": {
+   "old": 0.3965014577259474,
+   "new": 0.7871720116618075
+  },
+  "diff_2p8b_minus_70m": {
+   "old": 9.522210813492476e-06,
+   "new": -0.0020572503213995255
+  },
+  "wilcoxon_p_2p8b_vs_70m": {
+   "old": 0.9697265625,
+   "new": 0.2333984375
+  },
+  "sign_flipped": true
+ }
+}

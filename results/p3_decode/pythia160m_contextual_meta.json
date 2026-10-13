@@ -1,0 +1,20 @@
+{
+  "model": "EleutherAI/pythia-160m",
+  "tag": "pythia160m",
+  "d_model": 768,
+  "layers_kept": [
+    4,
+    6,
+    8
+  ],
+  "n_epochs": 177127,
+  "n_filled": 177121,
+  "shape": [
+    177127,
+    3,
+    768
+  ],
+  "dtype": "float16",
+  "elapsed_sec": 53.60539674758911,
+  "note": "contextual per-occurrence hidden at last sub-token of each word"
+}

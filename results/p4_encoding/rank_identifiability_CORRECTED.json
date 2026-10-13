@@ -1,0 +1,74 @@
+{
+  "concordance32_CORRECTED|RSA [checkpoint-level]": {
+    "spread": 0.0026506448906820405,
+    "marginal_se": 0.0003697197105454913,
+    "diff_se": 0.000393467033499978,
+    "ratio": 6.73663779937027,
+    "tau_median": 0.9395161290322582,
+    "p_best_wins": 0.992,
+    "verdict": "IDENTIFIABLE at this resolution."
+  },
+  "concordance32_CORRECTED|RSA [family-level]": {
+    "spread": 0.0024358105641547907,
+    "marginal_se": 0.00032370878210366246,
+    "diff_se": 0.0003276510937737515,
+    "ratio": 7.434159721855707,
+    "tau_median": 0.9696969696969696,
+    "p_best_wins": 1.0,
+    "verdict": "IDENTIFIABLE at this resolution."
+  },
+  "concordance32_CORRECTED|encoding [checkpoint-level]": {
+    "spread": 0.0063805707681873205,
+    "marginal_se": 0.004895302041610727,
+    "diff_se": 0.0016097385794406806,
+    "ratio": 3.963731036628514,
+    "tau_median": 0.8911290322580646,
+    "p_best_wins": 0.981,
+    "verdict": "IDENTIFIABLE at this resolution."
+  },
+  "concordance32_CORRECTED|encoding [family-level]": {
+    "spread": 0.006830007703092673,
+    "marginal_se": 0.0048107979774853985,
+    "diff_se": 0.0013257078389140536,
+    "ratio": 5.151970519151065,
+    "tau_median": 0.9393939393939392,
+    "p_best_wins": 1.0,
+    "verdict": "IDENTIFIABLE at this resolution."
+  },
+  "concordance32_brennan_v2|RSA [checkpoint-level]": {
+    "spread": 0.013791348253273944,
+    "marginal_se": 0.002229693765151769,
+    "diff_se": 0.0020278972370786253,
+    "ratio": 6.8008121916185775,
+    "tau_median": 0.9274193548387099,
+    "p_best_wins": 1.0,
+    "verdict": "IDENTIFIABLE at this resolution."
+  },
+  "concordance32_brennan_v2|RSA [family-level]": {
+    "spread": 0.010481270894280383,
+    "marginal_se": 0.001900750250647766,
+    "diff_se": 0.0017390356354943888,
+    "ratio": 6.02705929674677,
+    "tau_median": 0.9696969696969696,
+    "p_best_wins": 0.868,
+    "verdict": "IDENTIFIABLE at this resolution."
+  },
+  "concordance32_brennan_v2|encoding [checkpoint-level]": {
+    "spread": 0.014216579898515732,
+    "marginal_se": 0.029990110364978964,
+    "diff_se": 0.00593860196270683,
+    "ratio": 2.393927053503983,
+    "tau_median": 0.9395161290322582,
+    "p_best_wins": 0.9635,
+    "verdict": "IDENTIFIABLE at this resolution."
+  },
+  "concordance32_brennan_v2|encoding [family-level]": {
+    "spread": 0.008835929190225971,
+    "marginal_se": 0.030953957619613177,
+    "diff_se": 0.003758050939159179,
+    "ratio": 2.351199952654955,
+    "tau_median": 0.9393939393939392,
+    "p_best_wins": 0.985,
+    "verdict": "IDENTIFIABLE at this resolution."
+  }
+}

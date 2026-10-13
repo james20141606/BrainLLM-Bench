@@ -1,0 +1,24 @@
+{
+  "finding": "RSA readout reliability is cohort-dependent: the word-level neural RDM is reliable on the deep single-subject LibriBrain cohort but at the noise floor on the 10-subject MEG-MASC cohort, so RSA cannot rank models there.",
+  "libribrain_rdm_ceiling": {
+    "region": "temporal_L",
+    "time_ms": 350.0,
+    "n_groups": 12,
+    "best_mean_rho": 0.0158532604220637,
+    "best_median_rho": 0.0154106364162138,
+    "grand_mean_rho": 0.0025402692643642756,
+    "frac_cells_above_01": 0.03571428571428571
+  },
+  "meg_masc_rdm_ceiling": {
+    "region": "left",
+    "time_ms": 150.0,
+    "n_groups": 10,
+    "best_mean_rho": 0.0024358887554786,
+    "best_median_rho": 0.0019024465087754,
+    "grand_mean_rho": 0.0005247359703594632,
+    "frac_cells_above_01": 0.0
+  },
+  "ratio_best_cell": 6.50820378656778,
+  "implication": "On MASC the neural RDM ceiling ~0.0024 bounds RSA alignment for every model near zero, so a reliable RSA ranking is not obtainable; encoding (which maps features to the response directly, not via a reproducible RDM) is tested separately (families_masc_persess.json).",
+  "source": "results/reliability/{libribrain,meg_masc}_region_time.tsv"
+}

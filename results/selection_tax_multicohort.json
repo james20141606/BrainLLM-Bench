@@ -1,0 +1,138 @@
+{
+  "MEG-SCANS": {
+    "n_units": 92,
+    "n_subjects": 23,
+    "n_cells": 22464,
+    "in_sample": 0.005309238564223051,
+    "held_out_unit": 0.0051710838451981544,
+    "held_out_subject": 0.004600590094923973,
+    "held_out_sizematched": 0.004703453276306391,
+    "tax_unit_pct": 2.6021569261526323,
+    "tax_subject_pct": 13.347459541079798,
+    "tax_sizematched_pct": 11.410021994468622,
+    "frac_units_disagree_on_cell": 0.9782608695652174,
+    "mean_relative_rank_of_group_cell": 0.22994423928527188,
+    "unit": "recording",
+    "source": "meg_scans_v1/german-bert"
+  },
+  "MEG-MASC": {
+    "n_units": 76,
+    "n_subjects": 10,
+    "n_cells": 7488,
+    "in_sample": 0.001256450661458075,
+    "held_out_unit": 0.00033590648672543466,
+    "held_out_subject": 0.0002503678551875055,
+    "held_out_sizematched": 0.0008470750763081014,
+    "tax_unit_pct": 73.26544551016234,
+    "tax_subject_pct": 80.07340336810674,
+    "tax_sizematched_pct": 32.581906930981674,
+    "frac_units_disagree_on_cell": 1.0,
+    "mean_relative_rank_of_group_cell": 0.29552371513720194,
+    "unit": "recording",
+    "source": "exp1_crosslang_megmasc/german-bert"
+  },
+  "LibriBrain": {
+    "n_units": 36,
+    "n_subjects": 1,
+    "n_cells": 1728,
+    "in_sample": 0.006735620554536581,
+    "held_out_unit": 0.005954263266175985,
+    "held_out_subject": NaN,
+    "held_out_sizematched": NaN,
+    "tax_unit_pct": 11.60037567487876,
+    "tax_subject_pct": NaN,
+    "tax_sizematched_pct": NaN,
+    "frac_units_disagree_on_cell": 0.9444444444444444,
+    "mean_relative_rank_of_group_cell": 0.012233153292181071,
+    "unit": "session",
+    "source": "planb_baseline/glove_full"
+  },
+  "ECoG": {
+    "n_units": 9,
+    "n_subjects": 9,
+    "n_cells": 15288,
+    "in_sample": 0.006735890172421932,
+    "held_out_unit": -0.001663035829551518,
+    "held_out_subject": -0.001663035829551518,
+    "held_out_sizematched": -0.0019580174703150988,
+    "tax_unit_pct": 124.68917673806969,
+    "tax_subject_pct": 124.68917673806969,
+    "tax_sizematched_pct": 129.06842926762093,
+    "frac_units_disagree_on_cell": 1.0,
+    "mean_relative_rank_of_group_cell": 0.08944076205980968,
+    "unit": "patient",
+    "source": "ecog_stage1/bert-base-uncased_full"
+  },
+  "_nesting_test": {
+    "MEG-SCANS": {
+      "tax_leave_one_recording": 2.6021569261526323,
+      "tax_size_matched_across_subjects": 11.410021994468622,
+      "tax_leave_one_subject": 13.347459541079798,
+      "delta_vs_sizematched_points": 1.9374375466111768
+    },
+    "MEG-MASC": {
+      "tax_leave_one_recording": 73.26544551016234,
+      "tax_size_matched_across_subjects": 32.581906930981674,
+      "tax_leave_one_subject": 80.07340336810674,
+      "delta_vs_sizematched_points": 47.491496437125065
+    }
+  },
+  "_across_cohort": {
+    "cohorts": [
+      "MEG-SCANS",
+      "MEG-MASC",
+      "ECoG"
+    ],
+    "spearman_rho": 0.8660254037844387,
+    "p": 0.3333333333333332
+  },
+  "_unit_count_control": {
+    "cohort": "MEG-SCANS",
+    "curve": [
+      {
+        "n_subjects": 4,
+        "tax_pct_mean": 53.200211995332346,
+        "tax_pct_sd": 28.634666849058405,
+        "n_rep": 200
+      },
+      {
+        "n_subjects": 6,
+        "tax_pct_mean": 47.97679333560176,
+        "tax_pct_sd": 25.288943917537285,
+        "n_rep": 200
+      },
+      {
+        "n_subjects": 9,
+        "tax_pct_mean": 34.37132224339553,
+        "tax_pct_sd": 25.309871420232806,
+        "n_rep": 200
+      },
+      {
+        "n_subjects": 12,
+        "tax_pct_mean": 34.71299762547502,
+        "tax_pct_sd": 24.56998668387578,
+        "n_rep": 200
+      },
+      {
+        "n_subjects": 16,
+        "tax_pct_mean": 22.021719299667993,
+        "tax_pct_sd": 17.208792008136214,
+        "n_rep": 200
+      },
+      {
+        "n_subjects": 20,
+        "tax_pct_mean": 15.70260545769515,
+        "tax_pct_sd": 10.444298199767653,
+        "n_rep": 200
+      },
+      {
+        "n_subjects": 23,
+        "tax_pct_mean": 13.347463619489464,
+        "tax_pct_sd": 7.06455722538504e-06,
+        "n_rep": 200
+      }
+    ],
+    "spearman_rho": -0.9642857142857145,
+    "p": 0.0004541491691941689
+  }
+}

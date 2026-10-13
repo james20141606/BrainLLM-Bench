@@ -1,0 +1,593 @@
+{
+ "prereg": "paper4_temporalalign/notes/PREREG_paperA_brennan_preproc_20261009.md \u00a73",
+ "inputs_sha256": {
+  "brennan_b_only_EleutherAI_gpt-neo-1.3B.json": "8fc6eda3e6279d9718897388ebd31252ce1da7d8c08c1222614213256efd0874",
+  "brennan_b_only_EleutherAI_pythia-1b.json": "cb7d9e74de4e78011672748db1dd1004013b3fb8f97c778f1a16f745fe04eb00",
+  "brennan_b_only_Qwen_Qwen2.5-0.5B.json": "e23720a5043b65915aeb0aa1ccd40937779750d5d3ddd464e3df2c3d882e7f4e",
+  "brennan_b_only_bert-large-uncased.json": "8f2c95ae1d4ed3fa74d5c3700752ba08daeb95bc36d370b70c5c194fedc7eb14",
+  "brennan_b_only_facebook_opt-1.3b.json": "c8f94d497d4ba97ce2d204c822b2a8703e3a03a5e5e9a0b9948b6f22067b1915",
+  "brennan_b_only_gpt2.json": "1a17d8d323a0a33512448e57e10244690bd24f86676b95f204e8b8b0a984cbb5",
+  "brennan_b_only_meta-llama_Llama-3.2-1B.json": "8a0d9abd917135bee9c6a9a284fc82d125abe3795c54e43e11a785fbc5d000f9",
+  "brennan_b_only_roberta-large.json": "93d5e509916c75f6d4ff3b8ce5a2a00f990fcbaa689c325cd02e419cd8f8d41c",
+  "brennan_b_shard1.json": "ccf6c9b9f63742743e170f4488fd5f4aa3b30ced92e822b7c35a901160774759",
+  "brennan_b_shard2.json": "25322a2f67f0ac5fa163d017f90b48bc1ee56538610ae6f5059ac8f261610fab",
+  "brennan_b_shard3.json": "8f3a7eb3b16de0213658d2bb2d7e1d72b7bb8d6d0d7535d6e8c36660e9f85c64",
+  "brennan_c_only_EleutherAI_pythia-1.4b.json": "a593ccb27ba764b359b8aae7057d842f1e01c303b089398ebc96bf6cdf86542f",
+  "brennan_c_only_EleutherAI_pythia-410m.json": "abdca554d77b4fd8628ff0d7f03e0423a3b5152aba4aff1b814886c34d6a28c1",
+  "brennan_c_only_albert-base-v2.json": "7c71c969fca423cd7faad02abbd07bc4c456d05704cfa36c6076ebf24d6311a9",
+  "brennan_c_only_facebook_bart-base.json": "c3f4d3fc143a76f4c3e7510d265341a33a00d04d173b782e1292f714e4caabec",
+  "brennan_c_only_facebook_opt-350m.json": "6f8046accc6f240ba583d79b4e5aca604ba2093dc43bc4fb6acbd7602b97d36b",
+  "brennan_c_only_gpt2-medium.json": "e1026e1140714af66a2b4b87f401efacc31bafc9180159673363ac0a029065a3",
+  "brennan_c_only_microsoft_deberta-v3-large.json": "6a03ad530fcc0b95f66d73b51a18eb757244d8710f00e81bf7c12a001a0317f9",
+  "brennan_c_only_t5-large.json": "c9c133eec49b5e6b67cf3500aec1eeec61bfab8d84fe7467ba7d8232d7f57238",
+  "brennan_c_shard0.json": "aa2d28d047c78c51a4ee27d948fbb4b866578f4af14228fa3c2089d70e2e77ca",
+  "brennan_c_shard1.json": "30aa66db0697f6ebb23697f0ff26686a4b999e77b39f5a103264c692c209a2af",
+  "brennan_c_shard3.json": "b48254050119328c00100d40aad55d0e68a14282d9310b4b60d16ae2c64ce544",
+  "brennan_p4_v2_segment-1_full.json": "5a65a96536b0b40359812687a8c67e46f949eed5967051b4ed73f42dd5318794",
+  "brennan_p4_v2_segment-2_full.json": "41b04f8624cf5da7276c01814d865a885e9ae59b5269b17116ef69c69d5b7eae",
+  "brennan_p4_v2_segment-3_full.json": "1ab424c0a241ac80bbb694aa3d927e80fcb04cf87baf2c64fe803a02504b4790",
+  "brennan_p4_v2_segment-4_full.json": "9b0cabc82ba4bb5e45a03cd4e49e7c2c498714599fbc1598f6dc799bf99e91ef",
+  "brennan_p4_v2_segment-5_full.json": "ebcc9cf2f2d1e9d589507f2eec84c8da4c429bf5a64925beda8e4c86b56ed296",
+  "brennan_p4_v2_segment-6_full.json": "6440fcab2970ca966890b65cd215d7a5f11e00360cfb94a2a8dfa1b1e799894e",
+  "brennan_p4_v2_segment-7_full.json": "89a1ed73e1d48a179f6d4d4977a505cc26ecfd690d93d4af2b374b2238e87ce6",
+  "brennan_p4_v2_segment-8_full.json": "48e6845cbabc846c40d2bdcf531a43a5ff576f831763c2265dc5a14abd018f31",
+  "brennan_p4_v2_k1_seed0.json": "ac581adb8e5ecebf51bcb36fde4618af4fcde3638880f953b7c833e64f7dddce",
+  "brennan_p4_v2_k1_seed1.json": "b377e945016a59686cb2f570071666a0cb483539f204a1f39b55c7ded7b3a0df",
+  "brennan_p4_v2_k1_seed2.json": "52d29cf1b0d163907fe6f7836123e1269ed371ad182e9ff779b54918dc59e436"
+ },
+ "published_raw": {
+  "rho_v2": 0.3416422287390029,
+  "fisher_v2": [
+   -0.008005415137327691,
+   0.6168515468489515
+  ],
+  "table1_spacefix": 0.3658357771260997
+ },
+ "b": {
+  "n_models": 32,
+  "missing": [],
+  "gate_rsa_equals_K1_max_abs_diff": 9.71445146547012e-17,
+  "gate_pass": true,
+  "rho": -0.24780058651026388,
+  "fisher_ci95": [
+   -0.5490527882594834,
+   0.11043575873912406
+  ],
+  "family_ci95_seed0": [
+   -0.6194908173006555,
+   0.13592860213712768
+  ],
+  "family_seed_sweep": {
+   "lower": [
+    -0.6305099947172211,
+    -0.6020925195356858
+   ],
+   "upper": [
+    0.118059086952538,
+    0.13651905194766484
+   ]
+  },
+  "rsa_reliability_sb": 0.4502201079238852,
+  "rsa_ci90": [
+   -0.10178310298290406,
+   0.6522404395038413
+  ],
+  "enc_reliability_sb": 0.5881743844396412,
+  "enc_ci90": [
+   0.19621432871763994,
+   0.7764346948679188
+  ],
+  "enc_rank_vs_raw_spearman": 0.3409090909090909,
+  "enc_mean_raw_vs_treated": [
+   0.07808379190669057,
+   0.026902925446985533
+  ],
+  "branch": "not determined",
+  "decomposition": {
+   "label": "Brennan K2 b",
+   "n_models": 32,
+   "n_families": 12,
+   "overall_rho": -0.24780058651026388,
+   "overall_p": 0.17148766052439912,
+   "within_class_centred_rho": -0.19024926686217006,
+   "within_class_centred_p": 0.2969677099904973,
+   "between_class_share_of_abs_rho": 0.23224852071005908,
+   "per_class": {
+    "causal": {
+     "n": 18,
+     "rho": -0.3065015479876161,
+     "p": 0.21606379461125766,
+     "mean_rsa": 0.0006441000277542747,
+     "mean_enc": 0.027174964084366933
+    },
+    "encdec": {
+     "n": 5,
+     "rho": 0.3,
+     "p": 0.6238376647810728,
+     "mean_rsa": 0.0012770416897316297,
+     "mean_enc": 0.027401720313404744
+    },
+    "masked": {
+     "n": 9,
+     "rho": -0.03333333333333333,
+     "p": 0.932156735540504,
+     "mean_rsa": 0.001107912615340921,
+     "mean_enc": 0.026081739913100938
+    }
+   },
+   "class_gap_causal_minus_other": 15.61904761904762,
+   "gap_p_naive": 0.001515356349893511,
+   "gap_p_family_clustered": 0.012049397530123494
+  },
+  "rank_identifiability": {
+   "concordance32_brennan_k2_b|RSA [checkpoint-level]": {
+    "spread": 0.0006049855897989756,
+    "marginal_se": 0.0005575847928850851,
+    "diff_se": 0.0005773638363388287,
+    "ratio": 1.0478411561681824,
+    "tau_median": 0.6370967741935485,
+    "p_best_wins": 0.9425,
+    "verdict": "IDENTIFIABLE at this resolution."
+   },
+   "concordance32_brennan_k2_b|RSA [family-level]": {
+    "spread": 0.000541524513482044,
+    "marginal_se": 0.0004976508937843998,
+    "diff_se": 0.0004905168562150552,
+    "ratio": 1.103987572742303,
+    "tau_median": 0.6969696969696969,
+    "p_best_wins": 0.9925,
+    "verdict": "IDENTIFIABLE at this resolution."
+   },
+   "concordance32_brennan_k2_b|encoding [checkpoint-level]": {
+    "spread": 0.0011747665645996217,
+    "marginal_se": 0.002599161090382494,
+    "diff_se": 0.001127068006801582,
+    "ratio": 1.0423209225265826,
+    "tau_median": 0.6491935483870969,
+    "p_best_wins": 0.579,
+    "verdict": "WEAK: the leaderboard's winner beats the runner-up in only 58% of resamples."
+   },
+   "concordance32_brennan_k2_b|encoding [family-level]": {
+    "spread": 0.0008238788357097792,
+    "marginal_se": 0.0025020526332794413,
+    "diff_se": 0.0009525481645573325,
+    "ratio": 0.8649209209202051,
+    "tau_median": 0.6363636363636362,
+    "p_best_wins": 0.5935,
+    "verdict": "NOT IDENTIFIABLE: the spread between models is smaller than the smallest difference this data can detect between two of them. No ordering claim is defensible."
+   }
+  }
+ },
+ "c": {
+  "n_models": 32,
+  "missing": [],
+  "gate_rsa_equals_K1_max_abs_diff": 2.47198095326695e-17,
+  "gate_pass": true,
+  "rho": -0.04728739002932551,
+  "fisher_ci95": [
+   -0.3895580052738741,
+   0.30645974197085196
+  ],
+  "family_ci95_seed0": [
+   -0.5337213354033662,
+   0.38676975686142784
+  ],
+  "family_seed_sweep": {
+   "lower": [
+    -0.5376261304810327,
+    -0.5175329719963866
+   ],
+   "upper": [
+    0.3768602557771071,
+    0.399706229389124
+   ]
+  },
+  "rsa_reliability_sb": 0.2512791769874704,
+  "rsa_ci90": [
+   -0.46786787694394905,
+   0.581610337149337
+  ],
+  "enc_reliability_sb": 0.779554722234787,
+  "enc_ci90": [
+   0.6168957685948285,
+   0.8656955376474728
+  ],
+  "enc_rank_vs_raw_spearman": 0.6851173020527859,
+  "enc_mean_raw_vs_treated": [
+   0.07808379190669057,
+   0.013310211840254894
+  ],
+  "branch": "not determined",
+  "decomposition": {
+   "label": "Brennan K2 c",
+   "n_models": 32,
+   "n_families": 12,
+   "overall_rho": -0.04728739002932551,
+   "overall_p": 0.7971796452335246,
+   "within_class_centred_rho": 0.07661290322580644,
+   "within_class_centred_p": 0.6768548669721728,
+   "between_class_share_of_abs_rho": -0.6201550387596897,
+   "per_class": {
+    "causal": {
+     "n": 18,
+     "rho": 0.32507739938080493,
+     "p": 0.18808478142236898,
+     "mean_rsa": -8.767947626289835e-06,
+     "mean_enc": 0.013789618634762545
+    },
+    "encdec": {
+     "n": 5,
+     "rho": 0.39999999999999997,
+     "p": 0.5046315754686911,
+     "mean_rsa": 0.0001508570757470014,
+     "mean_enc": 0.013511500921784578
+    },
+    "masked": {
+     "n": 9,
+     "rho": -0.5666666666666667,
+     "p": 0.11163298761149114,
+     "mean_rsa": 8.510690892290583e-05,
+     "mean_enc": 0.012239570983723106
+    }
+   },
+   "class_gap_causal_minus_other": 15.365079365079364,
+   "gap_p_naive": 0.001176084612641258,
+   "gap_p_family_clustered": 0.008599570021498925
+  },
+  "rank_identifiability": {
+   "concordance32_brennan_k2_c|RSA [checkpoint-level]": {
+    "spread": 0.00011130172303220716,
+    "marginal_se": 0.00013307410553039037,
+    "diff_se": 0.0001355238635561016,
+    "ratio": 0.8212702922694687,
+    "tau_median": 0.5846774193548389,
+    "p_best_wins": 0.633,
+    "verdict": "NOT IDENTIFIABLE: the spread between models is smaller than the smallest difference this data can detect between two of them. No ordering claim is defensible."
+   },
+   "concordance32_brennan_k2_c|RSA [family-level]": {
+    "spread": 9.364828137454696e-05,
+    "marginal_se": 0.00011978518500026641,
+    "diff_se": 0.0001134081907085157,
+    "ratio": 0.8257629434830144,
+    "tau_median": 0.606060606060606,
+    "p_best_wins": 0.897,
+    "verdict": "NOT IDENTIFIABLE: the spread between models is smaller than the smallest difference this data can detect between two of them. No ordering claim is defensible."
+   },
+   "concordance32_brennan_k2_c|encoding [checkpoint-level]": {
+    "spread": 0.001723074867208942,
+    "marginal_se": 0.0015667981200236242,
+    "diff_se": 0.0011363238801988197,
+    "ratio": 1.5163589336056724,
+    "tau_median": 0.7459677419354841,
+    "p_best_wins": 0.6145,
+    "verdict": "WEAK: the leaderboard's winner beats the runner-up in only 61% of resamples."
+   },
+   "concordance32_brennan_k2_c|encoding [family-level]": {
+    "spread": 0.0008900438581364965,
+    "marginal_se": 0.0014907877751855103,
+    "diff_se": 0.0009249149761261753,
+    "ratio": 0.9622980285866604,
+    "tau_median": 0.6363636363636362,
+    "p_best_wins": 0.5775,
+    "verdict": "NOT IDENTIFIABLE: the spread between models is smaller than the smallest difference this data can detect between two of them. No ordering claim is defensible."
+   }
+  }
+ },
+ "cross_8seg_b": {
+  "brennan_p4_v2_segment-1_full.json": {
+   "cohort": "brennan_p4_v2",
+   "block_col": "segment",
+   "block": "1",
+   "cap_words": 0,
+   "n_words": 6612,
+   "partition": -1,
+   "n_partitions": 2,
+   "n_groups": 38,
+   "n_models": 32,
+   "concordance": -0.2591642228739003,
+   "concordance_p": 0.15204881251032565,
+   "rsa_rank_reliability": 0.876672652847371,
+   "rsa_rank_reliability_ci": [
+    0.5769545421828267,
+    0.9368144963404582
+   ],
+   "enc_rank_reliability": 0.8931940245193719,
+   "enc_rank_reliability_ci": [
+    0.7970295819909897,
+    0.9512832829351221
+   ],
+   "rankable": true
+  },
+  "brennan_p4_v2_segment-2_full.json": {
+   "cohort": "brennan_p4_v2",
+   "block_col": "segment",
+   "block": "2",
+   "cap_words": 0,
+   "n_words": 8319,
+   "partition": -1,
+   "n_partitions": 2,
+   "n_groups": 47,
+   "n_models": 32,
+   "concordance": 0.2261730205278592,
+   "concordance_p": 0.21323095439525366,
+   "rsa_rank_reliability": 0.755190443986181,
+   "rsa_rank_reliability_ci": [
+    0.32930125967863727,
+    0.8860976282179309
+   ],
+   "enc_rank_reliability": 0.8408750828505976,
+   "enc_rank_reliability_ci": [
+    0.7056049099010733,
+    0.914120604095969
+   ],
+   "rankable": true
+  },
+  "brennan_p4_v2_segment-3_full.json": {
+   "cohort": "brennan_p4_v2",
+   "block_col": "segment",
+   "block": "3",
+   "cap_words": 0,
+   "n_words": 8648,
+   "partition": -1,
+   "n_partitions": 2,
+   "n_groups": 47,
+   "n_models": 32,
+   "concordance": 0.25183284457478,
+   "concordance_p": 0.16439794285045076,
+   "rsa_rank_reliability": 0.7637883228579011,
+   "rsa_rank_reliability_ci": [
+    -0.025379435082747787,
+    0.9281784065710887
+   ],
+   "enc_rank_reliability": 0.717894471784632,
+   "enc_rank_reliability_ci": [
+    0.4447625921497233,
+    0.848203136101401
+   ],
+   "rankable": false
+  },
+  "brennan_p4_v2_segment-4_full.json": {
+   "cohort": "brennan_p4_v2",
+   "block_col": "segment",
+   "block": "4",
+   "cap_words": 0,
+   "n_words": 10058,
+   "partition": -1,
+   "n_partitions": 2,
+   "n_groups": 47,
+   "n_models": 32,
+   "concordance": 0.027126099706744865,
+   "concordance_p": 0.882839826124781,
+   "rsa_rank_reliability": 0.29819022979380505,
+   "rsa_rank_reliability_ci": [
+    -0.3916761738265793,
+    0.687199230028874
+   ],
+   "enc_rank_reliability": 0.4278914187581843,
+   "enc_rank_reliability_ci": [
+    -0.1868835173589898,
+    0.710514252489829
+   ],
+   "rankable": false
+  },
+  "brennan_p4_v2_segment-5_full.json": {
+   "cohort": "brennan_p4_v2",
+   "block_col": "segment",
+   "block": "5",
+   "cap_words": 0,
+   "n_words": 9071,
+   "partition": -1,
+   "n_partitions": 2,
+   "n_groups": 47,
+   "n_models": 32,
+   "concordance": 0.2320381231671554,
+   "concordance_p": 0.20128163220628079,
+   "rsa_rank_reliability": 0.8324414724142708,
+   "rsa_rank_reliability_ci": [
+    0.5977356736501772,
+    0.93038203317357
+   ],
+   "enc_rank_reliability": 0.6611042944785277,
+   "enc_rank_reliability_ci": [
+    0.4171743545111691,
+    0.810003213497062
+   ],
+   "rankable": true
+  },
+  "brennan_p4_v2_segment-6_full.json": {
+   "cohort": "brennan_p4_v2",
+   "block_col": "segment",
+   "block": "6",
+   "cap_words": 0,
+   "n_words": 9259,
+   "partition": -1,
+   "n_partitions": 2,
+   "n_groups": 47,
+   "n_models": 32,
+   "concordance": 0.14809384164222872,
+   "concordance_p": 0.4185786682699443,
+   "rsa_rank_reliability": 0.9057360169540101,
+   "rsa_rank_reliability_ci": [
+    0.8266529086617384,
+    0.9568574830290865
+   ],
+   "enc_rank_reliability": 0.5462280314942294,
+   "enc_rank_reliability_ci": [
+    0.18975098175545868,
+    0.7477995895222177
+   ],
+   "rankable": true
+  },
+  "brennan_p4_v2_segment-7_full.json": {
+   "cohort": "brennan_p4_v2",
+   "block_col": "segment",
+   "block": "7",
+   "cap_words": 0,
+   "n_words": 8366,
+   "partition": -1,
+   "n_partitions": 2,
+   "n_groups": 47,
+   "n_models": 32,
+   "concordance": -0.03885630498533724,
+   "concordance_p": 0.8327789196507925,
+   "rsa_rank_reliability": 0.686725218671983,
+   "rsa_rank_reliability_ci": [
+    0.3116484155187526,
+    0.8308649953656382
+   ],
+   "enc_rank_reliability": 0.31526455560204314,
+   "enc_rank_reliability_ci": [
+    -0.30955931595312114,
+    0.6603599551698222
+   ],
+   "rankable": false
+  },
+  "brennan_p4_v2_segment-8_full.json": {
+   "cohort": "brennan_p4_v2",
+   "block_col": "segment",
+   "block": "8",
+   "cap_words": 0,
+   "n_words": 8225,
+   "partition": -1,
+   "n_partitions": 2,
+   "n_groups": 47,
+   "n_models": 32,
+   "concordance": 0.43181818181818177,
+   "concordance_p": 0.013590882949206363,
+   "rsa_rank_reliability": 0.5234073097487731,
+   "rsa_rank_reliability_ci": [
+    -0.35588764343494494,
+    0.8249229936752132
+   ],
+   "enc_rank_reliability": 0.2560331982223879,
+   "enc_rank_reliability_ci": [
+    -0.3515486920724056,
+    0.6472614056097115
+   ],
+   "rankable": false
+  }
+ },
+ "repeat_k1_b": {
+  "brennan_p4_v2_k1_seed0.json": {
+   "cohort": "brennan_p4_v2",
+   "k": 1,
+   "draw_seed": 0,
+   "n_tokens": 2129,
+   "region": "all",
+   "arms": {
+    "plain": {
+     "concordance": 0.14479472140762462,
+     "p": 0.42913384618079997,
+     "n_models": 32,
+     "rsa_rank_reliability": 0.12390029325513194
+    },
+    "cv": {
+     "concordance": 0.20527859237536655,
+     "p": 0.2597065421012985,
+     "n_models": 32,
+     "rsa_rank_reliability": -0.44464809384164217
+    }
+   }
+  },
+  "brennan_p4_v2_k1_seed1.json": {
+   "cohort": "brennan_p4_v2",
+   "k": 1,
+   "draw_seed": 1,
+   "n_tokens": 2129,
+   "region": "all",
+   "arms": {
+    "plain": {
+     "concordance": -0.17338709677419353,
+     "p": 0.3426119530992835,
+     "n_models": 32,
+     "rsa_rank_reliability": -0.1220674486803519
+    },
+    "cv": {
+     "concordance": 0.05351906158357771,
+     "p": 0.7711179742669981,
+     "n_models": 32,
+     "rsa_rank_reliability": 0.09127565982404691
+    }
+   }
+  },
+  "brennan_p4_v2_k1_seed2.json": {
+   "cohort": "brennan_p4_v2",
+   "k": 1,
+   "draw_seed": 2,
+   "n_tokens": 2129,
+   "region": "all",
+   "arms": {
+    "plain": {
+     "concordance": -0.281891495601173,
+     "p": 0.11803720135326046,
+     "n_models": 32,
+     "rsa_rank_reliability": -0.25
+    },
+    "cv": {
+     "concordance": 0.125,
+     "p": 0.49545712501523587,
+     "n_models": 32,
+     "rsa_rank_reliability": -0.05058651026392961
+    }
+   }
+  }
+ },
+ "cross_8seg_published_raw": {
+  "brennan_p4_v2_segment-1_full.json": {
+   "n_groups": 38,
+   "concordance": -0.05058651026392961,
+   "rsa_rank_reliability": 0.9983477143381677,
+   "enc_rank_reliability": 0.22684264336834278,
+   "rankable": false
+  },
+  "brennan_p4_v2_segment-2_full.json": {
+   "n_groups": 47,
+   "concordance": 0.06414956011730204,
+   "rsa_rank_reliability": 0.9977957384276266,
+   "enc_rank_reliability": 0.865460398486116,
+   "rankable": true
+  },
+  "brennan_p4_v2_segment-3_full.json": {
+   "n_groups": 47,
+   "concordance": 0.3958944281524926,
+   "rsa_rank_reliability": 0.9953967961701343,
+   "enc_rank_reliability": 0.5427341070932126,
+   "rankable": false
+  },
+  "brennan_p4_v2_segment-4_full.json": {
+   "n_groups": 47,
+   "concordance": 0.4237536656891495,
+   "rsa_rank_reliability": 0.9968744254458539,
+   "enc_rank_reliability": 0.6176839622808039,
+   "rankable": false
+  },
+  "brennan_p4_v2_segment-5_full.json": {
+   "n_groups": 47,
+   "concordance": -0.1950146627565982,
+   "rsa_rank_reliability": 0.9965054257862791,
+   "enc_rank_reliability": 0.6720198258836978,
+   "rankable": false
+  },
+  "brennan_p4_v2_segment-6_full.json": {
+   "n_groups": 47,
+   "concordance": 0.5916422287390029,
+   "rsa_rank_reliability": 0.99668995954395,
+   "enc_rank_reliability": 0.6111666269898404,
+   "rankable": false
+  },
+  "brennan_p4_v2_segment-7_full.json": {
+   "n_groups": 47,
+   "concordance": 0.3500733137829911,
+   "rsa_rank_reliability": 0.9985315712187958,
+   "enc_rank_reliability": 0.08929144778201381,
+   "rankable": false
+  },
+  "brennan_p4_v2_segment-8_full.json": {
+   "n_groups": 47,
+   "concordance": -0.16495601173020527,
+   "rsa_rank_reliability": 0.995766611448555,
+   "enc_rank_reliability": 0.3214870556131526,
+   "rankable": false
+  }
+ }
+}

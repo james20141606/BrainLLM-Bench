@@ -1,0 +1,139 @@
+# DEPRECATED task definitions --- retained for the record, NOT part of BrainLLM-Bench.
+#
+# These tasks belonged to an earlier, broader framing of this project ("MEG-LLM-Bench",
+# companion to a kitchen-sink draft). They are preserved because the negative results are
+# load-bearing: each rests on a method the paper investigated and then dropped.
+#
+#   surprisal-tercile      -- the surprisal x layer gradient did not hold up across cohorts.
+#   sae-feature-transfer   -- CITE-SAE cross-cohort feature overlap was weak/fragile.
+#   layer-saturation-pfll  -- PFLL (probe-free layer localization) was not robust enough to ship.
+#
+# The live task set is in tasks.yaml. Do not score submissions against this file.
+
+# MEG-LLM-Bench task definitions
+# Each task has: name, description, input, output, metric, baselines, paper_section
+
+version: "0.1"
+
+tasks:
+
+  - name: best-layer
+    description: |
+      Predict, for each (cohort, LLM, region, time-window) cell, the LLM layer
+      with peak brain alignment. The reference computation uses a full per-layer
+      RSA scan (streaming RSA, see SROB primitive). Submissions provide a
+      per-cell predicted-best-layer; we score Spearman rank-correlation against
+      the gold-standard scan.
+    input:
+      - cohort  # libribrain | meg_masc | brennan | meg_scans | ecog
+      - llm     # gpt2 | gpt2-medium | bert-base-uncased | mult-bert | ...
+    output: tsv
+      # columns: cell_id (region_band_window) | predicted_best_layer
+    metric: spearman_rank_correlation
+    baselines:
+      - random      # uniform layer choice
+      - mid-LLM     # layer = floor(n_layers / 2)
+      - linear-probe  # ridge regression on per-layer activations
+    headline_finding: |
+      "Mid-LLM layer wins" replicates across 5/6 cohorts on BERT, with
+      MEG-SCANS source-level showing weighted-mean active layer ≈ 6.0/12
+      (G2 multi-subj) regardless of surprisal stratification.
+    paper_section: "App.A (PFLL), Sec.4"
+
+  - name: boundary-conditional
+    description: |
+      Replicate Zou-Ding 2026 NN constituent-boundary modulation: alignment
+      at sentence-medial (word-position ≥ 2) > sentence-onset (≤ 1).
+      Submissions provide per-cell z(medial) and z(onset). Scoring: sign-
+      consistency tally + Δ magnitude.
+    input:
+      - cohort
+      - llm
+      - layer  # specific layer to test
+    output: tsv
+      # columns: cell_id | z_onset | z_medial
+    metric:
+      primary: sign_consistency  # fraction of cells with z_medial > z_onset
+      secondary: median_delta_magnitude
+    baselines:
+      - random-tercile-permutation  # null distribution
+      - all-trials-pooled  # no stratification
+    headline_finding: |
+      Continuous-narrative cohorts (LibriBrain 3/3, Brennan 2/3, MEG-SCANS
+      2/3) replicate Zou-Ding direction; MEG-MASC 0/3 reverses (paradigm
+      outlier). G7 reveals German V2 reverses the causal direction (G7-cross).
+    paper_section: "App.G4, App.G7"
+
+  - name: surprisal-tercile
+    description: |
+      Stratify trials by per-trial surprisal (low/mid/high tercile based on
+      contextual GPT-2 surprisal, 25-word running context). Submit per-
+      tercile alignment z(ρ) per LLM layer. Test for monotone
+      surprisal × layer gradient (LibriBrain finding).
+    input:
+      - cohort
+      - llm
+      - region
+    output: tsv
+      # columns: cell_id | tercile | layer | z_rho
+    metric:
+      primary: weighted_mean_active_layer_drift  # Δ between high and low terciles
+      secondary: per_tercile_peak_z
+    baselines:
+      - unstratified  # all trials together
+      - sentence-position  # stratify by wordidx instead of surprisal
+    headline_finding: |
+      LibriBrain shows monotone shift (low → high surprisal: shallow → deep);
+      MEG-SCANS source-level (22 subj) is flat (~6.0 across all terciles).
+      SRM Procrustes hyperalignment partly rescues MEG-SCANS magnitude
+      (G-SRM: +5×10⁻³ on 11/13 layers).
+    paper_section: "App.G2, App.G3"
+
+  - name: sae-feature-transfer
+    description: |
+      Apply Joseph Bloom GPT-2-small SAE (24,576 features, blocks.5.hook_resid_pre)
+      to each cohort's GPT-2 layer 5 activations; compute per-feature brain-
+      alignment z(ρ) at headline cell. Cross-cohort: top-50 SAE-feature
+      overlap with anchor cohort.
+    input:
+      - cohort
+      - llm: gpt2  # SAE was trained on GPT-2-small
+      - layer: 5
+    output: tsv
+      # columns: sae_feature_idx | z_rho
+    metric:
+      primary: top50_overlap_with_anchor  # default anchor: LibriBrain
+      secondary: pairwise_spearman
+    baselines:
+      - random-features
+      - within-cohort-bootstrap  # null
+    headline_finding: |
+      Continuous-narrative English cohorts cluster (LB∩Br=11/50, LB∩ECoG=10/50);
+      MEG-MASC orthogonal (LB∩MM=2/50); MEG-SCANS German fully orthogonal
+      to all English cohorts (0/50, language hard ceiling). Paradigm >
+      modality > language hierarchy.
+    paper_section: "App.cite_sae, figF29"
+
+  - name: layer-saturation-pfll
+    description: |
+      Probe-Free Brain-Anchored Layer Localization: smallest LLM layer L
+      such that max(z[0..L]) >= 0.95 × max(z[all]). Reports L_sat as a
+      fraction of total layers (depth %).
+    input:
+      - cohort
+      - llm
+    output: tsv
+      # columns: cell_id | L_sat | L_sat_depth_pct
+    metric:
+      primary: median_L_sat_depth_pct
+    baselines:
+      - argmax-layer  # not the same statistic; reference comparison
+      - random
+    headline_finding: |
+      BERT saturates at ~11% depth on LibriBrain (mid-layers); German-BERT
+      at 2% depth on MEG-SCANS (early-layer dominance).
+    paper_section: "App.A (PFLL)"
+
+scoring:
+  cross_task_aggregation: mean_z_score
+  leaderboard_metric: cohort_consistency  # mean across cohorts of per-task score

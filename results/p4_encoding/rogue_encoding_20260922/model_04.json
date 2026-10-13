@@ -1,0 +1,99 @@
+{
+  "model": "bert-large-uncased",
+  "kind": "masked",
+  "config": {
+    "n_metadata": 177127,
+    "n_words": 30000,
+    "n_sessions": 12,
+    "selected_index_sha256": "bfe5c58de6dc807aae86ad2b4b2a59d8a7c96e57f10490ab000e2c2fcdb95346",
+    "selected_words_sha256": "0aa7f939fcd23af58a16361e21cb1ababa77d4f514a87bf04dfff9461e95aae2",
+    "neural_shape": [
+      30000,
+      750
+    ],
+    "target_shape": [
+      30000,
+      30
+    ],
+    "target_sha256": "80e21208689a3e18a8dd001a3e4052ab0a5f2296b470298ef1ec57c7b33a8197",
+    "window_samples": [
+      125,
+      150
+    ],
+    "source_metadata": "<PROJECT>/data/libribrain_full/trial_metadata.tsv",
+    "source_epochs": "<PROJECT>/data/libribrain_full/epochs_data.npy",
+    "feature_path": "<PROJECT>/data/preprocessed/llm_embeddings_fd/bert-large-uncased/layer_12.npy",
+    "feature_file_sha256": "82dec31b2314004cb94842f17b7a11cdd03c7744899254afa39bf75d44180b06",
+    "selected_feature_sha256": "9ac826d896724f7fa172362e31ce52afa7d792a29553e3f7b395866da101ca10",
+    "feature_shape": [
+      30000,
+      1024
+    ],
+    "generator_sha256": "5c6651e72bff2d1ffd3b62f7e21b82abd276274dbe7e56c9636e952fd297ae58",
+    "script_sha256": "640500b7535691fe95e19f6fb02585cf87d8e3db9de5cd4b173c79ff66e0afa2",
+    "reference_sha256": "e92d79fe8c77e0f8b1a073ffc67524ae83bc2532796d9d2f1fc72753bebf24b3",
+    "alpha_grid": [
+      10.0,
+      51.794746792312125,
+      268.2695795279727,
+      1389.4954943731375,
+      7196.856730011521,
+      37275.93720314938,
+      193069.77288832495,
+      1000000.0
+    ],
+    "folds": "LeaveOneGroupOut(session); X standardized from training fold only; RidgeCV alpha selected on training fold",
+    "analysis_status": "post hoc diagnostic, not preregistered",
+    "rogue_scope": "additive sample-varying rank-one intervention; cannot exclude all geometry explanations",
+    "versions": {
+      "numpy": "2.1.2",
+      "pandas": "2.3.3"
+    }
+  },
+  "baseline_check": {
+    "rsa_max_abs_session_diff": 5.204170427930421e-18,
+    "encoding_max_abs_session_diff": 4.163336342344337e-17,
+    "tolerance": 1e-06,
+    "passed": true
+  },
+  "doses": [
+    {
+      "dose": 0.0,
+      "transform": {
+        "nominal_share": 0.0,
+        "realized_added_variance_share": 0.0,
+        "rogue_seed": 1558557459
+      },
+      "rsa_mean": 0.0073546923636912875,
+      "encoding_mean": 0.04257857460822961,
+      "rsa_per_session": {
+        "1": 0.006845073714719545,
+        "2": 0.008922425274351782,
+        "3": 0.004928979060489081,
+        "4": 0.008241641505451534,
+        "5": 0.008758888992654765,
+        "6": 0.00562428060016562,
+        "7": 0.01127291071087439,
+        "8": 0.00729702845086866,
+        "9": 0.005171304067772189,
+        "10": 0.0067460075978684865,
+        "11": 0.004297901498843422,
+        "12": 0.010149866890235972
+      },
+      "encoding_per_session": {
+        "1": 0.04732129329813877,
+        "2": 0.04761936552759831,
+        "3": 0.026124837537426806,
+        "4": 0.05461889764999093,
+        "5": 0.04606569067532451,
+        "6": 0.03989683278557058,
+        "7": 0.04339054998347591,
+        "8": 0.0449575718380535,
+        "9": 0.000526582388886447,
+        "10": 0.047411143695648174,
+        "11": 0.059622141344217575,
+        "12": 0.05338798857442378
+      }
+    }
+  ]
+}

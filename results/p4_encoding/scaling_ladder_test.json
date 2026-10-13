@@ -1,0 +1,77 @@
+{
+  "cohort": "libribrain",
+  "metric": "per_session_encoding_at_preregistered_depth",
+  "ladder": [
+    {
+      "model": "pythia-70m",
+      "params_M": 70,
+      "n_sessions": 12,
+      "mean_R": 0.03560690774680067,
+      "ci95": [
+        0.02754391599462565,
+        0.04175735442357601
+      ]
+    },
+    {
+      "model": "pythia-160m",
+      "params_M": 160,
+      "n_sessions": 12,
+      "mean_R": 0.035270824742988434,
+      "ci95": [
+        0.02745317502508549,
+        0.04133347550929588
+      ]
+    },
+    {
+      "model": "pythia-410m",
+      "params_M": 410,
+      "n_sessions": 12,
+      "mean_R": 0.03958071450457057,
+      "ci95": [
+        0.030145259933191487,
+        0.046910141386144015
+      ]
+    },
+    {
+      "model": "pythia-1b",
+      "params_M": 1000,
+      "n_sessions": 12,
+      "mean_R": 0.03980244075988385,
+      "ci95": [
+        0.03116621788159403,
+        0.046559255763448076
+      ]
+    },
+    {
+      "model": "pythia-1.4b",
+      "params_M": 1400,
+      "n_sessions": 12,
+      "mean_R": 0.03881578478552794,
+      "ci95": [
+        0.030418245784872257,
+        0.04525404762525313
+      ]
+    },
+    {
+      "model": "pythia-2.8b",
+      "params_M": 2800,
+      "n_sessions": 12,
+      "mean_R": 0.03561642995761417,
+      "ci95": [
+        0.02830167654993944,
+        0.04138841558460979
+      ]
+    }
+  ],
+  "size_vs_alignment_spearman": 0.4285714285714286,
+  "size_vs_alignment_p": 0.3965014577259474,
+  "largest_vs_smallest": {
+    "diff": 9.522210813492476e-06,
+    "wilcoxon_p": 0.9697265625,
+    "param_ratio": 40.0
+  },
+  "p410_vs_p160": {
+    "diff": 0.004309889761582135,
+    "wilcoxon_p": 0.0048828125
+  }
+}

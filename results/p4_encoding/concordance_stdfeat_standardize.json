@@ -1,0 +1,208 @@
+{
+  "feat_preproc": "standardize",
+  "n_models": 32,
+  "per_model": [
+    {
+      "model": "gpt2",
+      "kind": "causal",
+      "rsa_mean": 0.00966338239313332,
+      "enc_mean": 0.03204343387168013
+    },
+    {
+      "model": "gpt2-medium",
+      "kind": "causal",
+      "rsa_mean": 0.009269427650797793,
+      "enc_mean": 0.03266985449900401
+    },
+    {
+      "model": "gpt2-large",
+      "kind": "causal",
+      "rsa_mean": 0.008553988572115609,
+      "enc_mean": 0.03653660555427526
+    },
+    {
+      "model": "gpt2-xl",
+      "kind": "causal",
+      "rsa_mean": 0.005256676479496739,
+      "enc_mean": 0.037360092253637414
+    },
+    {
+      "model": "EleutherAI/pythia-70m",
+      "kind": "causal",
+      "rsa_mean": 0.004340152539649725,
+      "enc_mean": 0.03560690774680067
+    },
+    {
+      "model": "EleutherAI/pythia-160m",
+      "kind": "causal",
+      "rsa_mean": 0.004575460884988991,
+      "enc_mean": 0.035270824742988434
+    },
+    {
+      "model": "EleutherAI/pythia-410m",
+      "kind": "causal",
+      "rsa_mean": 0.004615470242518012,
+      "enc_mean": 0.03958071450457057
+    },
+    {
+      "model": "EleutherAI/pythia-1b",
+      "kind": "causal",
+      "rsa_mean": 0.0045713211704145286,
+      "enc_mean": 0.03980244075988385
+    },
+    {
+      "model": "EleutherAI/pythia-1.4b",
+      "kind": "causal",
+      "rsa_mean": 0.004817292028636667,
+      "enc_mean": 0.03881578478552794
+    },
+    {
+      "model": "EleutherAI/pythia-2.8b",
+      "kind": "causal",
+      "rsa_mean": 0.005233733056599276,
+      "enc_mean": 0.03561642995761417
+    },
+    {
+      "model": "facebook/opt-125m",
+      "kind": "causal",
+      "rsa_mean": 0.006543149986095454,
+      "enc_mean": 0.033280707244960656
+    },
+    {
+      "model": "facebook/opt-350m",
+      "kind": "causal",
+      "rsa_mean": 0.008063387267274484,
+      "enc_mean": 0.03234866937439882
+    },
+    {
+      "model": "facebook/opt-1.3b",
+      "kind": "causal",
+      "rsa_mean": 0.008141611280415855,
+      "enc_mean": 0.0382303325416024
+    },
+    {
+      "model": "EleutherAI/gpt-neo-125m",
+      "kind": "causal",
+      "rsa_mean": 0.005045756354021653,
+      "enc_mean": 0.03996471312951604
+    },
+    {
+      "model": "EleutherAI/gpt-neo-1.3B",
+      "kind": "causal",
+      "rsa_mean": 0.005179906678770768,
+      "enc_mean": 0.03809369363319236
+    },
+    {
+      "model": "meta-llama/Llama-3.2-1B",
+      "kind": "causal",
+      "rsa_mean": 0.0076309290606330965,
+      "enc_mean": 0.03815082565839986
+    },
+    {
+      "model": "Qwen/Qwen2.5-0.5B",
+      "kind": "causal",
+      "rsa_mean": 0.004117581323596099,
+      "enc_mean": 0.04381783165627809
+    },
+    {
+      "model": "Qwen/Qwen2.5-1.5B",
+      "kind": "causal",
+      "rsa_mean": 0.004436188355929711,
+      "enc_mean": 0.0427151164115129
+    },
+    {
+      "model": "bert-base-uncased",
+      "kind": "masked",
+      "rsa_mean": 0.007681246551360584,
+      "enc_mean": 0.031824512579682475
+    },
+    {
+      "model": "bert-large-uncased",
+      "kind": "masked",
+      "rsa_mean": 0.008408984585911765,
+      "enc_mean": 0.03169872227901869
+    },
+    {
+      "model": "roberta-base",
+      "kind": "masked",
+      "rsa_mean": 0.007433137201712819,
+      "enc_mean": 0.03188871047643249
+    },
+    {
+      "model": "roberta-large",
+      "kind": "masked",
+      "rsa_mean": 0.00915769247945962,
+      "enc_mean": 0.03758528577499577
+    },
+    {
+      "model": "microsoft/deberta-v3-base",
+      "kind": "masked",
+      "rsa_mean": 0.0047507587075241164,
+      "enc_mean": 0.020829044392479807
+    },
+    {
+      "model": "microsoft/deberta-v3-large",
+      "kind": "masked",
+      "rsa_mean": 0.005923074830366083,
+      "enc_mean": 0.022703717757394336
+    },
+    {
+      "model": "google/electra-base-discriminator",
+      "kind": "masked",
+      "rsa_mean": 0.006113155647337384,
+      "enc_mean": 0.026679403055236334
+    },
+    {
+      "model": "albert-base-v2",
+      "kind": "masked",
+      "rsa_mean": 0.008948246182894469,
+      "enc_mean": 0.03504675787890304
+    },
+    {
+      "model": "distilbert-base-uncased",
+      "kind": "masked",
+      "rsa_mean": 0.00831464140514109,
+      "enc_mean": 0.03140424034420087
+    },
+    {
+      "model": "t5-small",
+      "kind": "encdec",
+      "rsa_mean": 0.008507911016023436,
+      "enc_mean": 0.03175366242401479
+    },
+    {
+      "model": "t5-base",
+      "kind": "encdec",
+      "rsa_mean": 0.009217196921491139,
+      "enc_mean": 0.026684897815432998
+    },
+    {
+      "model": "t5-large",
+      "kind": "encdec",
+      "rsa_mean": 0.010920435096342086,
+      "enc_mean": 0.03262904249638473
+    },
+    {
+      "model": "facebook/bart-base",
+      "kind": "encdec",
+      "rsa_mean": 0.00758579473152498,
+      "enc_mean": 0.0348849967978432
+    },
+    {
+      "model": "facebook/bart-large",
+      "kind": "encdec",
+      "rsa_mean": 0.007026389624049441,
+      "enc_mean": 0.029415805560704323
+    }
+  ],
+  "rsa_reliability_sb": 0.9836065221044994,
+  "enc_reliability_sb": 0.970954356846473,
+  "concordance_spearman": -0.439882697947214,
+  "concordance_p": 0.011759765097344095,
+  "concordance_ci95": [
+    -0.6837066963452318,
+    -0.10770972401578677
+  ],
+  "reversal_supported": true,
+  "verdict_note": "The 'verdict'/'H1' field is the pre-registered mechanical test (concordance CI below the attenuation ceiling = readouts not perfectly concordant); it is NOT a directional claim. For whether a NEGATIVE reversal is supported, use reversal_supported (rho<0 and CI upper<0)."
+}

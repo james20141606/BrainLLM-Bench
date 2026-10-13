@@ -1,0 +1,20 @@
+{
+  "model": "t5-base",
+  "tag": "t5",
+  "d_model": 768,
+  "layers_kept": [
+    4,
+    6,
+    8
+  ],
+  "n_epochs": 177127,
+  "n_filled": 177127,
+  "shape": [
+    177127,
+    3,
+    768
+  ],
+  "dtype": "float16",
+  "elapsed_sec": 52.2169246673584,
+  "note": "contextual per-occurrence hidden at last sub-token of each word"
+}

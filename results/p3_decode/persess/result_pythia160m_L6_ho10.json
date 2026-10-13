@@ -1,0 +1,42 @@
+{
+  "tag": "pythia160m_L6_ho10",
+  "target": "gpt2_contextual",
+  "layer": 6,
+  "proj_dim": 768,
+  "window_samples": [
+    50,
+    250,
+    2
+  ],
+  "n_train": 85496,
+  "n_val": 4500,
+  "n_test": 7763,
+  "test_session": 10,
+  "test_task": "Sherlock3",
+  "epochs": 40,
+  "val_best_top10": 0.015555555555555555,
+  "test": {
+    "n_candidates": 7763,
+    "top1": 0.0007728970758727296,
+    "top5": 0.002189875048306067,
+    "top10": 0.004895014813860621,
+    "median_rank": 2160.0,
+    "mean_rank": 2693.011593456138,
+    "chance_top1": 0.0001288161793121216,
+    "chance_top5": 0.000644080896560608,
+    "chance_top10": 0.001288161793121216,
+    "top10_over_chance": 3.8000000000000003
+  },
+  "shuffled_control": {
+    "n_candidates": 7763,
+    "top1": 0.0,
+    "top5": 0.0010305294344969728,
+    "top10": 0.0016746103310575809,
+    "median_rank": 3948.0,
+    "mean_rank": 3909.954270256344,
+    "chance_top1": 0.0001288161793121216,
+    "chance_top5": 0.000644080896560608,
+    "chance_top10": 0.001288161793121216,
+    "top10_over_chance": 1.3
+  }
+}

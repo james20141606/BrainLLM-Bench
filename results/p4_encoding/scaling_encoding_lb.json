@@ -1,0 +1,28 @@
+{
+  "cohort": "libribrain",
+  "metric": "held_out_encoding_R",
+  "cv": "leave_one_session_out",
+  "models": [
+    {
+      "model": "pythia-70m",
+      "params_M": 70,
+      "best_encoding_R": 0.013871808008109152,
+      "best_layer_idx": 0,
+      "n_layers": 2
+    },
+    {
+      "model": "pythia-160m",
+      "params_M": 160,
+      "best_encoding_R": 0.01626337949892364,
+      "best_layer_idx": 0,
+      "n_layers": 3
+    },
+    {
+      "model": "pythia-410m",
+      "params_M": 410,
+      "best_encoding_R": 0.016153179034908077,
+      "best_layer_idx": 2,
+      "n_layers": 7
+    }
+  ]
+}

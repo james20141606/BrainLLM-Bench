@@ -1,0 +1,120 @@
+{
+ "prereg": "paper4_temporalalign/PREREG_space_fix_reextract_20260925.md",
+ "model": "Qwen/Qwen2.5-72B",
+ "mode": "ext",
+ "batch_size": 4,
+ "jid": "18497043_",
+ "host": "<node>",
+ "gpu": [
+  "NVIDIA H200",
+  "NVIDIA H200"
+ ],
+ "versions": {
+  "torch": "2.6.0+cu124",
+  "transformers": "4.57.1",
+  "tokenizers": "0.22.1"
+ },
+ "python": "<HPC_SCRATCH>/envs/<env>/bin/python3.10",
+ "hf_source": "shared-cache-offline",
+ "code_sha256": {
+  "p4_spacefix_lib.py": "a7e298e6dc5058365927c076e00e483832e59c8ff0c94a31169e2e2a3b20d59a",
+  "p4_spacefix_extract.py": "664faa9bd668436e95b994943da16d9bca4a459457c76603fd04e9ccdb56d248",
+  "p4_spacefix_prep.py": null,
+  "p4_spacefix_score.py": "b1d1f1df308c46e31f4bd02971b85ab25e4e7825365caf2a3536d32296cee9f5",
+  "p4_spacefix_aggregate.py": "a521ab3cbdf832a88168a61ace5e58b3fb9df3d35b6b96aad33a3c5569926c66",
+  "frozen/p4_concordance32.py": "5c6651e72bff2d1ffd3b62f7e21b82abd276274dbe7e56c9636e952fd297ae58",
+  "frozen/extract_llm_layers_multi.py": "46d85ae60a03f4af11403cfa7c9b855f7dc47842ddd65bfaf88874093c6397eb",
+  "frozen/extract_llm_layers.py": "e02313cdff6a9bdc68e023ba5bd9f53e756fc7ca1d2c69764dfeba7f138f07b0",
+  "frozen/extract_llm_layers_multi_ef17743.py": "c9b736f703d479d861d44d28cb7d0c555928eddc72371918722cf06edb40a234",
+  "frozen/alpha_sensitivity_20260922.py": "31593a6efe5e564714f00fb59c10ba515ffebce1634ea6558da0180521279dfa",
+  "frozen/paper4_nn_revision/path1_confound_rsa.py": "b732984f3993cb61654385cac3b12afa6cf5dcf243879a18d502316b165d28ba",
+  "frozen/compute_rdms.py": "98e8d81f6f7e551231483cf24c5b3f1ffb581b435e3fc0ffc98a4dc0892399fb"
+ },
+ "tokenizer_files": {
+  "tokenizer.json": {
+   "sha256": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539",
+   "revision": "efba10c8e54e91e0d9570ab5f7b51a958474d4cb"
+  },
+  "tokenizer_config.json": {
+   "sha256": "c91efca15ceff6e9ee9424db58a6f59cd41294e550a86cbd07e3c1fb500b34f9",
+   "revision": "efba10c8e54e91e0d9570ab5f7b51a958474d4cb"
+  },
+  "config.json": {
+   "sha256": "d9113a671ad92740c49aa786fb4e4850c454d2cceba5c75aad97023ac2ec9c7a",
+   "revision": "efba10c8e54e91e0d9570ab5f7b51a958474d4cb"
+  }
+ },
+ "rule": "ef17743 extract_one verbatim; _load = ef17743 tokenizer lines + cluster --big model load (bf16, device_map=auto)",
+ "param_dtype": "torch.bfloat16",
+ "hf_device_map": [
+  "0",
+  "1"
+ ],
+ "cohort": "masc27",
+ "t_load_s": 273.8,
+ "D1_new_vs_cached": {
+  "n_rows": 67500,
+  "median_row_cos": 0.8846256709161572,
+  "min_row_cos": -0.15763486354606895,
+  "p05_row_cos": 0.5518436192771973,
+  "frac_rows_cos_ge_0.9999": 0.08124444444444444,
+  "frac_rows_cos_ge_0.999": 0.08148148148148149,
+  "frac_rows_cos_ge_0.99": 0.08148148148148149,
+  "frac_rows_bitwise_equal": 0.027525925925925926,
+  "max_abs_diff": 5170.75
+ },
+ "extractor_record": {
+  "model": "Qwen/Qwen2.5-72B",
+  "kind": "causal",
+  "layers_kept": [
+   "layer_40"
+  ],
+  "n_words": 67500,
+  "fallback_frac": 0.0
+ },
+ "gates": {
+  "G1": {
+   "row_sha256": "c150db0cdc50e703855f273b7228b0286be70195561408945134c2cfbde1e672",
+   "meta_sha256": "6f98b1209389237ad46e78ada6da83bec3bf76c8a754e01baa87c36055aa3d4f",
+   "emb_rows_sha256": "c150db0cdc50e703855f273b7228b0286be70195561408945134c2cfbde1e672",
+   "n_words": 67500,
+   "n_groups": 27,
+   "n_contexts": 403368,
+   "cached_rows": 403368,
+   "cached_mid_file": "data/preprocessed/llm_embeddings_masc27_fd/Qwen_Qwen2.5-72B/layer_40.npy",
+   "cached_mid_sha256": "ab1a749eefc4d0e30e0cba0b9a6f8a2fa682595d37e6925c6ec89540037b5d72",
+   "pass": true,
+   "context_word_mismatch_selected": 0,
+   "n_unique_rows": 67500
+  },
+  "T": {
+   "n_rows": 67500,
+   "decode_equal": 67500,
+   "frac_decode_equal": 1.0,
+   "space_loss_rows": 0,
+   "space_loss_strict_rows": 0,
+   "readout_is_special_rows": 0,
+   "rows_at_512_tokens": 0,
+   "padding_side": "right",
+   "mismatch_examples": [],
+   "T1_pass": true,
+   "T2_pass": true
+  },
+  "G5": {
+   "shape": [
+    67500,
+    8192
+   ],
+   "finite": true,
+   "zero_rows": 0,
+   "layer_written": "layer_40.npy",
+   "cached_layer": "layer_40.npy",
+   "pass": true
+  }
+ },
+ "t_extract_s": 1442.7,
+ "status": "OK",
+ "feature_file": "<HPC_HOME>/p4_spacefix_20260925/feat/masc27/Qwen_Qwen2.5-72B/layer_40.npy",
+ "feature_sha256": "3877d8a878eaa2893d53d496d7dea6595b4f03ea80852dff0ef52a30cc8a077a",
+ "rows_sha256": "a7c76b99bc09ea30b787e1b27654f1d023c3c5db560482e01338468b775a3443"
+}

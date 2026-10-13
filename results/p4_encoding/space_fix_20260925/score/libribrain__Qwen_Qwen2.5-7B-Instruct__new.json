@@ -1,0 +1,68 @@
+{
+ "prereg": "paper4_temporalalign/PREREG_space_fix_reextract_20260925.md",
+ "model": "Qwen/Qwen2.5-7B-Instruct",
+ "cohort": "libribrain",
+ "source": "new",
+ "feature_file": "<HPC_HOME>/p4_spacefix_20260925/feat/libribrain/Qwen_Qwen2.5-7B-Instruct/layer_14.bf16.npy",
+ "feature_sha256": "63bd056520140ae11c38b3feb164183b42574e80d78ce1bb2d031bdc6fc34a47",
+ "x_shape": [
+  30000,
+  3584
+ ],
+ "row_sha256": "bfe5c58de6dc807aae86ad2b4b2a59d8a7c96e57f10490ab000e2c2fcdb95346",
+ "meta_sha256": "b8e7784006b049060cb0383b5f4ad4a191674e540ed571e0aa831c1d6e7e843e",
+ "emb_rows_sha256": "bfe5c58de6dc807aae86ad2b4b2a59d8a7c96e57f10490ab000e2c2fcdb95346",
+ "n_words": 30000,
+ "n_groups": 12,
+ "ortho_sha256": "ea2dae192744f78d99f6a470012acf402f841ee8d77b21e96266d3250ff27f07",
+ "per_session_rsa": {
+  "1": 0.007925117249954983,
+  "2": 0.007405290194081474,
+  "3": 0.0061604472572134965,
+  "4": 0.007380701228466961,
+  "5": 0.007878787654856147,
+  "6": 0.006095483278200507,
+  "7": 0.008341599251685313,
+  "8": 0.008925877180506685,
+  "9": 0.005275948937161774,
+  "10": 0.007705896289100174,
+  "11": 0.0049599465290468365,
+  "12": 0.010316532860360113
+ },
+ "per_session_enc": {
+  "1": 0.07258672521196363,
+  "2": 0.07029038441098555,
+  "3": 0.022364544468428157,
+  "4": 0.06310372153733451,
+  "5": 0.057066899295527725,
+  "6": 0.065536534051936,
+  "7": 0.06340732740156571,
+  "8": 0.06388375969289736,
+  "9": 0.0014990279367440885,
+  "10": 0.05889714128644934,
+  "11": 0.06593946495768813,
+  "12": 0.07201287381820544
+ },
+ "rsa_mean": 0.007364302325886206,
+ "enc_mean": 0.05638236700581047,
+ "timing_s": {
+  "rsa": 122.3,
+  "enc": 358.1
+ },
+ "jid": "18502878_",
+ "host": "<node>",
+ "code_sha256": {
+  "p4_spacefix_lib.py": "6f74cf0a40f1ffcebb93841c996db0788cd98ed6009e25bd96edefd1ec741006",
+  "p4_spacefix_extract.py": "35623f9fe627d9bf20131155dfa2af0b9cee73042b015bceaa3eb7fab9c4543c",
+  "p4_spacefix_prep.py": null,
+  "p4_spacefix_score.py": "90cbd5f8d47a1be9c026d95aa10c6df21c08ab2308115bc33beb48cda2bee439",
+  "p4_spacefix_aggregate.py": "a521ab3cbdf832a88168a61ace5e58b3fb9df3d35b6b96aad33a3c5569926c66",
+  "frozen/p4_concordance32.py": "5c6651e72bff2d1ffd3b62f7e21b82abd276274dbe7e56c9636e952fd297ae58",
+  "frozen/extract_llm_layers_multi.py": "46d85ae60a03f4af11403cfa7c9b855f7dc47842ddd65bfaf88874093c6397eb",
+  "frozen/extract_llm_layers.py": "e02313cdff6a9bdc68e023ba5bd9f53e756fc7ca1d2c69764dfeba7f138f07b0",
+  "frozen/extract_llm_layers_multi_ef17743.py": "c9b736f703d479d861d44d28cb7d0c555928eddc72371918722cf06edb40a234",
+  "frozen/alpha_sensitivity_20260922.py": "31593a6efe5e564714f00fb59c10ba515ffebce1634ea6558da0180521279dfa",
+  "frozen/paper4_nn_revision/path1_confound_rsa.py": "b732984f3993cb61654385cac3b12afa6cf5dcf243879a18d502316b165d28ba",
+  "frozen/compute_rdms.py": "98e8d81f6f7e551231483cf24c5b3f1ffb581b435e3fc0ffc98a4dc0892399fb"
+ }
+}

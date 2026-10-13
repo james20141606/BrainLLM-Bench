@@ -1,0 +1,6 @@
+{
+  "script": "<REPO_ROOT>/codes/fig_paperA_scaling_spacefix.py",
+  "input": "paper4_temporalalign/results/p4_encoding/space_fix_20260925/aggregate/concordance_spacefix_libribrain.json",
+  "input_sha256": "44c08288165d92438f52c7e7b3ccdb3d9e35e1a268818489febfd727659cb44d",
+  "pdf_sha256": "ced07bb504f49dbad21e7798b8ad3f8b389d8e4e3451241de34ab9fec6d7ba6e"
+}

@@ -1,0 +1,84 @@
+{
+  "paperB_boundary_robust_stats": [
+    {
+      "cohort": "Brennan",
+      "model": "BERT",
+      "n": 49,
+      "n_positive": 38,
+      "mean_delta": 0.010608316022643104,
+      "sign_test_p": 0.00014197068519905542,
+      "wilcoxon_p": 0.00023961142875705832,
+      "hodges_lehmann": 0.01266563638205545,
+      "hl_ci95": [
+        0.0068639226033324,
+        0.0180168078616907
+      ]
+    },
+    {
+      "cohort": "Brennan",
+      "model": "GPT-2-medium",
+      "n": 49,
+      "n_positive": 31,
+      "mean_delta": 0.0069698912534676,
+      "sign_test_p": 0.08543313315739454,
+      "wilcoxon_p": 0.035005169024110216,
+      "hodges_lehmann": 0.008344631965940751,
+      "hl_ci95": [
+        0.0007446731735837493,
+        0.015382036597968206
+      ]
+    },
+    {
+      "cohort": "MEG-MASC (matched)",
+      "model": "BERT",
+      "n": 10,
+      "n_positive": 3,
+      "mean_delta": -0.0028743743734588197,
+      "sign_test_p": 0.34375,
+      "wilcoxon_p": 0.375,
+      "hodges_lehmann": -0.0030717404305057997,
+      "hl_ci95": [
+        -0.00802973205030195,
+        0.0021692711624726503
+      ]
+    },
+    {
+      "cohort": "MEG-SCANS",
+      "model": "Mult-BERT",
+      "n": 23,
+      "n_positive": 7,
+      "mean_delta": -0.0052540979498320525,
+      "sign_test_p": 0.0931396484375,
+      "wilcoxon_p": 0.005414485931396484,
+      "hodges_lehmann": -0.0047692418524137754,
+      "hl_ci95": [
+        -0.008370022634351205,
+        -0.0014604885233203
+      ]
+    }
+  ],
+  "paperA_concordance_bootstrap": {
+    "n_families": 6,
+    "similarity_vs_encoding": {
+      "rho": 0.6,
+      "ci95": [
+        -0.8000000000000002,
+        1.0
+      ]
+    },
+    "encoding_vs_decoding": {
+      "rho": 0.057977103565244846,
+      "ci95": [
+        -0.8000000000000002,
+        1.0
+      ]
+    },
+    "similarity_vs_decoding": {
+      "rho": 0.23190841426097938,
+      "ci95": [
+        -1.0,
+        1.0
+      ]
+    }
+  }
+}

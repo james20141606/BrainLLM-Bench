@@ -1,0 +1,35 @@
+{
+  "note": "The standardization variants change only the RSA arm, so pairing their stored per-model RSA with the corrected encoding arm gives the corrected variant without a re-run. 'repro-old' reproduces each stored value, which is the check that the pairing is the same computation.",
+  "variants": {
+    "none": {
+      "stored": -0.6777859237536656,
+      "repro_old": -0.6777859237536656,
+      "corrected": -0.5733137829912023,
+      "corrected_family_ci95": [
+        -0.7855269643048901,
+        -0.2641235334657375
+      ],
+      "n_families": 12
+    },
+    "mean-centred": {
+      "stored": -0.5989736070381232,
+      "repro_old": -0.5989736070381232,
+      "corrected": -0.4787390029325513,
+      "corrected_family_ci95": [
+        -0.7203271138483368,
+        -0.02870752848477673
+      ],
+      "n_families": 12
+    },
+    "standardized": {
+      "stored": -0.439882697947214,
+      "repro_old": -0.439882697947214,
+      "corrected": -0.43181818181818177,
+      "corrected_family_ci95": [
+        -0.7340658876778722,
+        0.23336723792342848
+      ],
+      "n_families": 12
+    }
+  }
+}

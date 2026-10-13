@@ -1,0 +1,10 @@
+cell_id	tercile	weighted_mean_layer
+meg_scans_Mult-BERT	low	6.003256478763568
+meg_scans_Mult-BERT	mid	5.935039238134932
+meg_scans_Mult-BERT	high	5.952838036239688
+meg_scans_German-BERT	low	6.069458291343791
+meg_scans_German-BERT	mid	5.95187368018806
+meg_scans_German-BERT	high	5.947903471041156
+meg_scans_German-GPT-2	low	6.029350136789892
+meg_scans_German-GPT-2	mid	6.032901047886485
+meg_scans_German-GPT-2	high	6.049880130465673

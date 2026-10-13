@@ -1,0 +1,42 @@
+{
+  "tag": "bert_L6_ho10",
+  "target": "gpt2_contextual",
+  "layer": 6,
+  "proj_dim": 768,
+  "window_samples": [
+    50,
+    250,
+    2
+  ],
+  "n_train": 85500,
+  "n_val": 4500,
+  "n_test": 7763,
+  "test_session": 10,
+  "test_task": "Sherlock3",
+  "epochs": 40,
+  "val_best_top10": 0.016888888888888887,
+  "test": {
+    "n_candidates": 7763,
+    "top1": 0.0002576323586242432,
+    "top5": 0.004895014813860621,
+    "top10": 0.00798660311735154,
+    "median_rank": 2063.0,
+    "mean_rank": 2591.554038387221,
+    "chance_top1": 0.0001288161793121216,
+    "chance_top5": 0.000644080896560608,
+    "chance_top10": 0.001288161793121216,
+    "top10_over_chance": 6.200000000000001
+  },
+  "shuffled_control": {
+    "n_candidates": 7763,
+    "top1": 0.0,
+    "top5": 0.000644080896560608,
+    "top10": 0.0016746103310575809,
+    "median_rank": 3891.0,
+    "mean_rank": 3873.9743655803168,
+    "chance_top1": 0.0001288161793121216,
+    "chance_top5": 0.000644080896560608,
+    "chance_top10": 0.001288161793121216,
+    "top10_over_chance": 1.3
+  }
+}

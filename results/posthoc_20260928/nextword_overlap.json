@@ -1,0 +1,18 @@
+{
+  "note": "post hoc, descriptive; stimulus timing only (no neural data)",
+  "csv": "data/brennan_2019_meta/AliceChapterOne-EEG.csv",
+  "csv_md5": "66af81f4c576f9f4d3ee91fb60ed8c13",
+  "csv_md5_matches_analysis_copy": true,
+  "n_words": 2129,
+  "n_words_with_next_in_sentence": 2039,
+  "next_word_lag_median_ms": 235.05700000000473,
+  "share_next_started_before": {
+    "325ms": 0.6640510053948013,
+    "400ms": 0.7812653261402648,
+    "475ms": 0.8592447278077489
+  },
+  "n_onset_words_with_next": 84,
+  "onset_words_share_next_started_before_400ms": 0.8095238095238095,
+  "n_words_with_second_next": 1949,
+  "share_second_next_started_before_475ms": 0.4012314007183171
+}

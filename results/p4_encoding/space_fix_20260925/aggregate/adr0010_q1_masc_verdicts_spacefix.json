@@ -1,0 +1,70 @@
+{
+  "source": "<HPC_HOME>/p4_spacefix_20260925/aggregate/concordance_spacefix_masc27_ladder.json",
+  "libribrain_source": "<HPC_HOME>/p4_spacefix_20260925/aggregate/adr0006_registered_verdicts_spacefix.json",
+  "cell": {
+    "region": "temporal_R",
+    "band": "broadband",
+    "window_ms": [
+      300.0,
+      400.0
+    ],
+    "depth_frac": 0.5,
+    "atlas": "kit208",
+    "group_col": "subject"
+  },
+  "n_models": 7,
+  "f3_gate": {
+    "rsa": {
+      "split_half": 0.8333333333333334,
+      "ci90": [
+        0.13011494252873573,
+        0.981818181818182
+      ],
+      "passes": true
+    },
+    "enc": {
+      "split_half": 0.6976744186046513,
+      "ci90": [
+        -0.15815384615384606,
+        0.9433962264150945
+      ],
+      "passes": false
+    }
+  },
+  "q1_masc_ladder_models": [
+    "Qwen/Qwen2.5-0.5B",
+    "Qwen/Qwen2.5-1.5B",
+    "Qwen/Qwen2.5-3B",
+    "Qwen/Qwen2.5-7B",
+    "Qwen/Qwen2.5-14B",
+    "Qwen/Qwen2.5-32B",
+    "Qwen/Qwen2.5-72B"
+  ],
+  "q1_masc": {
+    "rsa": {
+      "rho": 0.28571428571428575,
+      "ci95_subject_clustered": [
+        -0.3214285714285715,
+        0.7500000000000002
+      ],
+      "top_minus_bottom_mean": 9.181516058288077e-05,
+      "top_minus_bottom_p": 0.7139776796102524,
+      "n_subjects": 27,
+      "n_positive_top_minus_bottom": 15
+    },
+    "enc": {
+      "rho": -0.3214285714285715,
+      "ci95_subject_clustered": [
+        -0.7500000000000002,
+        0.25
+      ],
+      "top_minus_bottom_mean": -0.003784100975994282,
+      "top_minus_bottom_p": 0.07314017415046692,
+      "n_subjects": 27,
+      "n_positive_top_minus_bottom": 8
+    }
+  },
+  "q1_masc_verdict": "NOT SUPPORTED over the modern range: size does not order brain alignment up to the largest rung scored; state the CI",
+  "libribrain_q1_verdict": "NOT SUPPORTED over the modern range: size does not order brain alignment up to the largest rung scored; state the CI",
+  "cross_cohort_statement": []
+}

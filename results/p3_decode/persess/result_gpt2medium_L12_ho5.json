@@ -1,0 +1,42 @@
+{
+  "tag": "gpt2medium_L12_ho5",
+  "target": "gpt2_contextual",
+  "layer": 12,
+  "proj_dim": 768,
+  "window_samples": [
+    50,
+    250,
+    2
+  ],
+  "n_train": 85497,
+  "n_val": 4500,
+  "n_test": 7070,
+  "test_session": 5,
+  "test_task": "Sherlock3",
+  "epochs": 40,
+  "val_best_top10": 0.018222222222222223,
+  "test": {
+    "n_candidates": 7070,
+    "top1": 0.001272984441301273,
+    "top5": 0.005091937765205092,
+    "top10": 0.009193776520509194,
+    "median_rank": 1854.0,
+    "mean_rank": 2352.1241867043846,
+    "chance_top1": 0.00014144271570014144,
+    "chance_top5": 0.0007072135785007072,
+    "chance_top10": 0.0014144271570014145,
+    "top10_over_chance": 6.5
+  },
+  "shuffled_control": {
+    "n_candidates": 7070,
+    "top1": 0.0,
+    "top5": 0.0004243281471004243,
+    "top10": 0.0008486562942008486,
+    "median_rank": 3473.5,
+    "mean_rank": 3494.7049504950496,
+    "chance_top1": 0.00014144271570014144,
+    "chance_top5": 0.0007072135785007072,
+    "chance_top10": 0.0014144271570014145,
+    "top10_over_chance": 0.6
+  }
+}

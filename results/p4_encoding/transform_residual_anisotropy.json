@@ -1,0 +1,183 @@
+{
+  "n_models": 14,
+  "per_model": [
+    {
+      "model": "EleutherAI/pythia-160m",
+      "dim": 768,
+      "evr1_raw": 0.9917437248642698,
+      "evr1_centred": 0.9917437248642698,
+      "evr1_standardized": 0.49517111910673733,
+      "evr1_drop_pc2": 0.034211505409481806,
+      "pr_raw": 1.0167185149687237,
+      "pr_standardized": 4.035468343355197,
+      "pr_drop_pc2": 115.00947045781504,
+      "leading_dir_spread": 1.8635374817122599
+    },
+    {
+      "model": "EleutherAI/pythia-410m",
+      "dim": 1024,
+      "evr1_raw": 0.9990698541892601,
+      "evr1_centred": 0.9990698541892601,
+      "evr1_standardized": 0.6334705431760661,
+      "evr1_drop_pc2": 0.04029428074837951,
+      "pr_raw": 1.0018628816774537,
+      "pr_standardized": 2.484421424735843,
+      "pr_drop_pc2": 112.22415181648459,
+      "leading_dir_spread": 2.677523288042695
+    },
+    {
+      "model": "EleutherAI/pythia-70m",
+      "dim": 512,
+      "evr1_raw": 0.9558488000824761,
+      "evr1_centred": 0.9558488000824761,
+      "evr1_standardized": 0.32411990692068327,
+      "evr1_drop_pc2": 0.047075852015024844,
+      "pr_raw": 1.0944784970871204,
+      "pr_standardized": 8.994967322428694,
+      "pr_drop_pc2": 76.43935013143076,
+      "leading_dir_spread": 2.299499874847684
+    },
+    {
+      "model": "bert-base-uncased",
+      "dim": 768,
+      "evr1_raw": 0.04884477618513603,
+      "evr1_centred": 0.0488447761851361,
+      "evr1_standardized": 0.04681691386621419,
+      "evr1_drop_pc2": 0.03343358992971206,
+      "pr_raw": 86.99432333213244,
+      "pr_standardized": 89.85761638086812,
+      "pr_drop_pc2": 112.6610295577046,
+      "leading_dir_spread": 242.0165364500899
+    },
+    {
+      "model": "bert-large-uncased",
+      "dim": 1024,
+      "evr1_raw": 0.045372093607547855,
+      "evr1_centred": 0.04537209360754786,
+      "evr1_standardized": 0.04747432751821172,
+      "evr1_drop_pc2": 0.028796134103448993,
+      "pr_raw": 94.33275596719197,
+      "pr_standardized": 93.48746321614834,
+      "pr_drop_pc2": 120.11970062678942,
+      "leading_dir_spread": 347.9774878193903
+    },
+    {
+      "model": "google/flan-t5-base",
+      "dim": 768,
+      "evr1_raw": 0.991603866622292,
+      "evr1_centred": 0.991603866622292,
+      "evr1_standardized": 0.40790160251081653,
+      "evr1_drop_pc2": 0.43536478910721055,
+      "pr_raw": 1.0169741682211484,
+      "pr_standardized": 5.640925128153934,
+      "pr_drop_pc2": 4.872388761550499,
+      "leading_dir_spread": 4.192600616440279
+    },
+    {
+      "model": "google/flan-t5-large",
+      "dim": 1024,
+      "evr1_raw": 0.9982609589506952,
+      "evr1_centred": 0.9982609589506952,
+      "evr1_standardized": 0.5077782733142111,
+      "evr1_drop_pc2": 0.1372879020351186,
+      "pr_raw": 1.0034846992373807,
+      "pr_standardized": 3.816073220897882,
+      "pr_drop_pc2": 24.94834517327192,
+      "leading_dir_spread": 4.585961451733764
+    },
+    {
+      "model": "gpt2",
+      "dim": 768,
+      "evr1_raw": 0.9995686202993042,
+      "evr1_centred": 0.9995686202993042,
+      "evr1_standardized": 0.17243066499607454,
+      "evr1_drop_pc2": 0.039903533361707065,
+      "pr_raw": 1.0008633156815343,
+      "pr_standardized": 26.893820665555356,
+      "pr_drop_pc2": 86.25164388820752,
+      "leading_dir_spread": 1.1575045479951758
+    },
+    {
+      "model": "gpt2-ar-control",
+      "dim": 768,
+      "evr1_raw": 0.9993650103575813,
+      "evr1_centred": 0.9993650103575813,
+      "evr1_standardized": 0.1707713776609093,
+      "evr1_drop_pc2": 0.03819683906721413,
+      "pr_raw": 1.001271185021363,
+      "pr_standardized": 27.66252380585072,
+      "pr_drop_pc2": 91.06474005588744,
+      "leading_dir_spread": 1.147191825637886
+    },
+    {
+      "model": "gpt2-mask-test",
+      "dim": 768,
+      "evr1_raw": 0.9993166983726108,
+      "evr1_centred": 0.9993166983726108,
+      "evr1_standardized": 0.19852359676486872,
+      "evr1_drop_pc2": 0.03748719068771816,
+      "pr_raw": 1.001367999650032,
+      "pr_standardized": 21.699353375683252,
+      "pr_drop_pc2": 91.1503155950992,
+      "leading_dir_spread": 1.153454197784716
+    },
+    {
+      "model": "gpt2-medium",
+      "dim": 1024,
+      "evr1_raw": 0.999135239510939,
+      "evr1_centred": 0.999135239510939,
+      "evr1_standardized": 0.14676423744201664,
+      "evr1_drop_pc2": 0.03788457366070672,
+      "pr_raw": 1.0017317576044555,
+      "pr_standardized": 32.94219420659233,
+      "pr_drop_pc2": 84.21153038435483,
+      "leading_dir_spread": 1.0961312374715995
+    },
+    {
+      "model": "roberta-base",
+      "dim": 768,
+      "evr1_raw": 0.20298290615130798,
+      "evr1_centred": 0.20298290615130796,
+      "evr1_standardized": 0.11084642636818924,
+      "evr1_drop_pc2": 0.031421685654611994,
+      "pr_raw": 20.82247714980804,
+      "pr_standardized": 47.46645469055987,
+      "pr_drop_pc2": 97.92432755665314,
+      "leading_dir_spread": 11.099118013163167
+    },
+    {
+      "model": "t5-base",
+      "dim": 768,
+      "evr1_raw": 0.9488602104297562,
+      "evr1_centred": 0.9488602104297562,
+      "evr1_standardized": 0.08117025586170208,
+      "evr1_drop_pc2": 0.04229370979405915,
+      "pr_raw": 1.1106561720437558,
+      "pr_standardized": 70.97462063673576,
+      "pr_drop_pc2": 97.07919066018839,
+      "leading_dir_spread": 5.2681581195217655
+    },
+    {
+      "model": "t5-large",
+      "dim": 1024,
+      "evr1_raw": 0.3784003045714295,
+      "evr1_centred": 0.3784003045714296,
+      "evr1_standardized": 0.054397353552760506,
+      "evr1_drop_pc2": 0.05335480155204431,
+      "pr_raw": 6.6858586588371764,
+      "pr_standardized": 97.15659135434726,
+      "pr_drop_pc2": 77.73909847970667,
+      "leading_dir_spread": 6.3436124260451825
+    }
+  ],
+  "means": {
+    "evr1_raw": 0.7541695045853292,
+    "evr1_standardized": 0.24268832850424732,
+    "evr1_drop_pc2": 0.07407188479474557,
+    "pr_raw": 15.648916021368759,
+    "pr_standardized": 38.0794638408509,
+    "pr_drop_pc2": 85.12109165322457,
+    "leading_dir_spread": 45.205594096419745
+  },
+  "verdict": "standardization also removes the dominant direction; the two results conflict"
+}

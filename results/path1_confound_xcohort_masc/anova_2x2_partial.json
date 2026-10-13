@@ -1,0 +1,42 @@
+{
+  "ceiling": 0.0024358887554786,
+  "confound_C2_source": "wordfreq.zipf_frequency(en)",
+  "n_obs": 20,
+  "partial_rho_obj_means": [
+    {
+      "obj": "bidirectional",
+      "mean": 0.0020515531823570633,
+      "std": 0.0008356358989051472,
+      "count": 10
+    },
+    {
+      "obj": "causal",
+      "mean": 0.002681520861078687,
+      "std": 0.0011975413913101734,
+      "count": 10
+    }
+  ],
+  "raw_rho_obj_means": [
+    {
+      "obj": "bidirectional",
+      "mean": 0.001018388418370943,
+      "std": 0.001003329590615079,
+      "count": 10
+    },
+    {
+      "obj": "causal",
+      "mean": 0.0014358292454526274,
+      "std": 0.0011058853639123022,
+      "count": 10
+    }
+  ],
+  "causal_gt_bidir_mannwhitney": {
+    "n_causal_models": 1,
+    "n_bidir_models": 1,
+    "mean_causal": 0.002681520861078687,
+    "mean_bidir": 0.0020515531823570633,
+    "U": 1.0,
+    "p_one_sided_causal_greater": 0.5
+  },
+  "mixedlm_error": "Singular matrix"
+}

@@ -1,0 +1,74 @@
+{
+  "families": [
+    {
+      "family": "gpt2",
+      "RSA_partial": 0.004107568959085212,
+      "encoding_R": 0.012872212092510013,
+      "decoding_xchance": 13.100000000000001,
+      "rank_RSA_partial": 5.0,
+      "rank_encoding_R": 4.0,
+      "rank_decoding_xchance": 1.0
+    },
+    {
+      "family": "gpt2medium",
+      "RSA_partial": 0.005695995050533242,
+      "encoding_R": 0.014045138598146356,
+      "decoding_xchance": 5.9,
+      "rank_RSA_partial": 4.0,
+      "rank_encoding_R": 2.0,
+      "rank_decoding_xchance": 4.0
+    },
+    {
+      "family": "pythia160m",
+      "RSA_partial": 0.015744068484389775,
+      "encoding_R": 0.014697816412909058,
+      "decoding_xchance": 6.300000000000001,
+      "rank_RSA_partial": 1.0,
+      "rank_encoding_R": 1.0,
+      "rank_decoding_xchance": 3.0
+    },
+    {
+      "family": "bert",
+      "RSA_partial": 0.013779255013978933,
+      "encoding_R": 0.012642028898006044,
+      "decoding_xchance": 7.700000000000001,
+      "rank_RSA_partial": 2.0,
+      "rank_encoding_R": 5.0,
+      "rank_decoding_xchance": 2.0
+    },
+    {
+      "family": "roberta",
+      "RSA_partial": 0.0034108690098638415,
+      "encoding_R": 0.010078693982288686,
+      "decoding_xchance": 5.7,
+      "rank_RSA_partial": 6.0,
+      "rank_encoding_R": 6.0,
+      "rank_decoding_xchance": 5.5
+    },
+    {
+      "family": "t5",
+      "RSA_partial": 0.00867670062767305,
+      "encoding_R": 0.013064668426753884,
+      "decoding_xchance": 5.7,
+      "rank_RSA_partial": 3.0,
+      "rank_encoding_R": 3.0,
+      "rank_decoding_xchance": 5.5
+    }
+  ],
+  "pairwise_spearman": {
+    "RSA_vs_encoding": {
+      "spearman": 0.6,
+      "p": 0.20799999999999982
+    },
+    "RSA_vs_decoding": {
+      "spearman": 0.23190841426097938,
+      "p": 0.658373571260927
+    },
+    "encoding_vs_decoding": {
+      "spearman": 0.057977103565244846,
+      "p": 0.9131317851623264
+    }
+  },
+  "kendalls_W": 0.526984126984127,
+  "friedman_p": 0.00940356255149523
+}

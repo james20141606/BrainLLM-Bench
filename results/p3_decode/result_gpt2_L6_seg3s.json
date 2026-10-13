@@ -1,0 +1,38 @@
+{
+  "tag": "gpt2_L6_seg3s",
+  "target": "gpt2_contextual",
+  "seg_s": 3.0,
+  "min_words": 3,
+  "layer": 6,
+  "n_train_seg": 18306,
+  "n_val_seg": 2000,
+  "n_test_seg": 1229,
+  "test_session": 12,
+  "test_task": "Sherlock3",
+  "val_best_top10": 0.031,
+  "test": {
+    "n_candidates": 1229,
+    "top1": 0.007323026851098454,
+    "top5": 0.026037428803905614,
+    "top10": 0.04800650935720097,
+    "median_rank": 366.0,
+    "mean_rank": 450.6086248982913,
+    "chance_top1": 0.0008136696501220504,
+    "chance_top5": 0.0040683482506102524,
+    "chance_top10": 0.008136696501220505,
+    "top10_over_chance": 5.8999999999999995
+  },
+  "shuffled_control": {
+    "n_candidates": 1229,
+    "top1": 0.0,
+    "top5": 0.0032546786004882017,
+    "top10": 0.006509357200976403,
+    "median_rank": 626.0,
+    "mean_rank": 623.4149715215623,
+    "chance_top1": 0.0008136696501220504,
+    "chance_top5": 0.0040683482506102524,
+    "chance_top10": 0.008136696501220505,
+    "top10_over_chance": 0.7999999999999999
+  },
+  "_provenance_note": "target corrected from stale literal 'gpt2_contextual' to actual ctx used (verified via meta files + run_p3_causal_vs_masked.sbatch --ctx)"
+}

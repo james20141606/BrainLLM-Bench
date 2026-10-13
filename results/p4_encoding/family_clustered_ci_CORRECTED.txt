@@ -1,0 +1,3 @@
+headline       rho=-0.573  family-clustered 95%CI [-0.786, -0.264]  (n_families=12, vs naive n=32)
+centered       rho=-0.479  family-clustered 95%CI [-0.720, -0.029]  (n_families=12, vs naive n=32)
+standardized   rho=-0.432  family-clustered 95%CI [-0.734, +0.233]  (n_families=12, vs naive n=32)

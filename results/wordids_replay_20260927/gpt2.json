@@ -1,0 +1,59 @@
+{
+ "tokenizer": "gpt2",
+ "n_words": 2129,
+ "n_sentences": 84,
+ "misread": 49,
+ "misread_onset": 0,
+ "no_token_found": 0,
+ "sentences_affected": 5,
+ "examples": [
+  {
+   "sentence": 1,
+   "pos": 24,
+   "word": "the",
+   "read_token": "s"
+  },
+  {
+   "sentence": 1,
+   "pos": 25,
+   "word": "use",
+   "read_token": "\u0120the"
+  },
+  {
+   "sentence": 1,
+   "pos": 26,
+   "word": "of",
+   "read_token": "\u0120use"
+  },
+  {
+   "sentence": 1,
+   "pos": 27,
+   "word": "a",
+   "read_token": "\u0120of"
+  },
+  {
+   "sentence": 1,
+   "pos": 28,
+   "word": "book",
+   "read_token": "\u0120a"
+  },
+  {
+   "sentence": 7,
+   "pos": 44,
+   "word": "never",
+   "read_token": "d"
+  },
+  {
+   "sentence": 7,
+   "pos": 45,
+   "word": "before",
+   "read_token": "\u0120never"
+  },
+  {
+   "sentence": 7,
+   "pos": 46,
+   "word": "seen",
+   "read_token": "\u0120before"
+  }
+ ]
+}

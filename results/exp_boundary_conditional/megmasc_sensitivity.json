@@ -1,0 +1,59 @@
+{
+  "brennan_reference": {
+    "model": "BERT",
+    "n": 49,
+    "mean_delta": 0.010608316022643104
+  },
+  "alpha": 0.05,
+  "target_power": 0.8,
+  "per_model": {
+    "BERT": {
+      "n": 10,
+      "mean_delta": -0.00256015133051968,
+      "cohen_d": -0.25529230298815375,
+      "mde_d_80pct": 0.9960013714742162,
+      "mde_delta_80pct": 0.0099882143195577,
+      "upper_95_t": 0.0032530737350801703,
+      "upper_95_boot": 0.00222024314857333,
+      "upper_95_t_as_d": 0.32438890456147895,
+      "noninferiority_t": -4.152477761639699,
+      "noninferiority_p": 0.0012376215125584223,
+      "boot_p_ge_brennan": 0.0,
+      "excludes_brennan_effect": true,
+      "brennan_raw_effect_as_local_d": 1.0578364630097679,
+      "power_at_brennan_raw_effect": 0.8445584645034542
+    },
+    "GPT-2": {
+      "n": 10,
+      "mean_delta": -0.0047625819035281,
+      "cohen_d": -0.42866265447389873,
+      "mde_d_80pct": 0.9960013714742162,
+      "mde_delta_80pct": 0.011065900092215999,
+      "upper_95_t": 0.0016778653807811078,
+      "upper_95_boot": 0.0010253105443028035,
+      "upper_95_t_as_d": 0.15101855307573397,
+      "noninferiority_t": -4.37494331233945,
+      "noninferiority_p": 0.0008921009849397145,
+      "boot_p_ge_brennan": 0.0,
+      "excludes_brennan_effect": true,
+      "brennan_raw_effect_as_local_d": 0.954815895637511,
+      "power_at_brennan_raw_effect": 0.7664149224389881
+    },
+    "GPT-2-medium": {
+      "n": 10,
+      "mean_delta": -0.0039319127653454,
+      "cohen_d": -0.326394154693863,
+      "mde_d_80pct": 0.9960013714742162,
+      "mde_delta_80pct": 0.0119983475515183,
+      "upper_95_t": 0.0030512268130365554,
+      "upper_95_boot": 0.002119871293555776,
+      "upper_95_t_as_d": 0.25328705285576975,
+      "noninferiority_t": -3.81689083195732,
+      "noninferiority_p": 0.0020547295866982355,
+      "boot_p_ge_brennan": 0.0,
+      "excludes_brennan_effect": true,
+      "brennan_raw_effect_as_local_d": 0.8806127062261503,
+      "power_at_brennan_raw_effect": 0.6986317295631097
+    }
+  }
+}

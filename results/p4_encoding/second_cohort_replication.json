@@ -1,0 +1,46 @@
+{
+  "cohort": "meg_masc",
+  "n_sessions": 10,
+  "encoding_rank_masc": [
+    "gpt2medium",
+    "gpt2",
+    "pythia160m",
+    "roberta",
+    "bert",
+    "t5"
+  ],
+  "encoding_rank_libribrain": [
+    "pythia160m",
+    "gpt2medium",
+    "t5",
+    "gpt2",
+    "bert",
+    "roberta"
+  ],
+  "encoding_ranking_splithalf_median": 0.942857142857143,
+  "encoding_ranking_splithalf_ci90": [
+    0.8285714285714287,
+    1.0
+  ],
+  "encoding_rank_masc_vs_libribrain_spearman": 0.371,
+  "encoding_rank_masc_vs_libribrain_p": 0.468,
+  "mean_R_masc": {
+    "gpt2": 0.002505087817988455,
+    "gpt2medium": 0.0028368422666689972,
+    "pythia160m": 0.002247897390667811,
+    "bert": 0.001997753080275953,
+    "roberta": 0.002129234830804812,
+    "t5": 0.0017705005486565862
+  },
+  "rsa_side": {
+    "note": "RSA cannot be ranked on MASC: the neural RDM is at the noise floor.",
+    "masc_rdm_ceiling_best_cell": 0.0024358887554786,
+    "libribrain_rdm_ceiling_best_cell": 0.0158532604220637
+  },
+  "reference_reliabilities": {
+    "libribrain_encoding": 0.94,
+    "libribrain_RSA": 0.94,
+    "decoding_persession": 0.54,
+    "decoding_seed_to_seed": 0.17
+  }
+}

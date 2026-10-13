@@ -1,0 +1,52 @@
+{
+  "brennan": {
+    "label": "Brennan EEG, all 49",
+    "n": 49,
+    "n_positive": 38,
+    "mean": 0.010608316022643104,
+    "cohen_d": 0.4786244299212369,
+    "wilcoxon_p": 0.00023961142875705832
+  },
+  "megmasc_floor_passing": {
+    "label": "MEG-MASC n=27 rebuild, 24 above floor",
+    "n": 24,
+    "n_positive": 10,
+    "mean": 0.0009402273693776626,
+    "cohen_d": 0.10864344166020945,
+    "wilcoxon_p": 0.8553357124328613
+  },
+  "megmasc_all": {
+    "label": "MEG-MASC n=27 rebuild, all 27",
+    "n": 27,
+    "n_positive": 12,
+    "mean": 0.001298689047015752,
+    "cohen_d": 0.15442641495190476,
+    "wilcoxon_p": 0.6109333634376526
+  },
+  "between_primary": {
+    "arms": [
+      "Brennan",
+      "MEG-MASC (floor)"
+    ],
+    "mannwhitney_U": 848.0,
+    "p_two_sided": 0.0023094350280673764,
+    "p_a_greater_than_b": 0.0011547175140336882,
+    "mean_difference": 0.009668088653265442
+  },
+  "between_all": {
+    "arms": [
+      "Brennan",
+      "MEG-MASC (all)"
+    ],
+    "mannwhitney_U": 949.0,
+    "p_two_sided": 0.0018399329318952156,
+    "p_a_greater_than_b": 0.0009199664659476078,
+    "mean_difference": 0.009309626975627351
+  },
+  "alignment_level": {
+    "brennan_mean": -0.003478521918933843,
+    "megmasc_mean": -0.0019285937199279512,
+    "between_p": 0.44741170200931846,
+    "note": "levels comparable => the MEG-MASC null is about the boundary contrast, not about absent word-level signal"
+  }
+}

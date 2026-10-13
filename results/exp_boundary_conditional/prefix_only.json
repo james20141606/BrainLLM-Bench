@@ -1,0 +1,32 @@
+{
+  "full": {
+    "n": 47,
+    "n_positive": 37,
+    "mean": 0.042330910367624125,
+    "cohen_d": 0.8598562534558263,
+    "wilcoxon_p": 1.7417767139704665e-07
+  },
+  "prefix": {
+    "n": 47,
+    "n_positive": 28,
+    "mean": 0.012576925944806314,
+    "cohen_d": 0.22251875779840863,
+    "wilcoxon_p": 0.21195923539674766
+  },
+  "paired_test": {
+    "n": 47,
+    "mean_full": 0.042330910367624125,
+    "mean_prefix": 0.012576925944806314,
+    "mean_difference": 0.0297539844228178,
+    "ci95_difference": [
+      0.007238228803113159,
+      0.05226974004252244
+    ],
+    "wilcoxon_paired_p": 0.00546690891044932,
+    "retention": 0.2971097440518431,
+    "full_arm_reproduces": true,
+    "paired_drop_excludes_zero": true,
+    "retention_below_50pct": true
+  },
+  "verdict": "LEAKAGE CONFIRMED: removing future context reduces the contrast by an amount whose interval excludes zero, and the prefix arm retains under half the effect"
+}

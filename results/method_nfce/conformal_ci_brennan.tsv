@@ -1,0 +1,5 @@
+cohort	llm	R2_excess	CI_lo	CI_med	CI_hi	frac_robust	B	alpha
+Brennan	GPT-2	0.0	0.0	0.0	6.618274544836991e-06	0.24	100	0.1
+Brennan	BERT	0.0	0.0	0.0	1.5674665182724026e-05	0.42	100	0.1
+Brennan	GPT-2-medium	0.0	0.0	0.0	1.2781168103416861e-05	0.37	100	0.1
+Brennan	Pythia 70M	0.0	0.0	0.0	7.927426950944736e-06	0.16	100	0.1

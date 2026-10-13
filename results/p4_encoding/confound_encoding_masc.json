@@ -1,0 +1,101 @@
+{
+  "layer": 6,
+  "window_ms": [
+    100,
+    500
+  ],
+  "cv": "leave_one_story_out",
+  "confounds": [
+    "word_length",
+    "corpus_log_frequency"
+  ],
+  "n_subjects": 10,
+  "per_subject": [
+    {
+      "subject": "01",
+      "R_conf_only": 0.00015343369376414866,
+      "R_full_causal": 0.00673353134419342,
+      "R_full_masked": 0.006720841167859742,
+      "partial_causal": 0.006580097650429272,
+      "partial_masked": 0.0065674074740955934
+    },
+    {
+      "subject": "02",
+      "R_conf_only": -0.0001242952201461476,
+      "R_full_causal": 0.002322390743058189,
+      "R_full_masked": 0.002299743483165452,
+      "partial_causal": 0.0024466859632043367,
+      "partial_masked": 0.0024240387033116
+    },
+    {
+      "subject": "03",
+      "R_conf_only": -0.0003388418671198323,
+      "R_full_causal": 0.0026439187642556153,
+      "R_full_masked": 0.0027544907357354128,
+      "partial_causal": 0.0029827606313754477,
+      "partial_masked": 0.003093332602855245
+    },
+    {
+      "subject": "05",
+      "R_conf_only": -0.0006518870251384437,
+      "R_full_causal": 0.007207464855939204,
+      "R_full_masked": 0.0073845014737769854,
+      "partial_causal": 0.007859351881077649,
+      "partial_masked": 0.008036388498915428
+    },
+    {
+      "subject": "07",
+      "R_conf_only": -0.00014676768324427557,
+      "R_full_causal": 0.006420193670207234,
+      "R_full_masked": 0.00612827739276318,
+      "partial_causal": 0.006566961353451509,
+      "partial_masked": 0.0062750450760074555
+    },
+    {
+      "subject": "08",
+      "R_conf_only": -0.00035787486503007556,
+      "R_full_causal": 0.005667418268212229,
+      "R_full_masked": 0.005884585792779904,
+      "partial_causal": 0.0060252931332423045,
+      "partial_masked": 0.006242460657809979
+    },
+    {
+      "subject": "09",
+      "R_conf_only": -0.00019017526096907144,
+      "R_full_causal": 0.005191466836513796,
+      "R_full_masked": 0.0050346938948580226,
+      "partial_causal": 0.005381642097482868,
+      "partial_masked": 0.005224869155827094
+    },
+    {
+      "subject": "10",
+      "R_conf_only": -0.00037979950931859956,
+      "R_full_causal": 0.0021505254754305802,
+      "R_full_masked": 0.0021853359227915945,
+      "partial_causal": 0.00253032498474918,
+      "partial_masked": 0.002565135432110194
+    },
+    {
+      "subject": "11",
+      "R_conf_only": -0.0003249194815916795,
+      "R_full_causal": 0.0033871731241924856,
+      "R_full_masked": 0.003543023171052472,
+      "partial_causal": 0.003712092605784165,
+      "partial_masked": 0.0038679426526441515
+    },
+    {
+      "subject": "13",
+      "R_conf_only": -0.0004443555346902579,
+      "R_full_causal": 0.008051243443053262,
+      "R_full_masked": 0.008532571752296539,
+      "partial_causal": 0.00849559897774352,
+      "partial_masked": 0.008976927286986796
+    }
+  ],
+  "mean_partial_causal": 0.005258080927854025,
+  "mean_partial_masked": 0.005327354754056354,
+  "n_partial_causal_gt0": 10,
+  "pillar_wilcoxon_causal_partial_gt0_p": 0.0009765625,
+  "objdiff_wilcoxon_causal_gt_masked_p": 0.8388671875,
+  "n_causal_partial_gt_masked": 4
+}

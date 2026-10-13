@@ -1,0 +1,42 @@
+{
+  "tag": "roberta_L6_ho10",
+  "target": "gpt2_contextual",
+  "layer": 6,
+  "proj_dim": 768,
+  "window_samples": [
+    50,
+    250,
+    2
+  ],
+  "n_train": 85500,
+  "n_val": 4500,
+  "n_test": 7763,
+  "test_session": 10,
+  "test_task": "Sherlock3",
+  "epochs": 40,
+  "val_best_top10": 0.022,
+  "test": {
+    "n_candidates": 7763,
+    "top1": 0.0009017132551848512,
+    "top5": 0.004122117737987891,
+    "top10": 0.008115419296663661,
+    "median_rank": 2061.0,
+    "mean_rank": 2596.432822362489,
+    "chance_top1": 0.0001288161793121216,
+    "chance_top5": 0.000644080896560608,
+    "chance_top10": 0.001288161793121216,
+    "top10_over_chance": 6.300000000000001
+  },
+  "shuffled_control": {
+    "n_candidates": 7763,
+    "top1": 0.0002576323586242432,
+    "top5": 0.0007728970758727296,
+    "top10": 0.0015457941517454592,
+    "median_rank": 4011.0,
+    "mean_rank": 3949.591395079222,
+    "chance_top1": 0.0001288161793121216,
+    "chance_top5": 0.000644080896560608,
+    "chance_top10": 0.001288161793121216,
+    "top10_over_chance": 1.2
+  }
+}

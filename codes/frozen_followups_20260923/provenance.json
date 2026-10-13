@@ -1,0 +1,77 @@
+{
+  "scope": "Exact historical source bytes recovered from local Git objects; mappings distinguish hashes recorded at receipt write time from corrected actual in-memory execution source.",
+  "versions": [
+    {
+      "snapshot": "alpha_sensitivity_bd323b71.py",
+      "git_object": "6b6a7952f1:codes/alpha_sensitivity_20260922.py",
+      "raw_sha256": "bd323b718a250482e33a2f5b4f97e4fd43ecdc0af5cbef56e72248a5173d8213",
+      "recorded_hash_receipts": [
+        "qwen25_0_full.json",
+        "qwen25_1_full.json"
+      ],
+      "actual_execution_receipts": [
+        "qwen25_0_full.json",
+        "qwen25_1_full.json"
+      ]
+    },
+    {
+      "snapshot": "alpha_sensitivity_bcec091e.py",
+      "git_object": "d89dc54808:codes/alpha_sensitivity_20260922.py",
+      "raw_sha256": "bcec091eb03b64eb0f5f7c3f9e8e26661230ff34f1122fe02a9b1871fc28b8d7",
+      "recorded_hash_receipts": [
+        "qwen25_2_full.json",
+        "qwen25_3_full.json",
+        "qwen25_5_full.json"
+      ],
+      "actual_execution_receipts": [
+        "qwen25_2_full.json",
+        "qwen25_3_full.json",
+        "qwen25_4_full.json",
+        "qwen25_5_full.json",
+        "qwen25_6_full.json"
+      ],
+      "execution_note": "summary.json provenance_correction states 14B/rung4 and 72B/rung6 executed this committed in-memory fit/scoring source."
+    },
+    {
+      "snapshot": "alpha_sensitivity_31593a6e.py",
+      "git_object": "48e48f2e58:codes/alpha_sensitivity_20260922.py",
+      "raw_sha256": "31593a6efe5e564714f00fb59c10ba515ffebce1634ea6558da0180521279dfa",
+      "recorded_hash_receipts": [
+        "qwen25_4_full.json",
+        "qwen25_6_full.json",
+        "qwen25_6_plateau_full.json"
+      ],
+      "actual_execution_receipts": [
+        "qwen25_6_plateau_full.json"
+      ],
+      "execution_note": "14B/rung4 and 72B/rung6 saved this end-of-job on-disk hash after a later plateau-only extension, but did not execute it for their primary fit; only the separately launched plateau receipt is verified as executing this version."
+    },
+    {
+      "snapshot": "rogue_encoding_516a496a.py",
+      "git_object": "e4d93434cfc9:codes/rogue_encoding_20260922.py",
+      "raw_sha256": "516a496a2cb4f2d64021cc9ee5f85f83a01934442e8877f60cfcd2bba372948b",
+      "recorded_hash_receipts": [
+        "dose_model_00.json"
+      ],
+      "actual_execution_receipts": [
+        "dose_model_00.json"
+      ]
+    },
+    {
+      "snapshot": "rogue_encoding_e3195cd5.py",
+      "git_object": "64e9e80a09d7:codes/rogue_encoding_20260922.py",
+      "raw_sha256": "e3195cd5d629246cd124c37b569e292430da707fedfbd0bbc5abc33e560cbf7b",
+      "recorded_hash_receipts": [
+        "dose_model_01.json through dose_model_09.json"
+      ],
+      "actual_execution_receipts": [
+        "dose_model_01.json through dose_model_09.json"
+      ]
+    }
+  ],
+  "correction_basis": {
+    "path": "paper4_temporalalign/results/p4_encoding/alpha_sensitivity_20260922/summary.json",
+    "sha256": "15815bc52a416ce7a13b767dd7b34d4bd9fc9b364af4eb7c7f8ee8f0bd33270d",
+    "field": "provenance_correction"
+  }
+}

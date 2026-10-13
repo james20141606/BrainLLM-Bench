@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "meg-llm-bench"
+version = "0.1.0"
+description = "Reproducible benchmark for brain-LLM alignment evaluation"
+readme = "README.md"
+license = {file = "LICENSE"}
+authors = [
+    {name = "Xupeng Chen"},
+    {name = "Michael Yue"},
+    {name = "Runhao Li"},
+    {name = "Jiayi Cheng"},
+    {name = "Chenqian Le"},
+]
+requires-python = ">=3.9"
+dependencies = [
+    "numpy>=1.21",
+    "pandas>=1.4",
+    "scipy>=1.10",
+    "matplotlib>=3.5",
+    "scikit-learn>=1.1",
+    "mne>=1.7",
+    "transformers>=4.30",
+    "torch>=2.0",
+    "pyyaml>=6.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest", "ruff", "black"]
+sae = ["safetensors", "sae_lens"]
+srm = []  # uses internal srm_iterative; brainiak optional
+
+[tool.setuptools.packages.find]
+include = ["bench*"]

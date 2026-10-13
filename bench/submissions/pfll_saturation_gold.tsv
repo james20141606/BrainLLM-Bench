@@ -1,0 +1,16 @@
+cell_id	L_sat_proxy	L_sat_depth_pct
+meg_masc_bert-base-uncased_headline	2	16.666666666666668
+brennan_bert-base-uncased_headline	10	83.33333333333333
+libribrain_gpt2-medium_headline	22	91.66666666666667
+brennan_gpt2-medium_headline	23	95.83333333333333
+ecog_gpt2-medium_headline	12	50.0
+meg_scans_dbmdz_german-gpt2_headline	11	91.66666666666667
+libribrain_gpt2_headline	10	83.33333333333333
+libribrain_bert-base-uncased_headline	0	0.0
+ecog_gpt2_headline	11	91.66666666666667
+meg_scans_bert-base-german-cased_headline	1	8.333333333333334
+meg_masc_gpt2-medium_headline	0	0.0
+meg_masc_gpt2_headline	0	0.0
+meg_scans_bert-base-multilingual-cased_headline	0	0.0
+ecog_bert-base-uncased_headline	10	83.33333333333333
+brennan_gpt2_headline	11	91.66666666666667

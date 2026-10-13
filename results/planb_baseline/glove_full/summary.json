@@ -1,0 +1,21 @@
+{
+  "n_sessions": 36,
+  "shape_S_R_B_T_L": [
+    36,
+    6,
+    6,
+    48,
+    1
+  ],
+  "headline_rho_max": 0.006735749077051878,
+  "headline_rho_max_at": {
+    "region": "temporal_L",
+    "band": "broadband",
+    "window_idx": 33,
+    "window_center_s": 0.48674699664115906,
+    "layer": "layer_0"
+  },
+  "any_session_rho_max": 0.018093109130859375,
+  "n_cells_above_5e-3_in_headline": 13,
+  "n_cells_above_5e-3_in_per_session": 867
+}

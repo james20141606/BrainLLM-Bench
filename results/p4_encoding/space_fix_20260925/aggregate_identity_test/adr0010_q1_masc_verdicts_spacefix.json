@@ -1,0 +1,73 @@
+{
+  "source": "<HPC_HOME>/p4_spacefix_20260925/aggregate_idtest/concordance_spacefix_masc27_ladder.json",
+  "libribrain_source": "<HPC_HOME>/p4_spacefix_20260925/aggregate_idtest/adr0006_registered_verdicts_spacefix.json",
+  "cell": {
+    "region": "temporal_R",
+    "band": "broadband",
+    "window_ms": [
+      300.0,
+      400.0
+    ],
+    "depth_frac": 0.5,
+    "atlas": "kit208",
+    "group_col": "subject"
+  },
+  "n_models": 7,
+  "f3_gate": {
+    "rsa": {
+      "split_half": 0.7555555555555556,
+      "ci90": [
+        0.0,
+        0.9629629629629631
+      ],
+      "passes": false
+    },
+    "enc": {
+      "split_half": 0.8085106382978724,
+      "ci90": [
+        0.4,
+        0.9629629629629631
+      ],
+      "passes": true
+    }
+  },
+  "q1_masc_ladder_models": [
+    "Qwen/Qwen2.5-0.5B",
+    "Qwen/Qwen2.5-1.5B",
+    "Qwen/Qwen2.5-3B",
+    "Qwen/Qwen2.5-7B",
+    "Qwen/Qwen2.5-14B",
+    "Qwen/Qwen2.5-32B",
+    "Qwen/Qwen2.5-72B"
+  ],
+  "q1_masc": {
+    "rsa": {
+      "rho": 0.3214285714285715,
+      "ci95_subject_clustered": [
+        -0.4642857142857144,
+        0.5357142857142858
+      ],
+      "top_minus_bottom_mean": 8.680457866371317e-05,
+      "top_minus_bottom_p": 0.6963860541582108,
+      "n_subjects": 27,
+      "n_positive_top_minus_bottom": 15
+    },
+    "enc": {
+      "rho": 0.28571428571428575,
+      "ci95_subject_clustered": [
+        -0.42857142857142866,
+        0.642857142857143
+      ],
+      "top_minus_bottom_mean": -0.0011051465631898903,
+      "top_minus_bottom_p": 0.6445824354887009,
+      "n_subjects": 27,
+      "n_positive_top_minus_bottom": 12
+    }
+  },
+  "q1_masc_verdict": "NOT SUPPORTED over the modern range: size does not order brain alignment up to the largest rung scored; state the CI",
+  "libribrain_q1_verdict": "NOT SUPPORTED over the modern range: size does not order brain alignment up to the largest rung scored; state the CI",
+  "cross_cohort_statement": [
+    "RSA arm: INDETERMINATE by the registered F3 gate (MASC ladder similarity leaderboard split-half 0.756, CI90 [0.000, 0.963] does not exclude zero); not folded into either reading.",
+    "Encoding arm: NOT SUPPORTED in both cohorts (LibriBrain rho=-0.89 declining; MASC rho=+0.29, CI [-0.43, +0.64] crossing zero, flat). Pre-committed reading 1's parenthetical (encoding negative in both) is not met: size fails to order encoding alignment in either cohort, but the failure shapes differ (decline vs. flat); reported as such, with neither cohort privileged."
+  ]
+}

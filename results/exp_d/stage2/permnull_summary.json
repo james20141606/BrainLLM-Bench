@@ -1,0 +1,20 @@
+{
+  "n_features_tested": 24144,
+  "n_perm": 2000,
+  "min_active": 10,
+  "qthresh": 0.05,
+  "n_signif_q05": 0,
+  "n_signif_q01": 0,
+  "n_signif_q001": 0,
+  "n_obs_r_positive": 1612,
+  "mean_obs_r": -0.005656133146568897,
+  "max_obs_r": 0.030593689531087875,
+  "min_p": 0.0004997501249375312,
+  "ceiling_temporalL_350": 0.01585326042206379,
+  "sae_release": "gpt2-small-res-jb",
+  "sae_id": "blocks.5.hook_resid_pre",
+  "layer": 5,
+  "confound_C2_source": "wordfreq.zipf_frequency(en)",
+  "cell": "temporal_L x 1-80Hz x 350ms (rdm_libribrain_path1)",
+  "elapsed_sec": 165.67257833480835
+}

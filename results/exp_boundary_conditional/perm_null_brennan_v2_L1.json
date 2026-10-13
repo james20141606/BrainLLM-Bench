@@ -1,0 +1,22 @@
+{
+  "cohort": "Brennan",
+  "set": "brennan_p4_v2 (47 subjects)",
+  "model": "BERT",
+  "layer": "layer_6.npy",
+  "window_ms": [
+    325,
+    475
+  ],
+  "n_subjects": 47,
+  "n_perm": 1000,
+  "observed_group_mean_delta": 0.031898214644225494,
+  "null_group_mean": -0.00029003856973005757,
+  "null_group_sd": 0.009683228806927735,
+  "null_group_ci95": [
+    -0.020128018449984804,
+    0.018230531274694695
+  ],
+  "z_vs_null": 3.324123993393895,
+  "p_permutation_one_sided": 0.001998001998001998,
+  "n_subjects_obs_gt_own_null_95th": 4
+}

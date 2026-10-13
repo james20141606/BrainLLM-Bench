@@ -1,0 +1,21 @@
+{
+  "model": "gpt2",
+  "d_model": 768,
+  "layers_kept": [
+    4,
+    6,
+    8,
+    10,
+    12
+  ],
+  "n_epochs": 177127,
+  "n_filled": 177121,
+  "shape": [
+    177127,
+    5,
+    768
+  ],
+  "dtype": "float16",
+  "elapsed_sec": 48.923065185546875,
+  "note": "contextual per-occurrence hidden at last sub-token of each word"
+}

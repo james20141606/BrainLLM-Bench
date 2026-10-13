@@ -1,0 +1,205 @@
+{
+  "source": "paper4_temporalalign/results/p4_encoding/concordance_modern_final_v2.json",
+  "n_scored": 57,
+  "q1_qwen2.5_ladder_models": [
+    "Qwen/Qwen2.5-0.5B",
+    "Qwen/Qwen2.5-1.5B",
+    "Qwen/Qwen2.5-3B",
+    "Qwen/Qwen2.5-7B",
+    "Qwen/Qwen2.5-14B",
+    "Qwen/Qwen2.5-32B",
+    "Qwen/Qwen2.5-72B"
+  ],
+  "q1_qwen2.5": {
+    "rsa": {
+      "rho": 0.6071428571428572,
+      "ci95_session_clustered": [
+        0.42857142857142866,
+        0.8214285714285715
+      ],
+      "top_minus_bottom_mean": 0.002934270412449864,
+      "top_minus_bottom_p": 0.00244140625,
+      "n_sessions": 12
+    },
+    "enc": {
+      "rho": -0.8928571428571429,
+      "ci95_session_clustered": [
+        -0.9642857142857145,
+        -0.8214285714285715
+      ],
+      "top_minus_bottom_mean": -0.026079513470080872,
+      "top_minus_bottom_p": 0.00048828125,
+      "n_sessions": 12
+    }
+  },
+  "q1_qwen2.5_verdict": "NOT SUPPORTED over the modern range: size does not order brain alignment up to the largest rung scored; state the CI",
+  "q1_qwen3_ladder_models": [
+    "Qwen/Qwen3-0.6B-Base",
+    "Qwen/Qwen3-1.7B-Base",
+    "Qwen/Qwen3-4B-Base",
+    "Qwen/Qwen3-8B-Base",
+    "Qwen/Qwen3-14B-Base"
+  ],
+  "q1_qwen3": {
+    "rsa": {
+      "rho": 0.39999999999999997,
+      "ci95_session_clustered": [
+        0.0,
+        0.39999999999999997
+      ],
+      "top_minus_bottom_mean": 0.0008689664877590472,
+      "top_minus_bottom_p": 0.04248046875,
+      "n_sessions": 12
+    },
+    "enc": {
+      "rho": 0.09999999999999999,
+      "ci95_session_clustered": [
+        0.09999999999999999,
+        0.19999999999999998
+      ],
+      "top_minus_bottom_mean": 0.0035816097689416837,
+      "top_minus_bottom_p": 0.0341796875,
+      "n_sessions": 12
+    }
+  },
+  "q1_qwen3_verdict": "MIXED: one readout orders, one does not; report both CIs",
+  "q1_qwen3.5_ladder_models": [
+    "Qwen/Qwen3.5-0.8B-Base",
+    "Qwen/Qwen3.5-2B-Base",
+    "Qwen/Qwen3.5-4B-Base",
+    "Qwen/Qwen3.5-9B-Base"
+  ],
+  "q1_qwen3.5": {
+    "rsa": {
+      "rho": -1.0,
+      "ci95_session_clustered": [
+        -1.0,
+        -0.7999999999999999
+      ],
+      "top_minus_bottom_mean": -0.0017753173572154183,
+      "top_minus_bottom_p": 0.00048828125,
+      "n_sessions": 12
+    },
+    "enc": {
+      "rho": -0.39999999999999997,
+      "ci95_session_clustered": [
+        -1.0,
+        0.0
+      ],
+      "top_minus_bottom_mean": -0.0025919144211494797,
+      "top_minus_bottom_p": 0.10986328125,
+      "n_sessions": 12
+    }
+  },
+  "q1_qwen3.5_verdict": "NOT SUPPORTED over the modern range: size does not order brain alignment up to the largest rung scored; state the CI",
+  "q2": {
+    "n_base": 48,
+    "n_families": 12,
+    "rho": -0.5816326530612245,
+    "ci95_family_clustered": [
+      -0.7813990314150373,
+      -0.13917316245218725
+    ]
+  },
+  "q2_verdict": "REVERSAL SURVIVES modern models (negative, family-clustered CI < 0)",
+  "q3_exploratory": {
+    "Qwen/Qwen2.5-7B-Instruct": {
+      "rsa": {
+        "mean_diff": 0.00033772350129838085,
+        "ci95": [
+          0.00022778760682633966,
+          0.0004484741173570522
+        ]
+      },
+      "enc": {
+        "mean_diff": 0.0004808394060292546,
+        "ci95": [
+          -0.0003899826269731618,
+          0.001229657225446558
+        ]
+      }
+    },
+    "Qwen/Qwen2.5-72B-Instruct": {
+      "rsa": {
+        "mean_diff": -0.0006549840416818475,
+        "ci95": [
+          -0.0011546997780156267,
+          -0.00019665530097489427
+        ]
+      },
+      "enc": {
+        "mean_diff": 0.003102797394855285,
+        "ci95": [
+          0.002323053565662232,
+          0.0038571743562359523
+        ]
+      }
+    },
+    "meta-llama/Llama-3.1-8B-Instruct": {
+      "rsa": {
+        "mean_diff": -0.0001383025316115485,
+        "ci95": [
+          -0.0003391542439988861,
+          6.833786788148058e-05
+        ]
+      },
+      "enc": {
+        "mean_diff": 0.0018315409373870337,
+        "ci95": [
+          0.0008696383448238518,
+          0.002877391675756633
+        ]
+      }
+    },
+    "meta-llama/Llama-3.1-70B-Instruct": {
+      "rsa": {
+        "mean_diff": 7.14811800389198e-05,
+        "ci95": [
+          -0.0004896296325710387,
+          0.0006745935960744377
+        ]
+      },
+      "enc": {
+        "mean_diff": 0.006679540126970358,
+        "ci95": [
+          0.005066581483217028,
+          0.008111612268985834
+        ]
+      }
+    },
+    "Qwen/Qwen3-8B": {
+      "rsa": {
+        "mean_diff": 0.0003292254661138095,
+        "ci95": [
+          6.686126089743511e-05,
+          0.0005662591165135741
+        ]
+      },
+      "enc": {
+        "mean_diff": -0.000577768929554209,
+        "ci95": [
+          -0.001954032501511778,
+          0.0008742678002393035
+        ]
+      }
+    },
+    "Qwen/Qwen3.5-9B": {
+      "rsa": {
+        "mean_diff": -1.3533447640171078e-05,
+        "ci95": [
+          -0.00020599703975400605,
+          0.00016555246551444298
+        ]
+      },
+      "enc": {
+        "mean_diff": -0.00101890130017178,
+        "ci95": [
+          -0.0016828567065533017,
+          -0.00036668156227369185
+        ]
+      }
+    }
+  },
+  "q3_direction_count_rsa": "3/6 instruct > base",
+  "q3_direction_count_enc": "4/6 instruct > base"
+}

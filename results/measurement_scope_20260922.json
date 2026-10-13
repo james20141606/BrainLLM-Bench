@@ -1,0 +1,47 @@
+{
+  "review_date": "2026-09-22",
+  "kind": "implementation audit and interpretation correction; no real-data rescoring",
+  "routes": {
+    "original_tensor": {
+      "controls": [
+        "word_length",
+        "log_zipf_frequency",
+        "orthography",
+        "model_static_embedding"
+      ],
+      "generator": "bench/protocol.py",
+      "layer_rule": "layer/cell scan; best-layer summaries are descriptive"
+    },
+    "fixed_depth_concordance": {
+      "controls": [
+        "word_length",
+        "log_zipf_frequency",
+        "orthography"
+      ],
+      "static_embedding_control_executed": false,
+      "generator": "codes/p4_concordance32.py",
+      "relative_depth": 0.5,
+      "n_models": [
+        32,
+        57
+      ]
+    }
+  },
+  "rogue_intervention": {
+    "historical_result": "p4_encoding/invariance_intervention.json",
+    "encoding_recomputed": false,
+    "mechanism_excluded": false,
+    "replacement_interpretation": "RSA sensitivity against a frozen encoding reference; paired transformed-input encoding unrun",
+    "counterexample": "p4_encoding/rogue_counterexample.json"
+  },
+  "regularization": {
+    "grid_top_shared": true,
+    "finite_grid_explanation_excluded": false,
+    "expanded_grid_run": false
+  },
+  "scorecard": {
+    "scope": "conceptual extensions and analogies, not replication rate",
+    "inventory": "scorecard/scorecard_transport.tsv",
+    "unverified_missing_tensors": "Schrimpf et al."
+  }
+}

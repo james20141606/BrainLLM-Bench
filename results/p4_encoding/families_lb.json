@@ -1,0 +1,68 @@
+{
+  "cohort": "libribrain",
+  "cv": "leave_one_session_out",
+  "metric": "held_out_encoding_R",
+  "families": [
+    {
+      "family": "pythia160m",
+      "kind": "causal",
+      "layer_idx": 1,
+      "n_layers": 3,
+      "mean_R": 0.014697816412909058,
+      "sd_R": 0.006210310049494801
+    },
+    {
+      "family": "gpt2medium",
+      "kind": "causal",
+      "layer_idx": 1,
+      "n_layers": 3,
+      "mean_R": 0.014045138598146356,
+      "sd_R": 0.006191576311053174
+    },
+    {
+      "family": "t5",
+      "kind": "masked",
+      "layer_idx": 1,
+      "n_layers": 3,
+      "mean_R": 0.013064668426753884,
+      "sd_R": 0.005041239211812531
+    },
+    {
+      "family": "gpt2",
+      "kind": "causal",
+      "layer_idx": 2,
+      "n_layers": 5,
+      "mean_R": 0.012872212092510013,
+      "sd_R": 0.005552625436572472
+    },
+    {
+      "family": "bert",
+      "kind": "masked",
+      "layer_idx": 3,
+      "n_layers": 6,
+      "mean_R": 0.012642028898006044,
+      "sd_R": 0.005235465267082323
+    },
+    {
+      "family": "roberta",
+      "kind": "masked",
+      "layer_idx": 1,
+      "n_layers": 3,
+      "mean_R": 0.010078693982288686,
+      "sd_R": 0.003991898841475303
+    }
+  ],
+  "encoding_rank": [
+    "pythia160m",
+    "gpt2medium",
+    "t5",
+    "gpt2",
+    "bert",
+    "roberta"
+  ],
+  "mean_R_causal_families": 0.013871722367855145,
+  "mean_R_masked_families": 0.011928463769016207,
+  "wilcoxon_causal_gt_masked_families_p": 0.001220703125,
+  "n_sessions_causal_gt_masked": 10,
+  "n_sessions": 12
+}

@@ -1,0 +1,77 @@
+{
+  "published_corrupted": {
+    "source": "concordance32.json",
+    "concordance": -0.6777859237536656,
+    "n_models": 32,
+    "n_sessions": 12,
+    "naive_ci95": [
+      -0.8302570540816995,
+      -0.43094033381269126
+    ],
+    "family_clustered_ci95": [
+      -0.8571084230972985,
+      -0.37429902687477856
+    ],
+    "n_families": 12,
+    "depth_curve": {
+      "12": {
+        "mean": -0.6777859237536658,
+        "sd": 1.1102230246251565e-16
+      },
+      "10": {
+        "mean": -0.6682358870967743,
+        "sd": 0.021231998576995308
+      },
+      "5": {
+        "mean": -0.6331121700879765,
+        "sd": 0.04545796432015259
+      },
+      "2": {
+        "mean": -0.5693777492668621,
+        "sd": 0.08247401309474445
+      },
+      "1": {
+        "mean": -0.46669446480938404,
+        "sd": 0.17890398511737896
+      }
+    }
+  },
+  "corrected": {
+    "source": "concordance32_CORRECTED.json",
+    "concordance": -0.5733137829912023,
+    "n_models": 32,
+    "n_sessions": 12,
+    "naive_ci95": [
+      -0.7683967458207633,
+      -0.2807435541371818
+    ],
+    "family_clustered_ci95": [
+      -0.7855269643048901,
+      -0.2641235334657375
+    ],
+    "n_families": 12,
+    "depth_curve": {
+      "12": {
+        "mean": -0.5733137829912023,
+        "sd": 0.0
+      },
+      "10": {
+        "mean": -0.5737866568914956,
+        "sd": 0.03207081228076853
+      },
+      "5": {
+        "mean": -0.556066715542522,
+        "sd": 0.06942669849171286
+      },
+      "2": {
+        "mean": -0.48975073313782985,
+        "sd": 0.11702419288010688
+      },
+      "1": {
+        "mean": -0.3929398826979471,
+        "sd": 0.18114386407127744
+      }
+    }
+  },
+  "note": "Both rows use identical estimators. The published row is recomputed from the untouched published artifact and reproduces the numbers printed in the paper (naive CI [-0.830,-0.431] vs printed [-0.83,-0.43]; family-clustered lower bound -0.857 vs printed -0.857), which is what makes the corrected row comparable. The difference between rows is the 1e-12 guard in the correlation denominator; see concordance32_EPSILON_ISOLATED.json."
+}

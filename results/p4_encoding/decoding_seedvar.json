@@ -1,0 +1,70 @@
+{
+  "assay": "decoding_top10_over_chance",
+  "held_out_session": 12,
+  "n_seeds": 6,
+  "per_seed_top10xchance": {
+    "0": {
+      "gpt2": 6.6000000000000005,
+      "gpt2medium": 6.0,
+      "pythia160m": 6.9,
+      "bert": 4.8,
+      "roberta": 7.900000000000001,
+      "t5": 5.6000000000000005
+    },
+    "1": {
+      "gpt2": 7.700000000000001,
+      "gpt2medium": 6.300000000000001,
+      "pythia160m": 5.1000000000000005,
+      "bert": 6.5,
+      "roberta": 7.6000000000000005,
+      "t5": 7.6000000000000005
+    },
+    "2": {
+      "gpt2": 5.300000000000001,
+      "gpt2medium": 5.4,
+      "pythia160m": 3.3000000000000003,
+      "bert": 6.700000000000001,
+      "roberta": 6.6000000000000005,
+      "t5": 6.5
+    },
+    "3": {
+      "gpt2": 8.5,
+      "gpt2medium": 4.8,
+      "pythia160m": 5.9,
+      "bert": 6.700000000000001,
+      "roberta": 8.1,
+      "t5": 5.7
+    },
+    "4": {
+      "gpt2": 5.9,
+      "gpt2medium": 6.0,
+      "pythia160m": 5.4,
+      "bert": 6.1000000000000005,
+      "roberta": 6.1000000000000005,
+      "t5": 7.900000000000001
+    },
+    "5": {
+      "gpt2": 7.800000000000001,
+      "gpt2medium": 7.4,
+      "pythia160m": 7.700000000000001,
+      "bert": 5.4,
+      "roberta": 8.1,
+      "t5": 5.1000000000000005
+    }
+  },
+  "per_seed_winner_counts": {
+    "roberta": 2,
+    "gpt2": 2,
+    "bert": 1,
+    "t5": 1
+  },
+  "training_noise_ranking_reliability_mean_pairwise_spearman": 0.16571428571428576,
+  "training_noise_ranking_reliability_median": 0.2571428571428572,
+  "n_seed_pairs": 15,
+  "reference": {
+    "decoding_per_session_splithalf": 0.54,
+    "RSA_splithalf": 0.94,
+    "encoding_splithalf": 0.94
+  },
+  "interpretation": "seed-to-seed reliability on ONE fixed session isolates training noise; compare to the 0.54 per-session value to see how much of decoding's instability is irreducible training stochasticity rather than session sampling."
+}

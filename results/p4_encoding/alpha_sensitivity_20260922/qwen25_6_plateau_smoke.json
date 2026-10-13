@@ -1,0 +1,59 @@
+{
+  "model": "Qwen/Qwen2.5-72B",
+  "mode": "fixed_alpha_and_infinite_direction_diagnostic",
+  "smoke": true,
+  "trigger": "expanded training-fold RidgeCV selected 1e14 grid top in 72B fold 1",
+  "selection_policy": "none; fixed 1e10/1e12/1e14 and analytic limit, regardless of test scores",
+  "protocol": {
+    "n_words": 30000,
+    "n_sessions": 12,
+    "outer_split": "LeaveOneGroupOut(session)",
+    "depth_frac": 0.5,
+    "region": "temporal_L",
+    "band": "broadband",
+    "window_ms": [
+      300.0,
+      400.0
+    ]
+  },
+  "provenance": {
+    "generator_sha256": "31593a6efe5e564714f00fb59c10ba515ffebce1634ea6558da0180521279dfa",
+    "original_pipeline_sha256": "5c6651e72bff2d1ffd3b62f7e21b82abd276274dbe7e56c9636e952fd297ae58",
+    "metadata_sha256": "b8e7784006b049060cb0383b5f4ad4a191674e540ed571e0aa831c1d6e7e843e",
+    "embedding_sha256": "51435f941f735bfbab4fb82e9e4934f24dade343eadccb9b2cdcbfcfe0880a87",
+    "baseline_sha256": "986222549be7833420eb2d5ccc308cdbc32cbcc9cb0088fb6f382855ce1c2217",
+    "slurm_job_id": "18253865"
+  },
+  "folds": [
+    {
+      "infinite_alpha_direction_scale_free_heldout_pearson": 0.05679690495020188,
+      "candidates": {
+        "10000000000.0": {
+          "gram_trace_over_alpha_bound": 0.022527999552283292,
+          "relative_algebraic_residual": 3.7686238082270414e-17,
+          "direction_cosine_to_infinite_alpha": 0.9999999389953561,
+          "scale_free_heldout_pearson": 0.056801728111551424,
+          "original_epsilon_heldout_score": 0.056801706371302316,
+          "mean_raw_prediction_variance": 2.4006979732586914e-11
+        },
+        "1000000000000.0": {
+          "gram_trace_over_alpha_bound": 0.00022527999552283292,
+          "relative_algebraic_residual": 3.7686238082270424e-27,
+          "direction_cosine_to_infinite_alpha": 0.9999999999938948,
+          "scale_free_heldout_pearson": 0.05679695324048544,
+          "original_epsilon_heldout_score": 0.056794780679692444,
+          "mean_raw_prediction_variance": 2.4027810369063693e-15
+        },
+        "100000000000000.0": {
+          "gram_trace_over_alpha_bound": 2.2527999552283294e-06,
+          "relative_algebraic_residual": 3.768623808227042e-37,
+          "direction_cosine_to_infinite_alpha": 0.9999999999999994,
+          "scale_free_heldout_pearson": 0.05679690543311058,
+          "original_epsilon_heldout_score": 0.056582385534197185,
+          "mean_raw_prediction_variance": 2.402801889474792e-19
+        }
+      },
+      "session": "1"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "label": "Brennan EEG (47 subj)",
+  "n_models": 32,
+  "n_families": 12,
+  "overall_rho": 0.3416422287390029,
+  "overall_p": 0.05565068872724361,
+  "within_class_centred_rho": 0.2489002932551319,
+  "within_class_centred_p": 0.16953293152018684,
+  "between_class_share_of_abs_rho": 0.27145922746781126,
+  "per_class": {
+    "causal": {
+      "n": 18,
+      "rho": 0.7027863777089782,
+      "p": 0.0011427190651563898,
+      "mean_rsa": 0.01415526018685873,
+      "mean_enc": 0.08315398419834093
+    },
+    "encdec": {
+      "n": 5,
+      "rho": -0.7999999999999999,
+      "p": 0.10408803866182788,
+      "mean_rsa": 0.0058109004714747056,
+      "mean_enc": 0.07385048148962221
+    },
+    "masked": {
+      "n": 9,
+      "rho": -0.6,
+      "p": 0.0876228290414024,
+      "mean_rsa": 0.0027392041287442044,
+      "mean_enc": 0.07029524644398337
+    }
+  },
+  "class_gap_causal_minus_other": -0.38095238095238093,
+  "gap_p_naive": 0.6690785712501279,
+  "gap_p_family_clustered": 0.5254237288135594
+}

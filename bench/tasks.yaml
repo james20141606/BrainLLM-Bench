@@ -1,0 +1,133 @@
+# BrainLLM-Bench task definitions
+# Each task has: name, description, input, output, metric, baselines, paper_section
+#
+# Tasks from the earlier "MEG-LLM-Bench" framing that rest on methods this project dropped
+# (surprisal-tercile, sae-feature-transfer, layer-saturation-pfll) are retained for the record
+# in tasks_deprecated.yaml and are NOT scored here.
+
+version: "1.0"
+
+tasks:
+
+  - name: best-cell-alignment
+    description: |
+      The leaderboard task. For a frozen pretrained model, score its per-word, per-layer
+      features against each cohort's neural responses under the fixed protocol
+      (band-split -> region -> RSA -> confound partialization -> per-band ceiling
+      normalization), and report the model's headline cell.
+
+      The primary metric is deliberately NOT the raw correlation: it is the
+      confound-controlled partial Spearman expressed as a fraction of that band's
+      split-half reliability ceiling, so a model is credited for how much of the
+      alignable structure it captures rather than for absolute magnitude (which is
+      small and modality-bound).
+    input:
+      - cohort   # libribrain | meg_masc | meg_scans | brennan | ecog
+      - llm      # any frozen pretrained model
+    output: tsv
+      # columns: cohort | llm | region | band | layer | time_ms | rho_raw | rho_partial | ceiling | score
+    metric:
+      primary: partial_spearman_over_ceiling
+      secondary: rho_best   # raw best-cell correlation, reported for continuity
+    baselines:
+      - random-features
+      - untrained-init      # same architecture, random weights
+      - mid-layer           # layer = floor(n_layers / 2)
+    caveat: |
+      Best-cell selection in the released leaderboard is in-sample. A held-out cell-selection
+      split is the known next step; until it lands, treat cross-model gaps at the best cell as
+      upper bounds.
+    paper_section: "Sec. The per-cohort leaderboard"
+
+  - name: readout-concordance
+    description: |
+      The benchmark's headline diagnostic. Rank a set of models under two (optionally three)
+      readouts of the SAME neural data -- similarity-based (RSA) and encoding-based
+      (leave-one-session-out ridge), plus decoding where reliable -- and measure the rank
+      concordance between them.
+
+      This exists because the readout is not a free choice: on the primary cohort the two
+      standard readouts rank 32 checkpoints in close to opposite orders.
+    input:
+      - cohort
+      - model_set   # list of checkpoints (paper uses 32, spanning objective/scale/language)
+    output: json
+      # keys: concordance_spearman | concordance_ci95 | per_model[{model, rsa_mean, enc_mean}]
+    metric:
+      primary: rank_concordance_spearman
+      secondary: split_half_ranking_reliability   # per readout, vs attenuation ceiling
+    baselines:
+      - same-readout-split-half   # the reliability ceiling the concordance is read against
+    notes: |
+      Report a family-clustered bootstrap alongside the per-checkpoint CI: checkpoints are not
+      independent (the paper's 32 fall into 12 families).
+    paper_section: "Sec. Model rankings depend on the assay"
+
+  - name: band-attribution
+    description: |
+      Which frequency band carries word-level brain-LLM alignment? Compare broadband against
+      narrowband gamma (30-80 Hz) per unit (session or patient), and read both against each
+      band's split-half reliability ceiling.
+
+      The reliability ceiling is the point: narrowband gamma has essentially no reproducible
+      word-level structure to align to, so a band comparison that ignores the ceiling
+      misattributes the result.
+    input:
+      - cohort
+      - llm
+    output: tsv
+      # columns: unit | bb_z | gamma_z | bb_minus_gamma | cohort | llm
+    metric:
+      primary: fraction_units_broadband_gt_gamma
+      secondary: per_band_ceiling_normalized_alignment
+    baselines:
+      - per-band-ceiling    # split-half reliability per band
+    paper_section: "Sec. A preprocessing correction"
+
+  - name: boundary-conditional
+    description: |
+      Test the Zou-Ding constituent-boundary claim: is alignment to a language model different
+      at sentence-onset versus sentence-medial words? Submissions provide per-subject
+      z(onset) and z(medial); the contrast is Delta = z_medial - z_onset.
+    input:
+      - cohort
+      - llm
+      - layer
+    output: tsv
+      # columns: subject | llm | best_layer | z_onset | z_medial | delta
+    metric:
+      primary: per_subject_signed_rank   # sign consistency + Wilcoxon
+      secondary: median_delta_magnitude
+    baselines:
+      - label-permutation-null
+      - context-matched-medial   # controls lexical/context differences between the two classes
+    caveat: |
+      Report the decomposition, not only Delta. In this benchmark's English EEG cohort the
+      positive Delta is carried by the onset term (onset alignment negative, medial near zero),
+      which is an onset-specific anti-alignment rather than positive mid-constituent tracking.
+      The contrast does not reproduce across cohorts.
+    paper_section: "Companion paper (constituent boundary)"
+
+  - name: scorecard
+    description: |
+      The audit. Each entry restates a published claim, names the cells that operationalize it
+      under this benchmark's fixed protocol, and records a verdict
+      (replicate / refine / contradict). A new claim is added by naming cells, not by writing
+      analysis code.
+    input:
+      - claim_id
+      - cells    # the (cohort, region, band, layer, latency) cells that test the claim
+    output: tsv
+      # columns: paper | year | venue | claim | our_test | our_result | verdict
+    metric:
+      primary: modal_per_cohort_verdict   # ties break toward the weaker claim
+    notes: |
+      Verdicts are this benchmark's operationalization under one fixed protocol, not the
+      original authors' assessment. Because ties break toward the weaker claim, the "refine"
+      count is an upper bound on refinement.
+    paper_section: "Sec. An audit: the ten-claim scorecard"
+
+scoring:
+  cross_task_aggregation: mean_z_score
+  leaderboard_metric: partial_spearman_over_ceiling
+  reproduction_check: "python -m bench.reproduce"   # must exit 0 before any release

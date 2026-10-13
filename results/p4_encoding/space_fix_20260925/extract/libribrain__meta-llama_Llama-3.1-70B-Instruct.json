@@ -1,0 +1,122 @@
+{
+ "prereg": "paper4_temporalalign/PREREG_space_fix_reextract_20260925.md",
+ "model": "meta-llama/Llama-3.1-70B-Instruct",
+ "mode": "ext",
+ "batch_size": 4,
+ "jid": "18497073_",
+ "host": "<node>",
+ "gpu": [
+  "NVIDIA H200",
+  "NVIDIA H200"
+ ],
+ "versions": {
+  "torch": "2.6.0+cu124",
+  "transformers": "4.57.1",
+  "tokenizers": "0.22.1"
+ },
+ "python": "<HPC_SCRATCH>/envs/<env>/bin/python3.10",
+ "hf_source": "shm-download",
+ "code_sha256": {
+  "p4_spacefix_lib.py": "6f74cf0a40f1ffcebb93841c996db0788cd98ed6009e25bd96edefd1ec741006",
+  "p4_spacefix_extract.py": "35623f9fe627d9bf20131155dfa2af0b9cee73042b015bceaa3eb7fab9c4543c",
+  "p4_spacefix_prep.py": null,
+  "p4_spacefix_score.py": "90cbd5f8d47a1be9c026d95aa10c6df21c08ab2308115bc33beb48cda2bee439",
+  "p4_spacefix_aggregate.py": "a521ab3cbdf832a88168a61ace5e58b3fb9df3d35b6b96aad33a3c5569926c66",
+  "frozen/p4_concordance32.py": "5c6651e72bff2d1ffd3b62f7e21b82abd276274dbe7e56c9636e952fd297ae58",
+  "frozen/extract_llm_layers_multi.py": "46d85ae60a03f4af11403cfa7c9b855f7dc47842ddd65bfaf88874093c6397eb",
+  "frozen/extract_llm_layers.py": "e02313cdff6a9bdc68e023ba5bd9f53e756fc7ca1d2c69764dfeba7f138f07b0",
+  "frozen/extract_llm_layers_multi_ef17743.py": "c9b736f703d479d861d44d28cb7d0c555928eddc72371918722cf06edb40a234",
+  "frozen/alpha_sensitivity_20260922.py": "31593a6efe5e564714f00fb59c10ba515ffebce1634ea6558da0180521279dfa",
+  "frozen/paper4_nn_revision/path1_confound_rsa.py": "b732984f3993cb61654385cac3b12afa6cf5dcf243879a18d502316b165d28ba",
+  "frozen/compute_rdms.py": "98e8d81f6f7e551231483cf24c5b3f1ffb581b435e3fc0ffc98a4dc0892399fb"
+ },
+ "tokenizer_files": {},
+ "rule": "ef17743 extract_one verbatim; _load = ef17743 tokenizer lines + cluster --big model load (bf16, device_map=auto)",
+ "param_dtype": "torch.bfloat16",
+ "hf_device_map": [
+  "0",
+  "1"
+ ],
+ "cohort": "libribrain",
+ "t_load_s": 111.0,
+ "D1_new_vs_cached": {
+  "n_rows": 30000,
+  "median_row_cos": 0.8882602772121353,
+  "min_row_cos": 0.14313828639065584,
+  "p05_row_cos": 0.6133556713735481,
+  "frac_rows_cos_ge_0.9999": 0.05583333333333333,
+  "frac_rows_cos_ge_0.999": 0.056666666666666664,
+  "frac_rows_cos_ge_0.99": 0.056666666666666664,
+  "frac_rows_bitwise_equal": 0.018733333333333334,
+  "max_abs_diff": 8.1875
+ },
+ "extractor_record": {
+  "model": "meta-llama/Llama-3.1-70B-Instruct",
+  "kind": "causal",
+  "layers_kept": [
+   "layer_40"
+  ],
+  "n_words": 30000,
+  "fallback_frac": 0.0
+ },
+ "gates": {
+  "G1": {
+   "row_sha256": "bfe5c58de6dc807aae86ad2b4b2a59d8a7c96e57f10490ab000e2c2fcdb95346",
+   "meta_sha256": "b8e7784006b049060cb0383b5f4ad4a191674e540ed571e0aa831c1d6e7e843e",
+   "emb_rows_sha256": "bfe5c58de6dc807aae86ad2b4b2a59d8a7c96e57f10490ab000e2c2fcdb95346",
+   "n_words": 30000,
+   "n_groups": 12,
+   "n_contexts": 177127,
+   "cached_rows": 177127,
+   "cached_mid_file": "data/preprocessed/llm_embeddings_fd/meta-llama_Llama-3.1-70B-Instruct/layer_40.npy",
+   "cached_mid_sha256": "8d51e5d4c72e25b5a87e3276a4bd61ab097e8530cd48e310fc605eb8c3a3b766",
+   "pass": true,
+   "context_word_mismatch_selected": 0,
+   "n_unique_rows": 30000
+  },
+  "T": {
+   "n_rows": 30000,
+   "decode_equal": 30000,
+   "frac_decode_equal": 1.0,
+   "space_loss_rows": 0,
+   "space_loss_strict_rows": 0,
+   "readout_is_special_rows": 0,
+   "rows_at_512_tokens": 0,
+   "padding_side": "right",
+   "mismatch_examples": [],
+   "T1_pass": true,
+   "T2_pass": true
+  },
+  "G5": {
+   "shape": [
+    30000,
+    8192
+   ],
+   "finite": true,
+   "zero_rows": 0,
+   "layer_written": "layer_40.npy",
+   "cached_layer": "layer_40.npy",
+   "pass": true
+  },
+  "W": {
+   "n_rows": 512,
+   "median_row_cos": 0.9999675356738555,
+   "min_row_cos": 0.999771584519146,
+   "p05_row_cos": 0.9999034999159859,
+   "frac_rows_cos_ge_0.9999": 0.95703125,
+   "frac_rows_cos_ge_0.999": 1.0,
+   "frac_rows_cos_ge_0.99": 1.0,
+   "frac_rows_bitwise_equal": 0.482421875,
+   "max_abs_diff": 0.25,
+   "layer_written": "layer_40",
+   "pass": true
+  }
+ },
+ "t_extract_s": 621.0,
+ "status": "OK",
+ "feature_file": "<HPC_HOME>/p4_spacefix_20260925/feat/libribrain/meta-llama_Llama-3.1-70B-Instruct/layer_40.bf16.npy",
+ "feature_sha256": "77da3508d818484b15356dfe0406ebf6103605f0fef693283b02eacbd1d45958",
+ "feature_float32_sha256": "847e7ccc749e2bf859d6d744281a952cc973cabe4d24b62983126333519c536b",
+ "feature_storage": "bf16-exact-uint16",
+ "rows_sha256": "751268b62e22ba3fd5c301b8b1d3b455fd204aa8d9bc7e717c1fbc821833ee63"
+}

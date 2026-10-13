@@ -1,0 +1,36 @@
+{
+  "model": "BERT",
+  "brennan": {
+    "n": 49,
+    "mean": 0.010608316022643104,
+    "cohen_d": 0.4786244299428314,
+    "wilcoxon_p": 0.00023961142875705832
+  },
+  "megmasc": {
+    "n": 10,
+    "mean": -0.0028743743734588197,
+    "cohen_d": -0.3508608446542184,
+    "wilcoxon_p": 0.375
+  },
+  "between_cohort": {
+    "mannwhitney_U": 377.0,
+    "p_two_sided": 0.007890935010326157,
+    "p_brennan_gt_masc": 0.003945467505163078,
+    "mean_diff_brennan_minus_masc": 0.013482690396101924
+  },
+  "absolute_alignment_level": {
+    "brennan_mean": -0.003478521918933843,
+    "brennan_p_gt0": 0.07157415941166434,
+    "megmasc_mean": -0.00034557424509839673,
+    "megmasc_p_gt0": 0.431640625,
+    "between_cohort_level_p": 0.40179114856558396,
+    "note": "low-SNR regime: absolute alignment not reliably >0 in EITHER cohort; levels comparable, so the null contrast in MEG-MASC is not attributable to lower underlying signal than Brennan."
+  },
+  "power_at_brennan_d": {
+    "n10_alpha0.05": {
+      "assumed_d": 0.4786244299428314,
+      "n": 10,
+      "power": 0.3279035640547447
+    }
+  }
+}

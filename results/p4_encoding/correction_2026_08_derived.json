@@ -1,0 +1,91 @@
+{
+  "note": "Every quantity downstream of the encoding arm, recomputed under the corrected code. The 'published' column is recomputed from the untouched published artifact and reproduces the printed numbers (headline -0.6778 vs -0.68, RAWRSA -0.6763 vs -0.676, decomposition -0.2786 / 59% vs -0.28 / 59%), which is what makes the corrected column comparable rather than merely different.",
+  "variants": {
+    "raw_rsa_no_partialling": {
+      "published": -0.6763196480938416,
+      "corrected": -0.5784457478005864,
+      "source": "concordance32_RAWRSA.json"
+    },
+    "all_channel_cell": {
+      "published": -0.6528592375366569,
+      "corrected": -0.5553519061583576,
+      "source": "concordance32_lb_allch.json"
+    },
+    "chan_time_repr": {
+      "published": -0.6777859237536656,
+      "corrected": -0.5733137829912023,
+      "source": "concordance_repr_chantime.json"
+    }
+  },
+  "decomposition": {
+    "published": {
+      "overall_rho": -0.6777859237536656,
+      "overall_p": 2.0281428365678152e-05,
+      "within_class_rho": -0.2785923753665689,
+      "within_class_p": 0.1225869551482514,
+      "between_class_share": 0.588967009194159,
+      "class_means": {
+        "causal": [
+          0.004949457533027752,
+          0.037216943240324644
+        ],
+        "encdec": [
+          0.010098192689059522,
+          0.03107368101887601
+        ],
+        "masked": [
+          0.008247427068488288,
+          0.029962266059815983
+        ]
+      },
+      "n_models": 32
+    },
+    "corrected": {
+      "overall_rho": -0.5733137829912023,
+      "overall_p": 0.0006036474416567209,
+      "within_class_rho": -0.252199413489736,
+      "within_class_p": 0.16376397370417967,
+      "between_class_share": 0.5601023017902813,
+      "class_means": {
+        "causal": [
+          0.004949457533027752,
+          0.04939679745952857
+        ],
+        "encdec": [
+          0.010098192689059522,
+          0.04262140654475891
+        ],
+        "masked": [
+          0.008247427068488288,
+          0.04122261471029284
+        ]
+      },
+      "n_models": 32
+    }
+  },
+  "headline": {
+    "published": {
+      "rho": -0.6777859237536656,
+      "p": 2.0281428365678152e-05,
+      "family_clustered_ci95": [
+        -0.8571084230972985,
+        -0.37429902687477856
+      ],
+      "n_families": 12,
+      "n_models": 32
+    },
+    "corrected": {
+      "rho": -0.5733137829912023,
+      "p": 0.0006036474416567209,
+      "family_clustered_ci95": [
+        -0.7855269643048901,
+        -0.2641235334657375
+      ],
+      "n_families": 12,
+      "n_models": 32
+    }
+  },
+  "still_owed": [
+    "centred / per-dimension-standardized RSA attenuation curve (-0.68 -> -0.60 -> -0.44): per-session RSA not in the released tree, needs a cluster re-run against the corrected encoding arm"
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "job": 15981452,
+  "script": "code/alpha_probe.py",
+  "grid_top": 1000000.0,
+  "chosen_alpha_counts": {
+    "Qwen/Qwen2.5-72B": {
+      "1000000.0": 11,
+      "37275.937": 1,
+      "dim": 8192
+    },
+    "Qwen/Qwen2.5-32B": {
+      "1000000.0": 11,
+      "193069.773": 1,
+      "dim": 5120
+    },
+    "Qwen/Qwen2.5-0.5B": {
+      "1000000.0": 11,
+      "37275.937": 1,
+      "dim": 896
+    }
+  },
+  "note": "RidgeCV picks the grid-top penalty in 11/12 LOSO folds at every rung probed; edge-pinning is not differential with model size."
+}

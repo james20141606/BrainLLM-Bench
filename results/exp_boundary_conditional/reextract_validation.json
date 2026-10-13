@@ -1,0 +1,6 @@
+{
+  "mean_cosine_layer12_vs_existing": 0.9595367312431335,
+  "median_cosine": 0.9591846466064453,
+  "frac_cos_gt_0.98": 0.21015,
+  "n_sample": 20000
+}

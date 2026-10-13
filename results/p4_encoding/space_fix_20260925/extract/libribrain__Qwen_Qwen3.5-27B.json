@@ -1,0 +1,123 @@
+{
+ "prereg": "paper4_temporalalign/PREREG_space_fix_reextract_20260925.md",
+ "model": "Qwen/Qwen3.5-27B",
+ "mode": "ext",
+ "batch_size": 8,
+ "jid": "18503822_",
+ "host": "<node>",
+ "gpu": [
+  "NVIDIA <gpu>",
+  "NVIDIA <gpu>"
+ ],
+ "versions": {
+  "torch": "2.13.0+cu130",
+  "transformers": "5.15.0",
+  "tokenizers": "0.22.2"
+ },
+ "python": "<HPC_SCRATCH>/envs/<env2>/bin/python",
+ "hf_source": "shm-download",
+ "code_sha256": {
+  "p4_spacefix_lib.py": "aa06cbfa1851f491f50200972ea46a91638917512c4d2432c86a8ebef5b3fe9a",
+  "p4_spacefix_extract.py": "efa9be79ed7a5f014df3048b22b92e986bfe9432cb898f3cd8b23c24702f2ce6",
+  "p4_spacefix_prep.py": null,
+  "p4_spacefix_score.py": "90cbd5f8d47a1be9c026d95aa10c6df21c08ab2308115bc33beb48cda2bee439",
+  "p4_spacefix_aggregate.py": "a521ab3cbdf832a88168a61ace5e58b3fb9df3d35b6b96aad33a3c5569926c66",
+  "frozen/p4_concordance32.py": "5c6651e72bff2d1ffd3b62f7e21b82abd276274dbe7e56c9636e952fd297ae58",
+  "frozen/extract_llm_layers_multi.py": "46d85ae60a03f4af11403cfa7c9b855f7dc47842ddd65bfaf88874093c6397eb",
+  "frozen/extract_llm_layers.py": "e02313cdff6a9bdc68e023ba5bd9f53e756fc7ca1d2c69764dfeba7f138f07b0",
+  "frozen/extract_llm_layers_multi_ef17743.py": "c9b736f703d479d861d44d28cb7d0c555928eddc72371918722cf06edb40a234",
+  "frozen/alpha_sensitivity_20260922.py": "31593a6efe5e564714f00fb59c10ba515ffebce1634ea6558da0180521279dfa",
+  "frozen/paper4_nn_revision/path1_confound_rsa.py": "b732984f3993cb61654385cac3b12afa6cf5dcf243879a18d502316b165d28ba",
+  "frozen/compute_rdms.py": "98e8d81f6f7e551231483cf24c5b3f1ffb581b435e3fc0ffc98a4dc0892399fb"
+ },
+ "tokenizer_files": {},
+ "rule": "ef17743 extract_one verbatim; _load = ef17743 tokenizer lines + cluster --big model load (bf16, device_map=auto)",
+ "param_dtype": "torch.bfloat16",
+ "hf_device_map": [
+  "0",
+  "1"
+ ],
+ "forward": "cluster _forward (output_hidden_states=True in the call; transformers>=5)",
+ "cohort": "libribrain",
+ "t_load_s": 35.0,
+ "D1_new_vs_cached": {
+  "n_rows": 30000,
+  "median_row_cos": 0.9783234928502121,
+  "min_row_cos": 0.31064235989562994,
+  "p05_row_cos": 0.8525953345874339,
+  "frac_rows_cos_ge_0.9999": 0.0,
+  "frac_rows_cos_ge_0.999": 0.0009333333333333333,
+  "frac_rows_cos_ge_0.99": 0.2769666666666667,
+  "frac_rows_bitwise_equal": 0.0,
+  "max_abs_diff": 202.0625
+ },
+ "extractor_record": {
+  "model": "Qwen/Qwen3.5-27B",
+  "kind": "causal",
+  "layers_kept": [
+   "layer_32"
+  ],
+  "n_words": 30000,
+  "fallback_frac": 0.0
+ },
+ "gates": {
+  "G1": {
+   "row_sha256": "bfe5c58de6dc807aae86ad2b4b2a59d8a7c96e57f10490ab000e2c2fcdb95346",
+   "meta_sha256": "b8e7784006b049060cb0383b5f4ad4a191674e540ed571e0aa831c1d6e7e843e",
+   "emb_rows_sha256": "bfe5c58de6dc807aae86ad2b4b2a59d8a7c96e57f10490ab000e2c2fcdb95346",
+   "n_words": 30000,
+   "n_groups": 12,
+   "n_contexts": 177127,
+   "cached_rows": 177127,
+   "cached_mid_file": "data/preprocessed/llm_embeddings_fd/Qwen_Qwen3.5-27B/layer_32.npy",
+   "cached_mid_sha256": "29374654020729ecd57b5d52cb82c5344844adee914eb56868c4bca427f05765",
+   "pass": true,
+   "context_word_mismatch_selected": 0,
+   "n_unique_rows": 30000
+  },
+  "T": {
+   "n_rows": 30000,
+   "decode_equal": 30000,
+   "frac_decode_equal": 1.0,
+   "space_loss_rows": 0,
+   "space_loss_strict_rows": 0,
+   "readout_is_special_rows": 0,
+   "rows_at_512_tokens": 0,
+   "padding_side": "right",
+   "mismatch_examples": [],
+   "T1_pass": true,
+   "T2_pass": true
+  },
+  "G5": {
+   "shape": [
+    30000,
+    5120
+   ],
+   "finite": true,
+   "zero_rows": 0,
+   "layer_written": "layer_32.npy",
+   "cached_layer": "layer_32.npy",
+   "pass": true
+  },
+  "W": {
+   "n_rows": 512,
+   "median_row_cos": 0.9999632754965952,
+   "min_row_cos": 0.998651589716599,
+   "p05_row_cos": 0.9999124950484887,
+   "frac_rows_cos_ge_0.9999": 0.96875,
+   "frac_rows_cos_ge_0.999": 0.998046875,
+   "frac_rows_cos_ge_0.99": 1.0,
+   "frac_rows_bitwise_equal": 0.224609375,
+   "max_abs_diff": 1.0,
+   "layer_written": "layer_32",
+   "pass": true
+  }
+ },
+ "t_extract_s": 870.6,
+ "status": "OK",
+ "feature_file": "<HPC_HOME>/p4_spacefix_20260925/feat/libribrain/Qwen_Qwen3.5-27B/layer_32.bf16.npy",
+ "feature_sha256": "ea95cca6d677cfb7ba3cd98c18ed10209bc0516ca257f63eff54f52a7b585b0a",
+ "feature_float32_sha256": "ca5317504b79eab281a344176c66d319e2551a44fe71e95bbd9d7d4aa06e8207",
+ "feature_storage": "bf16-exact-uint16",
+ "rows_sha256": "751268b62e22ba3fd5c301b8b1d3b455fd204aa8d9bc7e717c1fbc821833ee63"
+}

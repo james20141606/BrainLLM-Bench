@@ -1,0 +1,59 @@
+{
+ "tokenizer": "bert-base-uncased",
+ "n_words": 2129,
+ "n_sentences": 84,
+ "misread": 15,
+ "misread_onset": 0,
+ "no_token_found": 0,
+ "sentences_affected": 1,
+ "examples": [
+  {
+   "sentence": 48,
+   "pos": 26,
+   "word": "first",
+   "read_token": "'"
+  },
+  {
+   "sentence": 48,
+   "pos": 27,
+   "word": "thought",
+   "read_token": "s"
+  },
+  {
+   "sentence": 48,
+   "pos": 28,
+   "word": "was",
+   "read_token": "first"
+  },
+  {
+   "sentence": 48,
+   "pos": 29,
+   "word": "that",
+   "read_token": "thought"
+  },
+  {
+   "sentence": 48,
+   "pos": 30,
+   "word": "it",
+   "read_token": "was"
+  },
+  {
+   "sentence": 48,
+   "pos": 31,
+   "word": "might",
+   "read_token": "that"
+  },
+  {
+   "sentence": 48,
+   "pos": 32,
+   "word": "belong",
+   "read_token": "it"
+  },
+  {
+   "sentence": 48,
+   "pos": 33,
+   "word": "to",
+   "read_token": "might"
+  }
+ ]
+}

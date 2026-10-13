@@ -1,0 +1,47 @@
+{
+  "table": [
+    {
+      "objective": "causal",
+      "perplexity": 20.80702497272911,
+      "alignment": 0.004481847458658976,
+      "resid": 0.000572353907045354
+    },
+    {
+      "objective": "mask15",
+      "perplexity": 23.796255944760688,
+      "alignment": 0.0037581229411041248,
+      "resid": -0.00014965760021469097
+    },
+    {
+      "objective": "mask40",
+      "perplexity": 23.018305520641093,
+      "alignment": 0.00328521455225745,
+      "resid": -0.000623011801746245
+    },
+    {
+      "objective": "shuffle",
+      "perplexity": 611.0870075945395,
+      "alignment": 0.0033813554135424494,
+      "resid": -0.00018987197646972483
+    },
+    {
+      "objective": "horizon2",
+      "perplexity": 316.5556815853205,
+      "alignment": 0.004178700439222466,
+      "resid": 0.0004386887704719163
+    },
+    {
+      "objective": "horizon4",
+      "perplexity": 347.37503146703654,
+      "alignment": 0.0036738490165866508,
+      "resid": -4.8501299086609485e-05
+    }
+  ],
+  "spearman_align_vs_ppl": {
+    "rho": -0.3714285714285715,
+    "p": 0.4684781341107872
+  },
+  "causal_residual": 0.000572353907045354,
+  "causal_is_max_residual": true,
+  "interpretation": "causal above align~ppl line => objective-specific (not quality); causal on line => quality artifact"
+}

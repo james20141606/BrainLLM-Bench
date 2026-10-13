@@ -1,0 +1,279 @@
+{
+  "cohort": "ds003020",
+  "subject": "UTS02",
+  "story": "theclosetthatateeverything",
+  "n_words": 1931,
+  "n_tr_used": 311,
+  "tr_s": 2.0647421176528664,
+  "delay_tr": 2,
+  "n_voxels": 94251,
+  "n_models": 32,
+  "concordance": 0.3350439882697947,
+  "concordance_p": 0.06086471828787545,
+  "concordance_ci": [
+    -0.015455629279268234,
+    0.6122142975723903
+  ],
+  "per_model": [
+    {
+      "model": "gpt2",
+      "kind": "causal",
+      "rsa": 0.0011752134519145904,
+      "enc": 0.026954112657070272
+    },
+    {
+      "model": "gpt2-medium",
+      "kind": "causal",
+      "rsa": 0.0022320276973676286,
+      "enc": 0.03459102896384341
+    },
+    {
+      "model": "gpt2-large",
+      "kind": "causal",
+      "rsa": 0.004549104528237471,
+      "enc": 0.041708187447626326
+    },
+    {
+      "model": "gpt2-xl",
+      "kind": "causal",
+      "rsa": 0.002552141481582669,
+      "enc": 0.054589747213448
+    },
+    {
+      "model": "EleutherAI/pythia-70m",
+      "kind": "causal",
+      "rsa": 0.006559439894366795,
+      "enc": 0.031066729190331283
+    },
+    {
+      "model": "EleutherAI/pythia-160m",
+      "kind": "causal",
+      "rsa": 0.005366879642790312,
+      "enc": 0.04610487547922475
+    },
+    {
+      "model": "EleutherAI/pythia-410m",
+      "kind": "causal",
+      "rsa": 0.003196662684540592,
+      "enc": 0.0392459246709437
+    },
+    {
+      "model": "EleutherAI/pythia-1b",
+      "kind": "causal",
+      "rsa": 0.004090828949881757,
+      "enc": 0.04970699803593313
+    },
+    {
+      "model": "EleutherAI/pythia-1.4b",
+      "kind": "causal",
+      "rsa": 0.007786682307459108,
+      "enc": 0.06014080320816347
+    },
+    {
+      "model": "EleutherAI/pythia-2.8b",
+      "kind": "causal",
+      "rsa": 0.008159733035475684,
+      "enc": 0.06615553569604184
+    },
+    {
+      "model": "facebook/opt-125m",
+      "kind": "causal",
+      "rsa": 0.005891949037586921,
+      "enc": 0.03273724702806292
+    },
+    {
+      "model": "facebook/opt-350m",
+      "kind": "causal",
+      "rsa": 0.0062077861041300525,
+      "enc": 0.01992805376943892
+    },
+    {
+      "model": "facebook/opt-1.3b",
+      "kind": "causal",
+      "rsa": 0.0041981049613112565,
+      "enc": 0.04361971025426005
+    },
+    {
+      "model": "EleutherAI/gpt-neo-125m",
+      "kind": "causal",
+      "rsa": 0.0002626508643266057,
+      "enc": 0.028255684361991374
+    },
+    {
+      "model": "EleutherAI/gpt-neo-1.3B",
+      "kind": "causal",
+      "rsa": 0.002414306288552548,
+      "enc": 0.045321172344139814
+    },
+    {
+      "model": "meta-llama/Llama-3.2-1B",
+      "kind": "causal",
+      "rsa": 0.007413522243960537,
+      "enc": 0.054266701679658545
+    },
+    {
+      "model": "Qwen/Qwen2.5-0.5B",
+      "kind": "causal",
+      "rsa": 0.0009777578135411766,
+      "enc": 0.029917148813040244
+    },
+    {
+      "model": "Qwen/Qwen2.5-1.5B",
+      "kind": "causal",
+      "rsa": 0.0017784556851218622,
+      "enc": 0.035412099707661
+    },
+    {
+      "model": "bert-base-uncased",
+      "kind": "masked",
+      "rsa": 0.005877247208424405,
+      "enc": 0.023679824059046707
+    },
+    {
+      "model": "bert-large-uncased",
+      "kind": "masked",
+      "rsa": 0.0009637394652098415,
+      "enc": 0.011101231798721873
+    },
+    {
+      "model": "roberta-base",
+      "kind": "masked",
+      "rsa": 0.00823002197808895,
+      "enc": 0.05551893270142798
+    },
+    {
+      "model": "roberta-large",
+      "kind": "masked",
+      "rsa": 0.005502836176877825,
+      "enc": 0.049274737734325655
+    },
+    {
+      "model": "microsoft/deberta-v3-base",
+      "kind": "masked",
+      "rsa": 0.018372963240847133,
+      "enc": 0.044447010846839094
+    },
+    {
+      "model": "microsoft/deberta-v3-large",
+      "kind": "masked",
+      "rsa": 0.014168990301788816,
+      "enc": 0.06134115812104869
+    },
+    {
+      "model": "google/electra-base-discriminator",
+      "kind": "masked",
+      "rsa": 0.003504044656853088,
+      "enc": 0.03579375872096667
+    },
+    {
+      "model": "albert-base-v2",
+      "kind": "masked",
+      "rsa": 0.004526283004279388,
+      "enc": 0.02199940022372171
+    },
+    {
+      "model": "distilbert-base-uncased",
+      "kind": "masked",
+      "rsa": 0.0043291835262570565,
+      "enc": 0.025438601393659388
+    },
+    {
+      "model": "t5-small",
+      "kind": "encdec",
+      "rsa": 0.009385397582910378,
+      "enc": 0.026445928621422844
+    },
+    {
+      "model": "t5-base",
+      "kind": "encdec",
+      "rsa": 0.008844906720439074,
+      "enc": 0.030766056340110325
+    },
+    {
+      "model": "t5-large",
+      "kind": "encdec",
+      "rsa": 0.007589915424924655,
+      "enc": 0.03912806411176256
+    },
+    {
+      "model": "facebook/bart-base",
+      "kind": "encdec",
+      "rsa": 0.008127864232895396,
+      "enc": 0.039340545073304395
+    },
+    {
+      "model": "facebook/bart-large",
+      "kind": "encdec",
+      "rsa": 0.006699118164476896,
+      "enc": 0.033886471819898865
+    }
+  ],
+  "rsa": {
+    "gpt2": 0.0011752134519145904,
+    "gpt2-medium": 0.0022320276973676286,
+    "gpt2-large": 0.004549104528237471,
+    "gpt2-xl": 0.002552141481582669,
+    "EleutherAI/pythia-70m": 0.006559439894366795,
+    "EleutherAI/pythia-160m": 0.005366879642790312,
+    "EleutherAI/pythia-410m": 0.003196662684540592,
+    "EleutherAI/pythia-1b": 0.004090828949881757,
+    "EleutherAI/pythia-1.4b": 0.007786682307459108,
+    "EleutherAI/pythia-2.8b": 0.008159733035475684,
+    "facebook/opt-125m": 0.005891949037586921,
+    "facebook/opt-350m": 0.0062077861041300525,
+    "facebook/opt-1.3b": 0.0041981049613112565,
+    "EleutherAI/gpt-neo-125m": 0.0002626508643266057,
+    "EleutherAI/gpt-neo-1.3B": 0.002414306288552548,
+    "meta-llama/Llama-3.2-1B": 0.007413522243960537,
+    "Qwen/Qwen2.5-0.5B": 0.0009777578135411766,
+    "Qwen/Qwen2.5-1.5B": 0.0017784556851218622,
+    "bert-base-uncased": 0.005877247208424405,
+    "bert-large-uncased": 0.0009637394652098415,
+    "roberta-base": 0.00823002197808895,
+    "roberta-large": 0.005502836176877825,
+    "microsoft/deberta-v3-base": 0.018372963240847133,
+    "microsoft/deberta-v3-large": 0.014168990301788816,
+    "google/electra-base-discriminator": 0.003504044656853088,
+    "albert-base-v2": 0.004526283004279388,
+    "distilbert-base-uncased": 0.0043291835262570565,
+    "t5-small": 0.009385397582910378,
+    "t5-base": 0.008844906720439074,
+    "t5-large": 0.007589915424924655,
+    "facebook/bart-base": 0.008127864232895396,
+    "facebook/bart-large": 0.006699118164476896
+  },
+  "enc": {
+    "gpt2": 0.026954112657070272,
+    "gpt2-medium": 0.03459102896384341,
+    "gpt2-large": 0.041708187447626326,
+    "gpt2-xl": 0.054589747213448,
+    "EleutherAI/pythia-70m": 0.031066729190331283,
+    "EleutherAI/pythia-160m": 0.04610487547922475,
+    "EleutherAI/pythia-410m": 0.0392459246709437,
+    "EleutherAI/pythia-1b": 0.04970699803593313,
+    "EleutherAI/pythia-1.4b": 0.06014080320816347,
+    "EleutherAI/pythia-2.8b": 0.06615553569604184,
+    "facebook/opt-125m": 0.03273724702806292,
+    "facebook/opt-350m": 0.01992805376943892,
+    "facebook/opt-1.3b": 0.04361971025426005,
+    "EleutherAI/gpt-neo-125m": 0.028255684361991374,
+    "EleutherAI/gpt-neo-1.3B": 0.045321172344139814,
+    "meta-llama/Llama-3.2-1B": 0.054266701679658545,
+    "Qwen/Qwen2.5-0.5B": 0.029917148813040244,
+    "Qwen/Qwen2.5-1.5B": 0.035412099707661,
+    "bert-base-uncased": 0.023679824059046707,
+    "bert-large-uncased": 0.011101231798721873,
+    "roberta-base": 0.05551893270142798,
+    "roberta-large": 0.049274737734325655,
+    "microsoft/deberta-v3-base": 0.044447010846839094,
+    "microsoft/deberta-v3-large": 0.06134115812104869,
+    "google/electra-base-discriminator": 0.03579375872096667,
+    "albert-base-v2": 0.02199940022372171,
+    "distilbert-base-uncased": 0.025438601393659388,
+    "t5-small": 0.026445928621422844,
+    "t5-base": 0.030766056340110325,
+    "t5-large": 0.03912806411176256,
+    "facebook/bart-base": 0.039340545073304395,
+    "facebook/bart-large": 0.033886471819898865
+  }
+}

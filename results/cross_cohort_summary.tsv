@@ -1,0 +1,13 @@
+cohort	llm	rho_best	region_best	band_best	layer_best	time_best_ms	lme_n_total	lme_n_sig_fdr	lme_n_pos_t_sig	lme_n_neg_t_sig	n_sessions	n_patients
+LibriBrain	GPT-2	0.0060972291976213455	temporal_L	broadband	5	346.18473052978516	27.0	13.0	13.0	0.0	36.0	
+LibriBrain	GPT-2-medium	0.006904354318976402	temporal_L	broadband	7	346.18473052978516	27.0	13.0	13.0	0.0	36.0	
+LibriBrain	BERT-base	0.013144087977707386	temporal_L	delta	0	446.58634066581726	27.0	18.0	18.0	0.0	36.0	
+MEG-MASC	GPT-2	0.004047037567943335	temporal_R	broadband	11	767.8714990615845	27.0	6.0	0.0	6.0	76.0	
+MEG-MASC	GPT-2-medium	0.003909680992364883	temporal_R	broadband	17	767.8714990615845	27.0	14.0	6.0	8.0	76.0	
+MEG-MASC	BERT-base	0.0024575586430728436	temporal_R	broadband	4	466.66666865348816	27.0	10.0	10.0	0.0	76.0	
+MEG-SCANS	German GPT-2 (dbmdz)	0.004282035399228334	temporal_R	broadband	12	567.0682787895203	27.0	6.0	6.0	0.0	92.0	
+MEG-SCANS	German BERT	0.005309845320880413	temporal_R	broadband	0	526.9076228141785	27.0	4.0	4.0	0.0	92.0	
+MEG-SCANS	Multilingual BERT	0.00550190731883049	temporal_R	broadband	4	587.1486067771912	27.0	9.0	8.0	1.0	92.0	
+ECoG-ext	GPT-2	0.021616877587804426	PCG	broadband	10	450.55555555555554						9.0
+ECoG-ext	GPT-2-medium	0.020346085474490787	PCG	broadband	16	339.8888888888889						9.0
+ECoG-ext	BERT-base	0.015407913809892112	PCG	broadband	5	274.8888888888889						9.0

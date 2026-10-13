@@ -1,0 +1,410 @@
+{
+  "prereg": "paper4_temporalalign/notes/PREREG_scans_masc_truncation_20260927.md (Q2)",
+  "script_sha256": "af569610876a5458cc626562a8646c52ebb2db692e2b73037f0df6f1df33d657",
+  "commit": "dd7f15fb",
+  "versions": {
+    "torch": "2.6.0+cu124",
+    "transformers": "4.57.1",
+    "numpy": "2.1.2",
+    "scipy": "1.15.3"
+  },
+  "device": "cpu",
+  "levels": [
+    "k0",
+    "k1",
+    "k2",
+    "k4",
+    "k8",
+    "full"
+  ],
+  "cell": {
+    "window_ms": [
+      325,
+      475
+    ],
+    "sensors": "all",
+    "layer": 12,
+    "model": "bert-base-uncased",
+    "read": "word list, word_ids, mean of sub-tokens"
+  },
+  "floor_excluded": [
+    3,
+    13,
+    19
+  ],
+  "gates": {
+    "G1_substrate": {
+      "floor_passing": {
+        "spearman_rho": 0.9878260869565217,
+        "count_pos_new": 11,
+        "count_pos_released": 10,
+        "mean_new": 0.001042382469521034,
+        "mean_released": 0.0009402273693776626,
+        "mean_diff": 0.00010215510014337128,
+        "pass": true
+      },
+      "all": {
+        "spearman_rho": 0.989010989010989,
+        "count_pos_new": 13,
+        "count_pos_released": 12,
+        "mean_new": 0.0013911721421225696,
+        "mean_released": 0.001298689047015752,
+        "mean_diff": 9.248309510681758e-05,
+        "pass": true
+      },
+      "strict_feature_cosine": {
+        "median_row_cosine_full_vs_cache": 1.0,
+        "threshold": 0.999,
+        "note": "cache = joined text, offset mapping, LAST sub-token; this run = word list, MEAN of sub-tokens: below threshold is an extractor difference, not a failed run, if the Delta rule holds"
+      },
+      "pass": true
+    },
+    "G2_alignment": {
+      "lost_by_level": {
+        "k0": 15,
+        "k1": 15,
+        "k2": 15,
+        "k4": 15,
+        "k8": 15,
+        "full": 15
+      },
+      "n_sampled": 16200,
+      "pass": true
+    },
+    "G3_completeness": {
+      "per_level": {
+        "k0": {
+          "finite": true,
+          "zero_rows": 0,
+          "rows": 16185
+        },
+        "k1": {
+          "finite": true,
+          "zero_rows": 0,
+          "rows": 16185
+        },
+        "k2": {
+          "finite": true,
+          "zero_rows": 0,
+          "rows": 16185
+        },
+        "k4": {
+          "finite": true,
+          "zero_rows": 0,
+          "rows": 16185
+        },
+        "k8": {
+          "finite": true,
+          "zero_rows": 0,
+          "rows": 16185
+        },
+        "full": {
+          "finite": true,
+          "zero_rows": 0,
+          "rows": 16185
+        }
+      },
+      "shared_trials_across_arms": true,
+      "pass": true
+    }
+  },
+  "pipeline_check": {
+    "max_abs_diff_cache_replay_vs_released": 0.000954482884640338,
+    "n": 27
+  },
+  "n_empty_target_words": 15,
+  "primary_floor_passing": {
+    "n_subjects": 24,
+    "subjects": [
+      1,
+      2,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      14,
+      15,
+      16,
+      17,
+      18,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27
+    ],
+    "per_level": {
+      "k0": {
+        "n": 24,
+        "n_positive": 12,
+        "mean": 0.0017768468575563396,
+        "cohen_d": 0.1613403624479462,
+        "wilcoxon_p": 0.5456695556640625
+      },
+      "k1": {
+        "n": 24,
+        "n_positive": 15,
+        "mean": 0.0029197213879038606,
+        "cohen_d": 0.3051236033471624,
+        "wilcoxon_p": 0.1355280876159668
+      },
+      "k2": {
+        "n": 24,
+        "n_positive": 15,
+        "mean": 0.0015505040298168405,
+        "cohen_d": 0.1493299407402847,
+        "wilcoxon_p": 0.47316575050354004
+      },
+      "k4": {
+        "n": 24,
+        "n_positive": 13,
+        "mean": -0.00020510063823700998,
+        "cohen_d": -0.02015837173033403,
+        "wilcoxon_p": 0.944107174873352
+      },
+      "k8": {
+        "n": 24,
+        "n_positive": 13,
+        "mean": 0.0014667599989525396,
+        "cohen_d": 0.18592657776414387,
+        "wilcoxon_p": 0.5087660551071167
+      },
+      "full": {
+        "n": 24,
+        "n_positive": 11,
+        "mean": 0.001042382469521034,
+        "cohen_d": 0.12260013633465607,
+        "wilcoxon_p": 0.7682963609695435
+      }
+    },
+    "E1_two_point": {
+      "mean_D_full_minus_k0": -0.0007344643880353065,
+      "boot_ci95": [
+        -0.005872783639453905,
+        0.004330369788090684
+      ],
+      "t_ci95": [
+        -0.006312679002819555,
+        0.004843750226748942
+      ],
+      "wilcoxon_paired_p": 0.8774070739746094,
+      "retention_R0": 1.704601630889654,
+      "retention_ci95_propagated": [
+        -3.6468070678266535,
+        7.0560103296059635
+      ]
+    },
+    "E2_trend": {
+      "page_increasing": {
+        "L": 1718.0,
+        "p": 0.884886286505915
+      },
+      "page_decreasing": {
+        "L": 1810.0,
+        "p": 0.115113713494085
+      },
+      "rho_k_retention": {
+        "point": -0.7714285714285715,
+        "ci95_clustered": [
+          -0.8857142857142858,
+          0.8857142857142858
+        ],
+        "n_boot_finite": 10000
+      },
+      "rho_k_meandelta": {
+        "point": -0.7714285714285715,
+        "ci95_clustered": [
+          -0.942857142857143,
+          0.7142857142857143
+        ],
+        "note": "the Brennan horizon script's construction; equals the retention rho whenever mean full > 0"
+      },
+      "retention_by_level": {
+        "k0": 1.7046016308896539,
+        "k1": 2.801007761810737,
+        "k2": 1.487461728447221,
+        "k4": -0.19676140402788236,
+        "k8": 1.4071226654708642,
+        "full": 1.0
+      }
+    },
+    "k8_noninferiority_vs_brennan": {
+      "upper_95_one_sided": 0.00422664016230325,
+      "noninferiority_p": 4.4235477531395495e-06,
+      "brennan_reference": 0.010608316022643104
+    }
+  },
+  "secondary_all": {
+    "n_subjects": 27,
+    "subjects": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27
+    ],
+    "per_level": {
+      "k0": {
+        "n": 27,
+        "n_positive": 14,
+        "mean": 0.00232020423276218,
+        "cohen_d": 0.21134838408262965,
+        "wilcoxon_p": 0.3607836216688156
+      },
+      "k1": {
+        "n": 27,
+        "n_positive": 18,
+        "mean": 0.0039855342190683145,
+        "cohen_d": 0.4043749141772121,
+        "wilcoxon_p": 0.040983185172080994
+      },
+      "k2": {
+        "n": 27,
+        "n_positive": 17,
+        "mean": 0.0018169149698276396,
+        "cohen_d": 0.18231025355830324,
+        "wilcoxon_p": 0.3607836216688156
+      },
+      "k4": {
+        "n": 27,
+        "n_positive": 15,
+        "mean": 0.0004874793029932423,
+        "cohen_d": 0.04865182862157529,
+        "wilcoxon_p": 0.6616804599761963
+      },
+      "k8": {
+        "n": 27,
+        "n_positive": 15,
+        "mean": 0.0017577723858962263,
+        "cohen_d": 0.21923608647783782,
+        "wilcoxon_p": 0.3607836216688156
+      },
+      "full": {
+        "n": 27,
+        "n_positive": 13,
+        "mean": 0.0013911721421225696,
+        "cohen_d": 0.1682283380691773,
+        "wilcoxon_p": 0.5619325190782547
+      }
+    },
+    "E1_two_point": {
+      "mean_D_full_minus_k0": -0.0009290320906396102,
+      "boot_ci95": [
+        -0.005637362843838599,
+        0.003727938559449716
+      ],
+      "t_ci95": [
+        -0.005989054638789255,
+        0.004130990457510034
+      ],
+      "wilcoxon_paired_p": 0.8039880394935608,
+      "retention_R0": 1.6678052719070031,
+      "retention_ci95_propagated": [
+        -1.9694315551828183,
+        5.305042098996823
+      ]
+    },
+    "E2_trend": {
+      "page_increasing": {
+        "L": 1928.0,
+        "p": 0.917637727961649
+      },
+      "page_decreasing": {
+        "L": 2041.0,
+        "p": 0.08236227203835106
+      },
+      "rho_k_retention": {
+        "point": -0.7714285714285715,
+        "ci95_clustered": [
+          -0.942857142857143,
+          0.8857142857142858
+        ],
+        "n_boot_finite": 10000
+      },
+      "rho_k_meandelta": {
+        "point": -0.7714285714285715,
+        "ci95_clustered": [
+          -0.942857142857143,
+          0.5428571428571429
+        ],
+        "note": "the Brennan horizon script's construction; equals the retention rho whenever mean full > 0"
+      },
+      "retention_by_level": {
+        "k0": 1.6678052719070025,
+        "k1": 2.864874948536145,
+        "k2": 1.306031737420716,
+        "k4": 0.35040904589239047,
+        "k8": 1.2635189655352927,
+        "full": 1.0
+      }
+    },
+    "k8_noninferiority_vs_brennan": {
+      "upper_95_one_sided": 0.00438955773318267,
+      "noninferiority_p": 2.4393250358779966e-06,
+      "brennan_reference": 0.010608316022643104
+    }
+  },
+  "E3_terms": {
+    "k0": {
+      "mean_z_onset_floor": -0.0026307506234290183,
+      "mean_z_medial_floor": -0.000853903765872679
+    },
+    "k1": {
+      "mean_z_onset_floor": -0.0034634651251478493,
+      "mean_z_medial_floor": -0.000543743737243989
+    },
+    "k2": {
+      "mean_z_onset_floor": -0.0027596700410765784,
+      "mean_z_medial_floor": -0.0012091660112597384
+    },
+    "k4": {
+      "mean_z_onset_floor": -0.001088421128211085,
+      "mean_z_medial_floor": -0.001293521766448095
+    },
+    "k8": {
+      "mean_z_onset_floor": -0.0027037168294059117,
+      "mean_z_medial_floor": -0.0012369568304533716
+    },
+    "full": {
+      "mean_z_onset_floor": -0.0028127803816906023,
+      "mean_z_medial_floor": -0.0017703979121695688
+    }
+  },
+  "branch": {
+    "primary_24": "B",
+    "all_27": "B",
+    "gates_pass": true,
+    "primary_and_all_agree": true
+  },
+  "elapsed_s": 117.9
+}

@@ -1,0 +1,46 @@
+{
+ "note": "Per-session concordance (Spearman of the 32 models' RSA vs encoding scores within each single session) recomputed from the corrected per-session matrices in concordance32_CORRECTED.json. Supersedes the independent_per_session block of concordance_depth_curve.json (corrupted encoding arm); the corrected subsampled depth CURVE lives in concordance_depth_curve_CORRECTED.json, which this complements. No pooled Wilcoxon p is reported: the 12 sessions share one listener, and Appendix F of the paper shows pooling them is anticonservative.",
+ "source": "concordance32_CORRECTED.json",
+ "supersedes": "concordance_depth_curve.json (independent_per_session block)",
+ "per_session": {
+  "1": -0.5230938416422287,
+  "2": -0.3863636363636363,
+  "3": -0.20784457478005863,
+  "4": -0.4552785923753665,
+  "5": -0.219941348973607,
+  "6": -0.3196480938416422,
+  "7": -0.5641495601173019,
+  "8": -0.5161290322580645,
+  "9": 0.032991202346041054,
+  "10": -0.32074780058651026,
+  "11": -0.6319648093841641,
+  "12": -0.5520527859237535
+ },
+ "n_sessions": 12,
+ "n_negative": 11,
+ "mean": -0.38868523949169104,
+ "median": -0.4208211143695014,
+ "min": -0.6319648093841641,
+ "max": 0.032991202346041054,
+ "superseded_values": {
+  "values": [
+   -0.5685483870967741,
+   -0.43475073313782986,
+   -0.3273460410557184,
+   -0.5494868035190614,
+   -0.3991935483870967,
+   -0.4787390029325513,
+   -0.593841642228739,
+   -0.5769794721407624,
+   0.05828445747800586,
+   -0.4494134897360703,
+   -0.627199413489736,
+   -0.6019061583577713
+  ],
+  "n_negative": 11,
+  "mean": -0.4624266862170088,
+  "median": -0.5141129032258064,
+  "min": -0.627199413489736,
+  "max": 0.05828445747800586
+ }
+}

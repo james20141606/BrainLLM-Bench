@@ -1,0 +1,72 @@
+{
+  "n_models": 10,
+  "models": [
+    "EleutherAI/pythia-160m",
+    "EleutherAI/pythia-410m",
+    "EleutherAI/pythia-70m",
+    "bert-base-uncased",
+    "bert-large-uncased",
+    "gpt2",
+    "gpt2-medium",
+    "roberta-base",
+    "t5-base",
+    "t5-large"
+  ],
+  "baseline_concordance": -0.43030303030303024,
+  "rogue": [
+    {
+      "variance_share": 0.0,
+      "rank_corr_with_undistorted_rsa": 0.9999999999999999,
+      "concordance_with_encoding": -0.43030303030303024
+    },
+    {
+      "variance_share": 0.1,
+      "rank_corr_with_undistorted_rsa": 0.6606060606060605,
+      "concordance_with_encoding": -0.49090909090909085
+    },
+    {
+      "variance_share": 0.3,
+      "rank_corr_with_undistorted_rsa": 0.6606060606060605,
+      "concordance_with_encoding": -0.49090909090909085
+    },
+    {
+      "variance_share": 0.5,
+      "rank_corr_with_undistorted_rsa": 0.6242424242424242,
+      "concordance_with_encoding": -0.43030303030303024
+    },
+    {
+      "variance_share": 0.7,
+      "rank_corr_with_undistorted_rsa": 0.5515151515151515,
+      "concordance_with_encoding": -0.4424242424242424
+    },
+    {
+      "variance_share": 0.9,
+      "rank_corr_with_undistorted_rsa": 0.49090909090909085,
+      "concordance_with_encoding": -0.3696969696969697
+    }
+  ],
+  "rescale": [
+    {
+      "log_spread": 0.0,
+      "rank_corr_with_undistorted_rsa": 0.9999999999999999,
+      "concordance_with_encoding": -0.43030303030303024
+    },
+    {
+      "log_spread": 0.5,
+      "rank_corr_with_undistorted_rsa": 0.9393939393939393,
+      "concordance_with_encoding": -0.4787878787878787
+    },
+    {
+      "log_spread": 1.0,
+      "rank_corr_with_undistorted_rsa": 0.8424242424242423,
+      "concordance_with_encoding": -0.406060606060606
+    },
+    {
+      "log_spread": 2.0,
+      "rank_corr_with_undistorted_rsa": 0.7575757575757575,
+      "concordance_with_encoding": -0.4424242424242424
+    }
+  ],
+  "encoding_invariance": "Standardized ridge is invariant to per-coordinate rescaling exactly, and its leaderboard is therefore unchanged by the rescale arm by construction; the rogue arm adds one direction that standardization absorbs. The encoding column is held fixed at the values in concordance32.json rather than recomputed, and that invariance is the control.",
+  "verdict": "RSA leaderboard is reorderable by a transform encoding ignores"
+}

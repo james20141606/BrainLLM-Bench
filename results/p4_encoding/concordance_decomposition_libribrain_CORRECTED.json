@@ -1,0 +1,47 @@
+{
+ "note": "Recomputed from the corrected per-session encoding matrices in concordance32_CORRECTED.json (RSA arm unaffected). Supersedes concordance_decomposition_libribrain.json, whose encoding arm carried the 1e-12-guard corruption. Family map: codes/model_families.py. The family-clustered permutation permutes the causal/non-causal label over whole families, 10000 permutations, seed 0, TWO-SIDED (the superseded artifact reported a one-sided p over 20000 permutations; the one-sided value is retained here for comparability).",
+ "source": "concordance32_CORRECTED.json",
+ "supersedes": "concordance_decomposition_libribrain.json",
+ "label": "LibriBrain",
+ "n_models": 32,
+ "overall_rho": -0.5733137829912023,
+ "overall_p": 0.0006036474416567209,
+ "within_class_centred_rho": -0.252199413489736,
+ "within_class_centred_p": 0.16376397370417967,
+ "between_class_share_of_abs_rho": 0.5601023017902813,
+ "per_class": {
+  "causal": {
+   "n": 18,
+   "rho": -0.2776057791537668,
+   "p": 0.26470972815378374,
+   "mean_rsa": 0.004949457533027751,
+   "mean_enc": 0.049396797459528574
+  },
+  "encdec": {
+   "n": 5,
+   "rho": -0.09999999999999999,
+   "p": 0.8728885715695383,
+   "mean_rsa": 0.01009819268905952,
+   "mean_enc": 0.04262140654475891
+  },
+  "masked": {
+   "n": 9,
+   "rho": 0.03333333333333333,
+   "p": 0.932156735540504,
+   "mean_rsa": 0.008247427068488286,
+   "mean_enc": 0.041222614710292836
+  }
+ },
+ "class_gap_causal_minus_other": 25.650793650793652,
+ "gap_p_family_clustered_two_sided": 0.005099490050994901,
+ "gap_p_family_clustered_one_sided": 0.0020997900209979003,
+ "n_families": 12,
+ "n_causal_families": 6,
+ "superseded_values": {
+  "overall_rho": -0.6777859237536656,
+  "within_class_centred_rho": -0.2785923753665689,
+  "between_class_share_of_abs_rho": 0.588967009194159,
+  "class_gap_causal_minus_other": 27.936507936507937,
+  "gap_p_family_clustered_one_sided_20000perm": 0.0008499575021248938
+ }
+}

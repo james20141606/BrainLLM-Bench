@@ -1,0 +1,32 @@
+{
+  "purpose": "Counterexample: standardized ridge is not invariant to additive sample-varying rank-one rogue directions.",
+  "versions": {
+    "numpy": "2.0.2",
+    "sklearn": "1.6.1"
+  },
+  "design": {
+    "data_seed": 7,
+    "rogue_seed": 9,
+    "cv_seed": 11,
+    "n_samples": 240,
+    "n_features": 18,
+    "n_splits": 6,
+    "ridge_alpha": 10.0,
+    "ridge_solver": "lsqr",
+    "rogue_variance_share": 0.7,
+    "axis_log_spread": 1.0
+  },
+  "axis_rescaling_control": {
+    "max_abs_prediction_difference": 3.552713678800501e-15,
+    "r2": 0.9887338671130114,
+    "expected": "Invariant up to floating-point error."
+  },
+  "rogue_counterexample": {
+    "standardized_design_relative_frobenius_change": 0.7990292938456566,
+    "prediction_correlation_with_original": 0.9851054535863544,
+    "max_abs_prediction_difference": 2.6955530498076445,
+    "r2_original": 0.9887338671130114,
+    "r2_rogue": 0.9411190779049402,
+    "expected": "Not invariant; one counterexample disproves the by-construction claim."
+  }
+}

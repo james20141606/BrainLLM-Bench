@@ -1,0 +1,66 @@
+{
+ "note": "Width-matched class gap recomputed from the corrected per-session encoding matrices in concordance32_CORRECTED.json. Supersedes class_gap_width_control.json (corrupted encoding arm). Matched strata (dims [512, 768, 1024]) taken from the superseded artifact; embedding dims from results/p4_pc/pctrunc_*.json; ranks recomputed within the matched subset; family map codes/model_families.py; family-clustered permutation of the causal/non-causal label over whole families, 10000 permutations, seed 0, two-sided (one-sided retained for comparability with the superseded one-sided/20000 value).",
+ "source": "concordance32_CORRECTED.json",
+ "supersedes": "class_gap_width_control.json",
+ "pooled_width_matched": {
+  "n": 22,
+  "n_causal": 8,
+  "gap": 14.142857142857142,
+  "p_family_two_sided": 0.018198180181981802,
+  "p_family_one_sided": 0.009099090090990901,
+  "n_families": 10,
+  "dims": [
+   512,
+   768,
+   1024
+  ]
+ },
+ "per_stratum": {
+  "512": {
+   "n": 2,
+   "n_causal": 1,
+   "gap": 2.0
+  },
+  "768": {
+   "n": 12,
+   "n_causal": 4,
+   "gap": 7.875
+  },
+  "1024": {
+   "n": 8,
+   "n_causal": 3,
+   "gap": 4.8
+  }
+ },
+ "superseded_values": {
+  "pooled_width_matched": {
+   "n": 22,
+   "n_causal": 8,
+   "gap": 16.30357142857143,
+   "p_family": 0.009799510024498775,
+   "n_families": 10,
+   "dims": [
+    512,
+    768,
+    1024
+   ]
+  },
+  "per_stratum": {
+   "512": {
+    "n": 2,
+    "n_causal": 1,
+    "gap": 2.0
+   },
+   "768": {
+    "n": 12,
+    "n_causal": 4,
+    "gap": 9.375
+   },
+   "1024": {
+    "n": 8,
+    "n_causal": 3,
+    "gap": 4.8
+   }
+  }
+ }
+}

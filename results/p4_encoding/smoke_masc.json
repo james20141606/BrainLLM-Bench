@@ -1,0 +1,14 @@
+{
+  "subject": "01",
+  "n_words": 16464,
+  "n_channels": 208,
+  "n_stories": 4,
+  "window_ms": [
+    100,
+    500
+  ],
+  "layer": "gpt2_L12",
+  "held_out_R_real": 0.022288582591013698,
+  "held_out_R_shuffled": -0.005753144679761867,
+  "gap": 0.028041727270775564
+}

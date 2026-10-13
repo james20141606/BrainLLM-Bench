@@ -1,0 +1,599 @@
+{
+  "scope": "post hoc 10-model primary-cell diagnostic; recomputed RSA and encoding",
+  "models": [
+    "EleutherAI/pythia-160m",
+    "EleutherAI/pythia-410m",
+    "EleutherAI/pythia-70m",
+    "bert-base-uncased",
+    "bert-large-uncased",
+    "gpt2",
+    "gpt2-medium",
+    "roberta-base",
+    "t5-base",
+    "t5-large"
+  ],
+  "doses": [
+    0.0,
+    -1.0,
+    0.3,
+    0.7
+  ],
+  "per_model": [
+    {
+      "model": "EleutherAI/pythia-160m",
+      "kind": "causal",
+      "baseline_check": {
+        "rsa_max_abs_session_diff": 4.336808689942018e-18,
+        "encoding_max_abs_session_diff": 8.023096076392733e-17,
+        "tolerance": 1e-06,
+        "passed": true
+      },
+      "scores": [
+        {
+          "dose": 0.0,
+          "condition": "raw_baseline",
+          "rsa_mean": 0.007629927436207123,
+          "encoding_mean": 0.046784854846356666
+        },
+        {
+          "dose": -1.0,
+          "condition": "center_only",
+          "rsa_mean": 0.0017326765186451362,
+          "encoding_mean": 0.04678485484635669
+        },
+        {
+          "dose": 0.3,
+          "condition": "center_plus_rank1",
+          "rsa_mean": -0.00030818956129095767,
+          "encoding_mean": 0.029866748568649945
+        },
+        {
+          "dose": 0.7,
+          "condition": "center_plus_rank1",
+          "rsa_mean": 0.00020985305308277933,
+          "encoding_mean": 0.02410152110468587
+        }
+      ]
+    },
+    {
+      "model": "EleutherAI/pythia-410m",
+      "kind": "causal",
+      "baseline_check": {
+        "rsa_max_abs_session_diff": 5.637851296924623e-18,
+        "encoding_max_abs_session_diff": 1.0907073855204175e-16,
+        "tolerance": 1e-06,
+        "passed": true
+      },
+      "scores": [
+        {
+          "dose": 0.0,
+          "rsa_mean": 0.0032839839551322032,
+          "encoding_mean": 0.05271702438065753,
+          "condition": "raw_baseline"
+        },
+        {
+          "dose": -1.0,
+          "condition": "center_only",
+          "rsa_mean": 0.001521351608107108,
+          "encoding_mean": 0.05271702438065753
+        },
+        {
+          "dose": 0.3,
+          "condition": "center_plus_rank1",
+          "rsa_mean": -0.0005373823934981798,
+          "encoding_mean": 0.033791553655772584
+        },
+        {
+          "dose": 0.7,
+          "condition": "center_plus_rank1",
+          "rsa_mean": 6.182573023065863e-05,
+          "encoding_mean": 0.02719810141551966
+        }
+      ]
+    },
+    {
+      "model": "EleutherAI/pythia-70m",
+      "kind": "causal",
+      "baseline_check": {
+        "rsa_max_abs_session_diff": 4.336808689942018e-18,
+        "encoding_max_abs_session_diff": 5.117434254131581e-17,
+        "tolerance": 1e-06,
+        "passed": true
+      },
+      "scores": [
+        {
+          "dose": 0.0,
+          "rsa_mean": 0.007230825968148338,
+          "encoding_mean": 0.04824520740765325,
+          "condition": "raw_baseline"
+        },
+        {
+          "dose": -1.0,
+          "condition": "center_only",
+          "rsa_mean": 0.003381163193400371,
+          "encoding_mean": 0.04824520740765325
+        },
+        {
+          "dose": 0.3,
+          "condition": "center_plus_rank1",
+          "rsa_mean": 0.0002959187715539188,
+          "encoding_mean": 0.04918354456520411
+        },
+        {
+          "dose": 0.7,
+          "condition": "center_plus_rank1",
+          "rsa_mean": 0.0006176440882367363,
+          "encoding_mean": 0.04707847991687041
+        }
+      ]
+    },
+    {
+      "model": "bert-base-uncased",
+      "kind": "masked",
+      "baseline_check": {
+        "rsa_max_abs_session_diff": 6.938893903907228e-18,
+        "encoding_max_abs_session_diff": 4.163336342344337e-17,
+        "tolerance": 1e-06,
+        "passed": true
+      },
+      "scores": [
+        {
+          "dose": 0.0,
+          "rsa_mean": 0.007957544292387335,
+          "encoding_mean": 0.043646303230708415,
+          "condition": "raw_baseline"
+        },
+        {
+          "dose": -1.0,
+          "condition": "center_only",
+          "rsa_mean": 0.008628581346849351,
+          "encoding_mean": 0.04364630323070843
+        },
+        {
+          "dose": 0.3,
+          "condition": "center_plus_rank1",
+          "rsa_mean": 0.001995339883305345,
+          "encoding_mean": 0.040023543526443786
+        },
+        {
+          "dose": 0.7,
+          "condition": "center_plus_rank1",
+          "rsa_mean": 0.00042745814740284283,
+          "encoding_mean": 0.035545034943073796
+        }
+      ]
+    },
+    {
+      "model": "bert-large-uncased",
+      "kind": "masked",
+      "baseline_check": {
+        "rsa_max_abs_session_diff": 5.204170427930421e-18,
+        "encoding_max_abs_session_diff": 4.163336342344337e-17,
+        "tolerance": 1e-06,
+        "passed": true
+      },
+      "scores": [
+        {
+          "dose": 0.0,
+          "rsa_mean": 0.0073546923636912875,
+          "encoding_mean": 0.04257857460822961,
+          "condition": "raw_baseline"
+        },
+        {
+          "dose": -1.0,
+          "condition": "center_only",
+          "rsa_mean": 0.009508806018305296,
+          "encoding_mean": 0.04257857460822961
+        },
+        {
+          "dose": 0.3,
+          "condition": "center_plus_rank1",
+          "rsa_mean": 0.0023241582880424434,
+          "encoding_mean": 0.02870777344270169
+        },
+        {
+          "dose": 0.7,
+          "condition": "center_plus_rank1",
+          "rsa_mean": 0.0007447679057088182,
+          "encoding_mean": 0.02287930382169072
+        }
+      ]
+    },
+    {
+      "model": "gpt2",
+      "kind": "causal",
+      "baseline_check": {
+        "rsa_max_abs_session_diff": 4.336808689942018e-18,
+        "encoding_max_abs_session_diff": 4.163336342344337e-17,
+        "tolerance": 1e-06,
+        "passed": true
+      },
+      "scores": [
+        {
+          "dose": 0.0,
+          "rsa_mean": 0.004530733918096129,
+          "encoding_mean": 0.04319047086895254,
+          "condition": "raw_baseline"
+        },
+        {
+          "dose": -1.0,
+          "condition": "center_only",
+          "rsa_mean": 0.0015557103687607286,
+          "encoding_mean": 0.04319047086895256
+        },
+        {
+          "dose": 0.3,
+          "condition": "center_plus_rank1",
+          "rsa_mean": -0.0005547116029670105,
+          "encoding_mean": 0.03920812618719884
+        },
+        {
+          "dose": 0.7,
+          "condition": "center_plus_rank1",
+          "rsa_mean": -1.8878169808474768e-05,
+          "encoding_mean": 0.02960192021341344
+        }
+      ]
+    },
+    {
+      "model": "gpt2-medium",
+      "kind": "causal",
+      "baseline_check": {
+        "rsa_max_abs_session_diff": 3.469446951953614e-18,
+        "encoding_max_abs_session_diff": 3.469446951953614e-17,
+        "tolerance": 1e-06,
+        "passed": true
+      },
+      "scores": [
+        {
+          "dose": 0.0,
+          "rsa_mean": 0.002556196031427548,
+          "encoding_mean": 0.043649428968591704,
+          "condition": "raw_baseline"
+        },
+        {
+          "dose": -1.0,
+          "condition": "center_only",
+          "rsa_mean": 0.000993537861846053,
+          "encoding_mean": 0.043649428968591704
+        },
+        {
+          "dose": 0.3,
+          "condition": "center_plus_rank1",
+          "rsa_mean": -0.0003756065768698415,
+          "encoding_mean": 0.048285825660736026
+        },
+        {
+          "dose": 0.7,
+          "condition": "center_plus_rank1",
+          "rsa_mean": 0.00017508800575937735,
+          "encoding_mean": 0.0452479008942915
+        }
+      ]
+    },
+    {
+      "model": "roberta-base",
+      "kind": "masked",
+      "baseline_check": {
+        "rsa_max_abs_session_diff": 6.938893903907228e-18,
+        "encoding_max_abs_session_diff": 2.0816681711721685e-17,
+        "tolerance": 1e-06,
+        "passed": true
+      },
+      "scores": [
+        {
+          "dose": 0.0,
+          "rsa_mean": 0.008473818706300883,
+          "encoding_mean": 0.04453810957080637,
+          "condition": "raw_baseline"
+        },
+        {
+          "dose": -1.0,
+          "condition": "center_only",
+          "rsa_mean": 0.009677393958519553,
+          "encoding_mean": 0.04453810957080637
+        },
+        {
+          "dose": 0.3,
+          "condition": "center_plus_rank1",
+          "rsa_mean": 0.003153814653597464,
+          "encoding_mean": 0.04330439015406351
+        },
+        {
+          "dose": 0.7,
+          "condition": "center_plus_rank1",
+          "rsa_mean": 0.0009342196972298226,
+          "encoding_mean": 0.04199950363525002
+        }
+      ]
+    },
+    {
+      "model": "t5-base",
+      "kind": "encdec",
+      "baseline_check": {
+        "rsa_max_abs_session_diff": 8.673617379884035e-18,
+        "encoding_max_abs_session_diff": 2.0816681711721685e-17,
+        "tolerance": 1e-06,
+        "passed": true
+      },
+      "scores": [
+        {
+          "dose": 0.0,
+          "rsa_mean": 0.010338644743976031,
+          "encoding_mean": 0.03585947611197998,
+          "condition": "raw_baseline"
+        },
+        {
+          "dose": -1.0,
+          "condition": "center_only",
+          "rsa_mean": 0.012536748835126968,
+          "encoding_mean": 0.035859476111979996
+        },
+        {
+          "dose": 0.3,
+          "condition": "center_plus_rank1",
+          "rsa_mean": 0.004377544444171384,
+          "encoding_mean": 0.02011525714568155
+        },
+        {
+          "dose": 0.7,
+          "condition": "center_plus_rank1",
+          "rsa_mean": 0.001500421008392995,
+          "encoding_mean": 0.014820628077710023
+        }
+      ]
+    },
+    {
+      "model": "t5-large",
+      "kind": "encdec",
+      "baseline_check": {
+        "rsa_max_abs_session_diff": 6.938893903907228e-18,
+        "encoding_max_abs_session_diff": 2.7755575615628914e-17,
+        "tolerance": 1e-06,
+        "passed": true
+      },
+      "scores": [
+        {
+          "dose": 0.0,
+          "rsa_mean": 0.010625096668929723,
+          "encoding_mean": 0.04377257452190055,
+          "condition": "raw_baseline"
+        },
+        {
+          "dose": -1.0,
+          "condition": "center_only",
+          "rsa_mean": 0.011618643036584213,
+          "encoding_mean": 0.04377257452190055
+        },
+        {
+          "dose": 0.3,
+          "condition": "center_plus_rank1",
+          "rsa_mean": 0.00453326141714259,
+          "encoding_mean": 0.03710550328336858
+        },
+        {
+          "dose": 0.7,
+          "condition": "center_plus_rank1",
+          "rsa_mean": 0.001344984330463622,
+          "encoding_mean": 0.03254544928578076
+        }
+      ]
+    }
+  ],
+  "rankings": [
+    {
+      "dose": 0.0,
+      "condition": "raw_baseline",
+      "rsa_model_order_desc": [
+        "t5-large",
+        "t5-base",
+        "roberta-base",
+        "bert-base-uncased",
+        "EleutherAI/pythia-160m",
+        "bert-large-uncased",
+        "EleutherAI/pythia-70m",
+        "gpt2",
+        "EleutherAI/pythia-410m",
+        "gpt2-medium"
+      ],
+      "encoding_model_order_desc": [
+        "EleutherAI/pythia-410m",
+        "EleutherAI/pythia-70m",
+        "EleutherAI/pythia-160m",
+        "roberta-base",
+        "t5-large",
+        "gpt2-medium",
+        "bert-base-uncased",
+        "gpt2",
+        "bert-large-uncased",
+        "t5-base"
+      ],
+      "rsa_rank_corr_vs_baseline": 0.9999999999999999,
+      "rsa_rank_corr_family_ci95": [
+        0.9999999999999998,
+        1.0
+      ],
+      "encoding_rank_corr_vs_baseline": 0.9999999999999999,
+      "encoding_rank_corr_family_ci95": [
+        0.9999999999999998,
+        1.0
+      ],
+      "rsa_encoding_concordance": -0.2606060606060606,
+      "rsa_encoding_concordance_family_ci95": [
+        -0.9875776397515528,
+        0.6800000000000002
+      ],
+      "encoding_max_abs_score_shift": 0.0,
+      "rsa_rank_corr_vs_center_only": 0.9272727272727272,
+      "encoding_rank_corr_vs_center_only": 0.9999999999999999,
+      "encoding_max_abs_score_shift_vs_center_only": 2.0816681711721685e-17
+    },
+    {
+      "dose": -1.0,
+      "condition": "center_only",
+      "rsa_model_order_desc": [
+        "t5-base",
+        "t5-large",
+        "roberta-base",
+        "bert-large-uncased",
+        "bert-base-uncased",
+        "EleutherAI/pythia-70m",
+        "EleutherAI/pythia-160m",
+        "gpt2",
+        "EleutherAI/pythia-410m",
+        "gpt2-medium"
+      ],
+      "encoding_model_order_desc": [
+        "EleutherAI/pythia-410m",
+        "EleutherAI/pythia-70m",
+        "EleutherAI/pythia-160m",
+        "roberta-base",
+        "t5-large",
+        "gpt2-medium",
+        "bert-base-uncased",
+        "gpt2",
+        "bert-large-uncased",
+        "t5-base"
+      ],
+      "rsa_rank_corr_vs_baseline": 0.9272727272727272,
+      "rsa_rank_corr_family_ci95": [
+        0.41401273885350326,
+        0.9829059829059827
+      ],
+      "encoding_rank_corr_vs_baseline": 0.9999999999999999,
+      "encoding_rank_corr_family_ci95": [
+        0.9999999999999998,
+        1.0
+      ],
+      "rsa_encoding_concordance": -0.406060606060606,
+      "rsa_encoding_concordance_family_ci95": [
+        -0.9829059829059827,
+        0.27999999999999997
+      ],
+      "encoding_max_abs_score_shift": 2.0816681711721685e-17,
+      "rsa_rank_corr_vs_center_only": 0.9999999999999999,
+      "encoding_rank_corr_vs_center_only": 0.9999999999999999,
+      "encoding_max_abs_score_shift_vs_center_only": 0.0
+    },
+    {
+      "dose": 0.3,
+      "condition": "center_plus_rank1",
+      "rsa_model_order_desc": [
+        "t5-large",
+        "t5-base",
+        "roberta-base",
+        "bert-large-uncased",
+        "bert-base-uncased",
+        "EleutherAI/pythia-70m",
+        "EleutherAI/pythia-160m",
+        "gpt2-medium",
+        "EleutherAI/pythia-410m",
+        "gpt2"
+      ],
+      "encoding_model_order_desc": [
+        "EleutherAI/pythia-70m",
+        "gpt2-medium",
+        "roberta-base",
+        "bert-base-uncased",
+        "gpt2",
+        "t5-large",
+        "EleutherAI/pythia-410m",
+        "EleutherAI/pythia-160m",
+        "bert-large-uncased",
+        "t5-base"
+      ],
+      "rsa_rank_corr_vs_baseline": 0.8909090909090909,
+      "rsa_rank_corr_family_ci95": [
+        0.3963636363636364,
+        0.9829059829059827
+      ],
+      "encoding_rank_corr_vs_baseline": 0.406060606060606,
+      "encoding_rank_corr_family_ci95": [
+        -0.09754786806114238,
+        0.9999999999999998
+      ],
+      "rsa_encoding_concordance": -0.24848484848484845,
+      "rsa_encoding_concordance_family_ci95": [
+        -0.654320987654321,
+        0.42335766423357657
+      ],
+      "encoding_max_abs_score_shift": 0.018925470724884944,
+      "rsa_rank_corr_vs_center_only": 0.9393939393939393,
+      "encoding_rank_corr_vs_center_only": 0.406060606060606,
+      "encoding_max_abs_score_shift_vs_center_only": 0.018925470724884944
+    },
+    {
+      "dose": 0.7,
+      "condition": "center_plus_rank1",
+      "rsa_model_order_desc": [
+        "t5-base",
+        "t5-large",
+        "roberta-base",
+        "bert-large-uncased",
+        "EleutherAI/pythia-70m",
+        "bert-base-uncased",
+        "EleutherAI/pythia-160m",
+        "gpt2-medium",
+        "EleutherAI/pythia-410m",
+        "gpt2"
+      ],
+      "encoding_model_order_desc": [
+        "EleutherAI/pythia-70m",
+        "gpt2-medium",
+        "roberta-base",
+        "bert-base-uncased",
+        "t5-large",
+        "gpt2",
+        "EleutherAI/pythia-410m",
+        "EleutherAI/pythia-160m",
+        "bert-large-uncased",
+        "t5-base"
+      ],
+      "rsa_rank_corr_vs_baseline": 0.8424242424242423,
+      "rsa_rank_corr_family_ci95": [
+        0.27999999999999997,
+        0.9230769230769231
+      ],
+      "encoding_rank_corr_vs_baseline": 0.4424242424242424,
+      "encoding_rank_corr_family_ci95": [
+        -0.10545454545454544,
+        0.9999999999999998
+      ],
+      "rsa_encoding_concordance": -0.16363636363636364,
+      "rsa_encoding_concordance_family_ci95": [
+        -0.7857142857142856,
+        0.5
+      ],
+      "encoding_max_abs_score_shift": 0.02551892296513787,
+      "rsa_rank_corr_vs_center_only": 0.9393939393939393,
+      "encoding_rank_corr_vs_center_only": 0.4424242424242424,
+      "encoding_max_abs_score_shift_vs_center_only": 0.02551892296513787
+    }
+  ],
+  "uncertainty": {
+    "method": "family-block bootstrap, 2000 draws, seed 20260922",
+    "families": {
+      "EleutherAI": [
+        "EleutherAI/pythia-160m",
+        "EleutherAI/pythia-410m",
+        "EleutherAI/pythia-70m"
+      ],
+      "bert": [
+        "bert-base-uncased",
+        "bert-large-uncased"
+      ],
+      "gpt2": [
+        "gpt2",
+        "gpt2-medium"
+      ],
+      "roberta": [
+        "roberta-base"
+      ],
+      "t5": [
+        "t5-base",
+        "t5-large"
+      ]
+    },
+    "scope": "descriptive; few family blocks, no general geometry exclusion"
+  }
+}

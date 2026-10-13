@@ -1,0 +1,107 @@
+{
+  "rule": "modal per-cohort outcome; ties broken toward the weaker claim",
+  "n_claims": 10,
+  "n_derivable": 9,
+  "tally_over_derivable": {
+    "refine": 7,
+    "replicate": 1,
+    "contradict": 1
+  },
+  "claims": {
+    "Tang et al.": {
+      "per_cohort": {
+        "LibriBrain/bert_L6": "refines",
+        "LibriBrain/gpt2_L6": "refines",
+        "LibriBrain/gpt2_L6_seg3s": "refines",
+        "LibriBrain/gpt2medium_L12": "refines",
+        "LibriBrain/pythia160m_L6": "refines",
+        "LibriBrain/roberta_L6": "refines",
+        "LibriBrain/t5_L6": "refines"
+      },
+      "verdict": "refine",
+      "evidence": "{\"bert_L6\": {\"top1\": 0.0007372301211163771, \"top10\": 0.006845708267509215, \"top10_over_chance\": 6.5, \"median_rank\": 2355.0, \"n_candidates\": 9495, \"shuffled_top10_over_chance\": 1.3}, \"gpt2_L6\": {\"top1\": 0.000315955766192733, \"top10\": 0.006424433912585572, \"top10_over_chance\": 6.1, \"median_rank\": 2143.0, \"n_candidates\": 9495, \"shuffled_top10_over_chance\": 0.7}, \"gpt2_L6_seg3s\": {\"top1\": 0.007323026851098454, \"top10\": 0.04800650935720097, \"top10_over_chance\": 5.9, \"median_rank\": 366.0, \"n_candidates\": 1229, \"shuffled_top10_over_chance\": 0.8}, \"gpt2medium_L12\": {\"top1\": 0.000631911532385466, \"top10\": 0.006213796735123749, \"top10_over_chance\": 5.9, \"median_rank\": 2551.0, \"n_candidates\": 9495, \"shuffled_top10_over_chance\": 0.3}, \"pythia160m_L6\": {\"top1\": 0.0007372301211163771, \"top10\": 0.006635071090047393, \"top10_over_chance\": 6.3, \"median_rank\": 2558.0, \"n_candidates\": 9495, \"shuffled_top10_over_chance\": 0.9}, \"roberta_L6\": {\"top1\": 0.0008425487098472881, \"top10\": 0.006003159557661927, \"top10_over_chance\": 5.7, \"median_rank\": 2278.0, \"n_candidates\": 9495, \"shuffled_top10_over_chance\": 0.8}, \"t5_L6\": {\"top1\": 0.000631911532385466, \"top10\": 0.006003159557661927, \"top10_over_chance\": 5.7, \"median_rank\": 2202.0, \"n_candidates\": 9495, \"shuffled_top10_over_chance\": 0.8}}"
+    },
+    "Toneva & Wehbe": {
+      "per_cohort": {
+        "ECoG/bert-base-uncased": "contradicts",
+        "ECoG/gpt2-medium": "contradicts",
+        "ECoG/gpt2": "supports",
+        "MEG-SCANS/german-bert": "contradicts",
+        "MEG-SCANS/german-gpt2": "supports",
+        "MEG-SCANS/multilingual-bert": "contradicts",
+        "MEG-MASC/german-bert": "contradicts",
+        "MEG-MASC/german-gpt2": "contradicts",
+        "LibriBrain": "NOT_DERIVABLE",
+        "Brennan": "NOT_DERIVABLE"
+      },
+      "verdict": "refine",
+      "evidence": "{\"ECoG/bert-base-uncased\": {\"shallow\": 0.0035161669366061, \"mid\": 0.0058861295692622, \"deep\": 0.0065028527751564, \"best_layer\": 10, \"n_layers\": 13, \"strict_mid_wins\": false, \"mid_or_shallow_beats_deep\": false}, \"ECoG/gpt2-medium\": {\"shallow\": 0.0088019166141748, \"mid\": 0.0073735630139708, \"deep\": 0.0055546704679727, \"best_layer\": 7, \"n_layers\": 25, \"strict_mid_wins\": false, \"mid_or_shallow_beats_deep\": true}, \"ECoG/gpt2\": {\"shallow\": 0.0094545446336269, \"mid\": 0.0096188895404338, \"deep\": 0.007340713404119, \"best_layer\": 11, \"n_layers\": 13, \"strict_mid_wins\": true, \"mid_or_shallow_beats_deep\": true}, \"MEG-SCANS/german-bert\": {\"shallow\": 0.0050026797689497, \"mid\": 0.0040119122713804, \"deep\": 0.0032817968167364, \"best_layer\": 0, \"n_layers\": 13, \"strict_mid_wins\": false, \"mid_or_shallow_beats_deep\": true}, \"MEG-SCANS/german-gpt2\": {\"shallow\": 0.0035004010424017, \"mid\": 0.0036667799577116, \"deep\": 0.0035905446857213, \"best_layer\": 12, \"n_layers\": 13, \"strict_mid_wins\": true, \"mid_or_shallow_beats_deep\": true}, \"MEG-SCANS/multilingual-bert\": {\"shallow\": 0.0051315003074705, \"mid\": 0.0041269860230386, \"deep\": 0.0017107564490288, \"best_layer\": 4, \"n_layers\": 13, \"strict_mid_wins\": false, \"mid_or_shallow_beats_deep\": true}, \"MEG-MASC/german-bert\": {\"shallow\": 0.0002228543744422, \"mid\": 0.0004606716975104, \"deep\": 0.0009596498566679, \"best_layer\": 12, \"n_layers\": 13, \"strict_mid_wins\": false, \"mid_or_shallow_beats_deep\": false}, \"MEG-MASC/german-gpt2\": {\"shallow\": -2.590601798146963e-05, \"mid\": -0.0004731485969386, \"deep\": -0.0004485588578972, \"best_layer\": 0, \"n_layers\": 13, \"strict_mid_wins\": false, \"mid_or_shallow_beats_deep\": true}, \"_coverage\": {\"cells\": 8, \"cohorts\": [\"ECoG\", \"MEG-MASC\", \"MEG-SCANS\"], \"strict_supports\": 2, \"weak_supports\": 6, \"not_recomputable\": [\"LibriBrain\", \"Brennan\"], \"reason\": \"results/stage1_streaming_* empty on disk\"}}"
+    },
+    "Schrimpf et al.": {
+      "per_cohort": {
+        "(all)": "NOT_DERIVABLE"
+      },
+      "verdict": "NOT_DERIVABLE",
+      "evidence": "source not mirrored: stage1_streaming_* empty; only a jointly-thresholded lower bound on the LLM side survives"
+    },
+    "Caucheteux et al.": {
+      "per_cohort": {
+        "LibriBrain/BERT L7": "refines",
+        "LibriBrain/GPT-2 L11": "refines"
+      },
+      "verdict": "refine",
+      "evidence": "{\"BERT L7\": {\"n_windows\": 8, \"forward\": 0, \"backward\": 4, \"k_peaks\": [-6, -1, 0, 0, -1, 0, 0, -1]}, \"GPT-2 L11\": {\"n_windows\": 8, \"forward\": 4, \"backward\": 3, \"k_peaks\": [6, -5, -2, 1, 1, 1, 0, -1]}}"
+    },
+    "Goldstein et al.": {
+      "per_cohort": {
+        "LibriBrain/bert-base-uncased": "refines",
+        "LibriBrain/gpt2": "contradicts",
+        "LibriBrain/gpt2-medium": "contradicts"
+      },
+      "verdict": "refine",
+      "evidence": "{\"bert-base-uncased\": {\"n_cells\": 36, \"sig_positive\": 5, \"sig_negative\": 5}, \"gpt2\": {\"n_cells\": 36, \"sig_positive\": 4, \"sig_negative\": 9}, \"gpt2-medium\": {\"n_cells\": 36, \"sig_positive\": 5, \"sig_negative\": 15}}"
+    },
+    "Zou et al.": {
+      "per_cohort": {
+        "Brennan": "supports",
+        "MEG-MASC": "refines",
+        "MEG-SCANS": "contradicts"
+      },
+      "verdict": "refine",
+      "evidence": "{\"Brennan\": {\"model\": \"BERT\", \"mean_delta\": 0.0106083160226431, \"wilcoxon_p\": 0.000239611428757}, \"MEG-MASC\": {\"model\": \"BERT\", \"mean_delta\": -0.0028743743734588, \"wilcoxon_p\": 0.375}, \"MEG-SCANS\": {\"model\": \"Mult-BERT\", \"mean_delta\": -0.005254097949832, \"wilcoxon_p\": 0.0054144859313964}}"
+    },
+    "Bhaya-Grossman et al.": {
+      "per_cohort": {
+        "MEG-SCANS": "supports"
+      },
+      "verdict": "replicate",
+      "evidence": "{\"n_regions\": 6, \"multilingual_wins_shallow\": 5, \"german_native_wins_deep\": 6}"
+    },
+    "Feghhi/Hadidi et al.": {
+      "per_cohort": {
+        "brennan": "refines",
+        "ecog_persubject": "refines",
+        "libribrain": "contradicts",
+        "megmasc": "refines",
+        "megscans": "refines"
+      },
+      "verdict": "refine",
+      "evidence": "{\"brennan\": {\"median_frac_robust\": 0.305, \"n\": 4}, \"ecog_persubject\": {\"median_frac_robust\": 0.68, \"n\": 27}, \"libribrain\": {\"median_frac_robust\": 0.8049999999999999, \"n\": 4}, \"megmasc\": {\"median_frac_robust\": 0.34, \"n\": 3}, \"megscans\": {\"median_frac_robust\": 0.55, \"n\": 3}}"
+    },
+    "Antonello et al.": {
+      "per_cohort": {
+        "LibriBrain": "contradicts"
+      },
+      "verdict": "contradict",
+      "evidence": "{\"rho\": 0.4285714285714286, \"p\": 0.3965014577259474, \"largest_vs_smallest\": {\"diff\": 9.522210813492476e-06, \"wilcoxon_p\": 0.9697265625, \"param_ratio\": 40.0}}"
+    },
+    "He et al.": {
+      "per_cohort": {
+        "Brennan": "refines",
+        "MEG-MASC": "refines"
+      },
+      "verdict": "refine",
+      "evidence": "{\"Brennan\": {\"mean_z_bnd_causal\": -0.0009366602274535002, \"mean_z_bnd_masked\": -0.0065092169218739, \"signs_differ\": false}, \"MEG-MASC\": {\"mean_z_bnd_causal\": 0.0119054059524575, \"mean_z_bnd_masked\": 0.0201246422713812, \"signs_differ\": false}}"
+    }
+  }
+}

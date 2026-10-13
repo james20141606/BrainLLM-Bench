@@ -1,0 +1,48 @@
+{
+  "cohort": "Brennan",
+  "set": "brennan_p4_v2",
+  "model": "BERT",
+  "layer": "layer_6.npy",
+  "window_ms": [
+    325,
+    475
+  ],
+  "long_pause_threshold_ms": 51.86619499999967,
+  "onset_median_gap_ms": 510.13026999999767,
+  "medial_median_gap_ms": -2.5582600000007005,
+  "delta_base": {
+    "n": 47,
+    "n_pos": 38,
+    "mean": 0.047326710014057645,
+    "cohen_d": 0.8607794795547448,
+    "wilcoxon_p": 2.79497143651497e-07
+  },
+  "delta_acoustic_controlled": {
+    "n": 47,
+    "n_pos": 40,
+    "mean": 0.05019472867053895,
+    "cohen_d": 0.8947816533602314,
+    "wilcoxon_p": 2.21056239979589e-07
+  },
+  "delta_gap_matched": {
+    "n": 47,
+    "n_pos": 45,
+    "mean": 0.07851736977330773,
+    "cohen_d": 1.3944827237068183,
+    "wilcoxon_p": 4.689582056016661e-13
+  },
+  "z_onset_base": {
+    "n": 47,
+    "n_pos": 9,
+    "mean": -0.030353446030739376,
+    "cohen_d": -0.6227736831167175,
+    "wilcoxon_p": 2.9836296604912604e-05
+  },
+  "z_far_base": {
+    "n": 47,
+    "n_pos": 30,
+    "mean": 0.016973263983318262,
+    "cohen_d": 0.42779144183130136,
+    "wilcoxon_p": 0.00442322262927064
+  }
+}

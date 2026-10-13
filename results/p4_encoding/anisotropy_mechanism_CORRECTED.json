@@ -1,0 +1,39 @@
+{
+ "note": "Encoding-side class means recomputed from the corrected per-session encoding matrices in concordance32_CORRECTED.json. Supersedes the encoding-dependent fields of anisotropy_mechanism.json (per-class mean encoding and per-class ENC-minus-RSA mean rank gap); the anisotropy measures themselves (PR/dim, EVR of PC1) come from results/p4_pc and are unaffected, as is the RSA arm.",
+ "source": "concordance32_CORRECTED.json",
+ "supersedes": "anisotropy_mechanism.json (encoding-side class means and rank gaps)",
+ "class_means": {
+  "causal": {
+   "n": 18,
+   "mean_enc": 0.049396797459528574,
+   "mean_rsa": 0.004949457533027751,
+   "mean_rank_gap": 11.222222222222221
+  },
+  "encdec": {
+   "n": 5,
+   "mean_enc": 0.04262140654475891,
+   "mean_rsa": 0.01009819268905952,
+   "mean_rank_gap": -18.8
+  },
+  "masked": {
+   "n": 9,
+   "mean_enc": 0.041222614710292836,
+   "mean_rsa": 0.008247427068488286,
+   "mean_rank_gap": -12.0
+  }
+ },
+ "superseded_values": {
+  "causal": {
+   "mean_enc": 0.037216943240324644,
+   "mean_rank_gap": 12.222222222222221
+  },
+  "encdec": {
+   "mean_enc": 0.03107368101887601,
+   "mean_rank_gap": -20.2
+  },
+  "masked": {
+   "mean_enc": 0.029962266059815983,
+   "mean_rank_gap": -13.222222222222221
+  }
+ }
+}

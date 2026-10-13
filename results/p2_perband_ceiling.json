@@ -1,0 +1,113 @@
+{
+  "per_band": {
+    "gamma": {
+      "band_hz": [
+        30.0,
+        80.0
+      ],
+      "ceiling_splithalf_raw": -0.0009948142085406469,
+      "ceiling_SB_raw": -0.0019916096987074353,
+      "alignment_raw": -0.00028024422238169,
+      "normalized_raw": 0.14071242099472098,
+      "ceiling_splithalf_partial": -0.0011664996190301157,
+      "ceiling_SB_partial": -0.002335723859051975,
+      "alignment_partial": -0.0006286529176414399,
+      "normalized_partial": 0.2691469349876821
+    },
+    "broadband": {
+      "band_hz": [
+        1.0,
+        80.0
+      ],
+      "ceiling_splithalf_raw": 0.07243318882287642,
+      "ceiling_SB_raw": 0.13508196049467752,
+      "alignment_raw": 0.005644621662639904,
+      "normalized_raw": 0.041786643027455266,
+      "ceiling_splithalf_partial": 0.08598397938531267,
+      "ceiling_SB_partial": 0.15835220595792068,
+      "alignment_partial": -0.0035769198620235333,
+      "normalized_partial": -0.02258838037895119
+    },
+    "delta": {
+      "band_hz": [
+        1.0,
+        4.0
+      ],
+      "ceiling_splithalf_raw": 0.13878032225307774,
+      "ceiling_SB_raw": 0.24373501990006424,
+      "alignment_raw": 0.005469828610953971,
+      "normalized_raw": 0.022441701702105424,
+      "ceiling_splithalf_partial": 0.16163455877289193,
+      "ceiling_SB_partial": 0.2782881372669159,
+      "alignment_partial": -0.0064420916834680595,
+      "normalized_partial": -0.023148998540635683
+    },
+    "theta": {
+      "band_hz": [
+        4.0,
+        8.0
+      ],
+      "ceiling_splithalf_raw": 0.056458887275133776,
+      "ceiling_SB_raw": 0.10688326437530395,
+      "alignment_raw": 0.0016035681309498062,
+      "normalized_raw": 0.015002986111269266,
+      "ceiling_splithalf_partial": 0.06414756331694667,
+      "ceiling_SB_partial": 0.12056140619633389,
+      "alignment_partial": -0.005710843786452777,
+      "normalized_partial": -0.04736875561282593
+    },
+    "alpha": {
+      "band_hz": [
+        8.0,
+        13.0
+      ],
+      "ceiling_splithalf_raw": 0.0014602699664789968,
+      "ceiling_SB_raw": 0.0029162813748524947,
+      "alignment_raw": -0.0033882803808352627,
+      "normalized_raw": -1.161849610964457,
+      "ceiling_splithalf_partial": 0.0020920092057067096,
+      "ceiling_SB_partial": 0.004175283679519428,
+      "alignment_partial": -0.0021223683151565752,
+      "normalized_partial": -0.5083171535307173
+    },
+    "beta": {
+      "band_hz": [
+        13.0,
+        30.0
+      ],
+      "ceiling_splithalf_raw": 0.00029446823387605615,
+      "ceiling_SB_raw": 0.0005887630957231432,
+      "alignment_raw": -0.00011893352674308185,
+      "normalized_raw": -0.2020057432387177,
+      "ceiling_splithalf_partial": -0.00032706883094669927,
+      "ceiling_SB_partial": -0.0006543516799323821,
+      "alignment_partial": 0.0006384682847235121,
+      "normalized_partial": -0.9757265157315539
+    }
+  },
+  "verdict": {
+    "cell": {
+      "dataset": "libribrain",
+      "region": "temporal_L",
+      "time_ms": 350.0,
+      "gpt2_layer": 5,
+      "n_words": 462,
+      "n_sessions": 12
+    },
+    "confound_C2_source": "wordfreq.zipf_frequency(en)",
+    "raw": {
+      "bb_over_gamma_alignment_ratio": -20.141794948236193,
+      "bb_norm": 0.041786643027455266,
+      "gamma_norm": 0.14071242099472098,
+      "bb_norm_over_gamma_norm": 0.2969648502389348,
+      "bb_still_wins": false
+    },
+    "partial": {
+      "bb_over_gamma_alignment_ratio": 5.689816688425321,
+      "bb_norm": -0.02258838037895119,
+      "gamma_norm": 0.2691469349876821,
+      "bb_norm_over_gamma_norm": -0.08392583173939908,
+      "bb_still_wins": false
+    }
+  }
+}

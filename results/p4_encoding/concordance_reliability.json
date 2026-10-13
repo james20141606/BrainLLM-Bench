@@ -1,0 +1,58 @@
+{
+  "note": "reliability-aware concordance; see docstring. Decoding ranking is unreliable (0.54) so its concordance with the representational readouts is not reliably estimable.",
+  "families": [
+    "gpt2",
+    "gpt2medium",
+    "pythia160m",
+    "bert",
+    "roberta",
+    "t5"
+  ],
+  "readout_reliability_splithalf_median": {
+    "RSA": 0.943,
+    "encoding": 0.943,
+    "decoding": 0.543
+  },
+  "readout_reliability_ci90": {
+    "RSA": [
+      0.886,
+      1.0
+    ],
+    "encoding": [
+      0.829,
+      1.0
+    ],
+    "decoding": [
+      0.086,
+      0.829
+    ]
+  },
+  "reliable_pair_concordance": {
+    "RSA_vs_encoding_spearman": 0.6,
+    "RSA_vs_encoding_p": 0.208,
+    "n_families": 6,
+    "comment": "both readouts 0.94-reliable; this is the trustworthy assay-dependence estimate"
+  },
+  "decoding_not_reliably_estimable": {
+    "decoding_reliability": 0.543,
+    "decoding_mean_rank_reproducible": [
+      "roberta",
+      "t5",
+      "gpt2",
+      "bert",
+      "gpt2medium",
+      "pythia160m"
+    ],
+    "enc_vs_decoding_stale_maxlayer_spearman": 0.058,
+    "enc_vs_decoding_reproducible_spearman": -0.771,
+    "RSA_vs_decoding_stale_maxlayer_spearman": 0.232,
+    "RSA_vs_decoding_reproducible_spearman": -0.714,
+    "comment": "the two decoding estimates disagree in sign (+0.06 vs -0.77), which is exactly what a 0.54-reliable ranking predicts: not trustworthy."
+  },
+  "gpt2_fluke": {
+    "concordance_json_decoding_xchance": 13.100000000000001,
+    "reproducible_mean_over_12_sessions": 5.58,
+    "sessions_won_of_12": 0,
+    "comment": "gpt2=13.1 in concordance.json was a single lucky run; does not reproduce."
+  }
+}

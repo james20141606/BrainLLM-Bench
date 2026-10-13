@@ -1,0 +1,23 @@
+{
+  "model": "bert-base-uncased",
+  "tag": "bert",
+  "d_model": 768,
+  "layers_kept": [
+    2,
+    4,
+    6,
+    8,
+    10,
+    12
+  ],
+  "n_epochs": 177127,
+  "n_filled": 177127,
+  "shape": [
+    177127,
+    6,
+    768
+  ],
+  "dtype": "float16",
+  "elapsed_sec": 48.11223649978638,
+  "note": "contextual per-occurrence hidden at last sub-token of each word"
+}
