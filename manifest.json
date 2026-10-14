@@ -18,7 +18,7 @@
     {
       "bundle_path": "VERIFY.md",
       "original_sha256": null,
-      "packaged_sha256": "59b59bb164eee5607c88c6d09cba45cb933fa9e15f64b1bc271bf64e45b1bdc6",
+      "packaged_sha256": "eea8734326ee203125127d108648ca2855500faf0035526bb9170c744f7d3ab5",
       "redaction_changed_bytes": false,
       "source_path": null
     },
@@ -501,7 +501,7 @@
     {
       "bundle_path": "codes/check_paperA_revision_r1_20261007.py",
       "original_sha256": "c52997a9ec572774c8afe86151cbf539bdbd3cf33bb04deef902e35f7b28ec11",
-      "packaged_sha256": "52ca7a0ef2a8cde3a36bdedddaef0bc7d9ad18eedbd21dfd83ee81bb85fcecfc",
+      "packaged_sha256": "7d021173cc9623ee5460235a43ce3a11fd83432d9f273dbd49b011d9be4ea73d",
       "redaction_changed_bytes": true,
       "source_path": "codes/check_paperA_revision_r1_20261007.py"
     },

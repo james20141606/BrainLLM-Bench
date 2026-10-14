@@ -200,3 +200,8 @@ not a literature replication rate. Historical labels remain for provenance.
   bytes; both hashes are retained rather than pretending the copy is byte-
   identical. The manifest excludes itself because a file cannot contain its
   own cryptographic hash.
+
+
+## Note on `A1_git_timing`
+
+`codes/check_paperA_revision_r1_20261007.py` checks that the reading-rule summary was committed about two hours before the 2026-09-26 19:59 (+08:00) deadline. That needs the development repository's git history. In this public release the file arrives in the root commit, so the check prints `SKIP` (not `PASS`) and the timing is not verified here.

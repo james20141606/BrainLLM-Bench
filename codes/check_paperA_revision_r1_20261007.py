@@ -184,7 +184,13 @@ def run(tex_raw: str, R: Path) -> Pins:
     # timing claim: summary committed before the 2026-09-26 19:59 (+08:00) deadline, ~2 h before (git, if available)
     g = subprocess.run(["git", "log", "-1", "--diff-filter=A", "--format=%cI", "--", str(R / "readrule_20260926/readrule_summary.json")],
                        cwd=ROOT, capture_output=True, text=True)
-    if g.returncode == 0 and g.stdout.strip():
+    root_add = subprocess.run(["git", "log", "-1", "--diff-filter=A", "--format=%P", "--", str(R / "readrule_20260926/readrule_summary.json")],
+                              cwd=ROOT, capture_output=True, text=True)
+    if g.returncode == 0 and g.stdout.strip() and not root_add.stdout.strip():
+        # public release: the file arrives in the release's root commit, so the development-repo
+        # commit time is not in this history. Reported as SKIP, not PASS; checked in the dev repo.
+        print("  SKIP  A1_git_timing  (public release history; the commit time is checked in the development repository)")
+    elif g.returncode == 0 and g.stdout.strip():
         from datetime import datetime
         t = datetime.fromisoformat(g.stdout.strip())
         dl_t = datetime.fromisoformat("2026-09-26T19:59:00+08:00")
