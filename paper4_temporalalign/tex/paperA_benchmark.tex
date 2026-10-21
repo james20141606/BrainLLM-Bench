@@ -70,7 +70,7 @@ autoregressive models last and encoding puts them first.
 \begin{figure}[t]
 \centering
 \includegraphics[width=\textwidth]{../figures_v2/fig1_20261010/fig1.pdf}
-\caption{\textbf{A model ranking survives new listeners, but not always a new story or a new readout.} Rows change one argument of Eq.~\eqref{eq:agree}. Dots: listener-half splits or story pairs; bars: medians (Table~\ref{tab:main}). Diamonds: readout concordance, family-clustered 95\% intervals; grey circles: reliability ceiling. With each model's static layer-0 embedding (C4) also partialled out, the reversal is not determined, nor under a common reading rule. $^\dagger$Exploratory. Brennan EEG is omitted: its epochs were not baseline-corrected, and after drift removal its concordance is not determined. Receipts: \texttt{crossed\_narrative/}, \texttt{ds003020/}, \texttt{concordance32\_CORRECTED}, \texttt{concordance\_spacefix\_masc27\_32}, \texttt{brennan\_k2\_summary\_20261009}.}
+\caption{\textbf{A model ranking survives new listeners, but not always a new story or a new readout.} Rows change one argument of Eq.~\eqref{eq:agree}. Dots: listener-half splits or story pairs; bars: medians (Table~\ref{tab:main}). Diamonds: readout concordance, family-clustered 95\% intervals; grey circles: reliability ceiling. With each model's static layer-0 embedding (C4) also partialled out, the reversal is not determined, nor under a common reading rule. $^\dagger$Exploratory. Brennan EEG is omitted: its epochs were not baseline-corrected, and after drift removal its concordance is not determined.}
 \label{fig:overview}
 \end{figure}
 
@@ -841,8 +841,7 @@ replicate it. Table~\ref{tab:checkpoints} lists the $32$ checkpoints by class an
 \begin{table}[t]
 \centering\small
 \caption{The $32$ checkpoints of the readout comparison, by objective class and family; the
-$12$ families are the resampling units of every family-clustered interval
-(\texttt{codes/model\_families.py}). All are the public pretrained releases.}
+$12$ families are the resampling units of every family-clustered interval. All are the public pretrained releases.}
 \label{tab:checkpoints}
 \begin{tabular}{@{}llp{6.4cm}@{}}
 \toprule
@@ -1109,8 +1108,7 @@ FDR-controlled linear mixed-effects (LME) survivors out of the $27$
 region~$\times$~band~$\times$~layer-group inference cells of \S\ref{sec:tensor}
 (ECoG has no session-level LME). Region names follow Appendix~\ref{app:protocol}; PCG is
 precentral gyrus. Broadband is the winning band in
-$11$ of $12$ cells; ECoG carries the largest raw alignment. Source:
-\texttt{results/cross\_cohort\_summary.tsv}.}
+$11$ of $12$ cells; ECoG carries the largest raw alignment.}
 \label{tab:percohort}
 \end{table}
 
@@ -1293,9 +1291,7 @@ Split-half ranking reliability & $0.98$ & $0.97$ & --- \\
 \end{tabular}
 \caption{The $32$-checkpoint LibriBrain readout comparison with and without the static-embedding
 control C4. Family-clustered intervals resample the $12$ model families ($10{,}000$ draws, seed $0$);
-$\Delta$'s interval uses the same draws for both concordances. Receipts:
-\texttt{p4\_encoding/\allowbreak concordance32\_c4.json} (aggregate) and \texttt{p4\_encoding/\allowbreak c4\_static32/}
-(one gate-and-score receipt per checkpoint).}
+$\Delta$'s interval uses the same draws for both concordances.}
 \label{tab:c4}
 \end{table}
 
@@ -1412,7 +1408,7 @@ $462$ shared words). Only the low-frequency, high-power bands carry a positive,
 reliably measured ceiling and positive raw alignment; gamma's ceiling is
 $\approx 0$ so its alignment cannot be normalized. At the group mean, no band with a
 reliably positive ceiling keeps positive partial alignment, so the raw broadband advantage here is largely
-lexical-confound-driven. Source: \texttt{results/p2\_perband\_ceiling.json}.}
+lexical-confound-driven.}
 \label{tab:ceiling}
 \end{table}
 
@@ -1680,7 +1676,7 @@ cells of the Zou, Feghhi/Hadidi and He rows read a $49$-listener archive that ca
 \begin{figure}[t]
 \centering
 \includegraphics[width=1.0000\textwidth]{../figures_v2/revision_r1_20261007/fig09_scorecard_r1.pdf}
-\caption{\textbf{Cross-setting tests and source coverage.} The right column follows scorecard\_transport.tsv: these tests are conceptual extensions or analogies, not literal replications. Each mini-bar displays the stored per-model/condition outcomes for that cohort in scorecard\_derived.json. Colors describe support, conditional/mixed behavior, or the opposite direction under this benchmark's operationalization, not verdicts on the original papers. Numbers count conditions, not independent subjects. Dashes mean no stored entry; hatched gray denotes unavailable evidence. The Schrimpf comparison remains unverified because tensors are missing. Dark-hatched outlined cells read the $49$-listener Brennan archive, which cannot be recomputed (Appendix~\ref{app:brennan}): the Zou cell is not reproduced on the recomputable $47$-listener rebuild, although the same rule still reads ``supports'' there (BERT $36/47$, epochs without a baseline) and its provenance is lost; the Feghhi/Hadidi and He Brennan cells are pending re-derivation. No replication fraction is computed. Drawn by \texttt{codes/fig\_paperA\_scorecard\_r1\_20261007.py}.}
+\caption{\textbf{Cross-setting tests and source coverage.} The right column follows scorecard\_transport.tsv: these tests are conceptual extensions or analogies, not literal replications. Each mini-bar displays the stored per-model/condition outcomes for that cohort in scorecard\_derived.json. Colors describe support, conditional/mixed behavior, or the opposite direction under this benchmark's operationalization, not verdicts on the original papers. Numbers count conditions, not independent subjects. Dashes mean no stored entry; hatched gray denotes unavailable evidence. The Schrimpf comparison remains unverified because tensors are missing. Dark-hatched outlined cells read the $49$-listener Brennan archive, which cannot be recomputed (Appendix~\ref{app:brennan}): the Zou cell is not reproduced on the recomputable $47$-listener rebuild, although the same rule still reads ``supports'' there (BERT $36/47$, epochs without a baseline) and its provenance is lost; the Feghhi/Hadidi and He Brennan cells are pending re-derivation. No replication fraction is computed.}
 \label{fig:scorecard}
 \end{figure}
 
@@ -1889,8 +1885,7 @@ premise is falsified on real data (Table~\ref{tab:rogue-ranks}).
 \caption{\textbf{Post hoc rank-one sensitivity, both readouts recomputed on the same ten models.}
 Cells are RSA/encoding ranks (rank 1 = highest) at the fixed LibriBrain primary cell.
 Center-only is $X-X_{\mathrm{mean}}$; doses $0.3/0.7$ add a sample-varying rank-one term to that
-centered matrix. The old frozen-encoding RSA-only injection is not mixed into these ranks.
-Source: \texttt{rogue\_encoding\_20260922/summary.json} and ten four-condition model receipts.}
+centered matrix. The old frozen-encoding RSA-only injection is not mixed into these ranks.}
 \label{tab:rogue-ranks}
 \begin{tabular}{lrrrr}
 \toprule
@@ -2132,7 +2127,7 @@ benchmark ran, its results and original labels. These legacy labels are retained
 Table~\ref{tab:scorecard} gives the current scoped outcomes. They do not imply direct replication.
 
 \begin{longtable}{@{}p{2.1cm} p{3.8cm} p{5.1cm} p{1.5cm}@{}}
-\caption{Historical scorecard detail: tested operationalizations, stored results and legacy labels. Current scoped outcomes and missing-data status are in Table~\ref{tab:scorecard}; legacy labels are not replication verdicts (\S\ref{sec:scorecard}); source \texttt{results/scorecard/scorecard.tsv}, whose operationalization strings (``7-LLM'', ``5-cohort'') predate the counts used here, which follow the receipts (six tensor-route LLMs in \texttt{headline\_layer\_scan.tsv}; four boundary cohorts in \texttt{exp\_boundary\_conditional/}).}\label{tab:scorecard-detail}\\
+\caption{Historical scorecard detail: tested operationalizations, stored results and legacy labels. Current scoped outcomes and missing-data status are in Table~\ref{tab:scorecard}; legacy labels are not replication verdicts (\S\ref{sec:scorecard}). The stored operationalization strings (``7-LLM'', ``5-cohort'') predate the counts used here, which follow the receipts (six tensor-route LLMs; four boundary cohorts).}\label{tab:scorecard-detail}\\
 \toprule
 Prior claim (venue) & Benchmark operationalization & Result & Legacy label \\
 \midrule \endfirsthead
@@ -2150,5 +2145,26 @@ Hadidi et al. (Nat. Commun.) & Their confounds, positional signals and word rate
 Antonello et al. (NeurIPS) & Their claim: fMRI encoding performance scales logarithmically with size, $125$M--$30$B, for unidirectional models (OPT, LLaMA). Like-for-like arm: the registered Qwen $0.5$B--$72$B encoding ladder, plus the six-point Pythia $70$M$\to$$2.8$B ladder scored per session at the pre-registered depth; the BERT/GPT-2 RSA comparison is a secondary arm outside their model class. & On the registered bounded-alpha grid, with the rungs re-extracted after the tokenization defect, the ordering reverses on LibriBrain (encoding $\rho=-0.96$; $72$B vs $0.5$B $p=0.0005$), but a post hoc training-fold-expanded grid attenuates the size correlation to $-0.464$ while retaining a $72$B deficit; on MEG-MASC the encoding arm fails its rankability gate and is not determined; under the similarity readout size orders positively ($\rho=+0.93$, $p=0.001$), so the verdict is stated for encoding only. Outside their model class, BERT-base ($110$M, masked) leads at $13.1\times10^{-3}$, above the three-times-larger GPT-2-medium ($355$M, $6.9\times10^{-3}$); across the ladder size does not predict alignment ($\rho = -0.14$, $p = 0.79$) and $2.8$B sits nominally below $70$M at forty times the parameters ($p = 0.23$). In these ladders parameter count did not order alignment. & \textbf{contradict} \\ \addlinespace
 He et al. (NeurIPS) & Iterative residual disentanglement (lexicon, syntax, meaning, reasoning; they test one model family) on LibriBrain, then the reasoning residual split medial versus constituent-onset, read out as alignment per model. & The medial-minus-onset contrast of the \emph{reasoning} residual sign-inverts between architectures (LibriBrain: GPT-2 $z=+13.1\times10^{-3}$, BERT $z=-15.7\times10^{-3}$). The \emph{meaning} component also inverts but in the opposite direction and roughly fifteen times smaller (GPT-2 $-0.7$, BERT $+0.9\times10^{-3}$), so the architecture-conditional effect is carried by the boundary term, not the semantic one. & refine \\ \addlinespace
 \end{longtable}
+
+
+\section{Figure and table sources}
+\label{app:sources}
+Every number in a figure or table is read from a committed receipt in the code release; the files and generators are listed here rather than in the captions.
+{\small\begin{longtable}{@{}p{0.13\textwidth}>{\raggedright\arraybackslash}p{0.83\textwidth}@{}}
+\toprule Item & Receipts and generator \\ \midrule
+\endhead
+Fig.~\ref{fig:overview} & Receipts: \texttt{crossed\_narrative/}, \texttt{ds003020/}, \texttt{concordance32\_CORRECTED}, \texttt{concordance\_spacefix\_masc27\_32}, \texttt{brennan\_k2\_summary\_20261009}. \\
+Table~\ref{tab:checkpoints} & \texttt{codes/model\_families.py}. \\
+Table~\ref{tab:percohort} & Source:
+\texttt{results/cross\_cohort\_summary.tsv}. \\
+Table~\ref{tab:c4} & Receipts:
+\texttt{p4\_encoding/\allowbreak concordance32\_c4.json} (aggregate) and \texttt{p4\_encoding/\allowbreak c4\_static32/}
+(one gate-and-score receipt per checkpoint). \\
+Table~\ref{tab:ceiling} & Source: \texttt{results/p2\_perband\_ceiling.json}. \\
+Fig.~\ref{fig:scorecard} & Drawn by \texttt{codes/fig\_paperA\_scorecard\_r1\_20261007.py}. \\
+Table~\ref{tab:rogue-ranks} & Source: \texttt{rogue\_encoding\_20260922/summary.json} and ten four-condition model receipts. \\
+Table~\ref{tab:scorecard-detail} & \texttt{results/scorecard/scorecard.tsv}; counts from \texttt{headline\_layer\_scan.tsv} (six tensor-route LLMs) and \texttt{exp\_boundary\_conditional/} (four boundary cohorts). \\
+\bottomrule
+\end{longtable}}
 
 \end{document}
